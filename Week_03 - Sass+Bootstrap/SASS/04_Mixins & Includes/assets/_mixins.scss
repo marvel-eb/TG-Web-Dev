@@ -1,0 +1,24 @@
+// Opdracht 1
+
+@mixin ephrem {
+  background-color: #8faf03;
+  color: #cce7cd;
+  padding: 25px 35px;
+  &hover {
+    background-color: rgb(151, 86, 0);
+    color: #f3b496;
+  }
+}
+
+// Opdracht 2
+
+@mixin colorChangingSquare {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: background-color 0.5s ease-in-out;
+
+  &:hover {
+    background-color: green;
+  }
+}
