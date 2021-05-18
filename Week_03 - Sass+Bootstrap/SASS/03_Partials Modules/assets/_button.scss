@@ -1,0 +1,10 @@
+@import "colors";
+
+.button {
+  padding: 15px 25px;
+  margin: 10px;
+  background-color: $button-color;
+  &:hover {
+    background-color: $button-hover-color;
+  }
+}
