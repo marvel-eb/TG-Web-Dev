@@ -1,0 +1,188 @@
+@charset "UTF-8";
+html, body {
+    max-width: 1200px;
+    margin: auto;
+    font-family: "Space Mono", sans-serif;
+    font-size: 18px;
+    line-height: 1.4em;
+    color: GhostWhite;
+}
+body {
+    background-image: url(../images/space.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.clearfix {
+    clear: both;
+}
+/* Title and Description */
+.page-title {
+    text-align: center;
+    margin: auto;
+    line-height: 2em;
+}
+.logo {
+    height: 80px;
+    width: 80px;
+    background-image: url("../images/spaceship.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 1em;
+}
+.page-title h1 {
+    display: inline-block;
+}
+.main {
+    text-align: center;
+}
+.page-description {
+    font-size: 0.8rem;
+    padding: 30px;
+}
+.learn-more {
+    color: DarkOrange;
+    text-decoration: none;
+    display: block;
+    margin: 25px 0 0 0;
+    font-weight: bold;
+}
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.gallery-item {
+    margin: 20px;
+}
+.gallery-item .thumbnail {
+    width: 240px;
+    border: 2px solid GhostWhite;
+    border-radius: 4px;
+}
+/* Footer Navigation */
+nav {
+    margin-top: 30px;
+}
+nav ul {
+    display: block;
+}
+nav li {
+    display: inline;
+    margin: 0 20px 0 0;
+    color: GhostWhite;
+}
+nav a {
+    line-height: 60px;
+    border: 1px solid GhostWhite;
+    padding: 7px;
+    border-radius: 4px;
+    color: DarkOrange;
+    text-decoration: none;
+}
+.contact-btn {
+    cursor: pointer;
+    margin: 20px 30px;
+    text-align: center;
+}
+.contact-btn a:active {
+    position: relative;
+    bottom: 2px;
+}
+/* On screens that are 992px or less, set the background color to blue */
+@media (max-width: 480px) {
+    /*
+	Opdracht 1 
+
+Schrijf onderaan je CSS bestand een media query voor een maximale breedte van 480px. Hierdoor kunnen we de breedte van het page-title element op kleinere schermen verkleinen. 
+
+Als het scherm minder dan 480px breed is, geeft je de .page-title class een breedte van 270px. Hierdoor wordt het page-title element duidelijker weergegeven op kleine schermen. Test je code door het formaat van de browser aan te passen in element inspection. 
+*/
+    .page title {
+        width: 270px;
+    }
+    /*
+	Opdracht 4 
+
+De tekst van de website moet groter zijn voor gebruikers met kleine schermen met een lage resolutie. Schrijf een media query die van toepassing is wanneer de maximale resolutie 150 dpi is en het scherm een maximale breedte heeft van 480px. 
+
+Maak binnen de media query de font-size van het page-description element 20px. 
+*/
+    .page-description {
+        font-size: 20px !important;
+    }
+}
+/*
+Opdracht 2 
+
+Laten we de gallery afbeeldingen groter laten lijken als de schermgrootte klein tot middelgroot is. Schrijf een media query voor schermformaten met een bereik tussen 320px en 480px. Gebruik min-breedte en max-breedte om het bereik te definiëren. 
+
+ 
+
+Selecteer in de media query de thumbnails van de gallery met .gallery-item .thumbnail en geef ze een breedte van 95%. Als het goed is zul je zien dat de gallery afbeeldingen breder lijken wanneer de schermgrootte tussen 320 en 480 pixels breed is. 
+
+
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .gallery-item .thumbnail {
+        width: 95%;
+    }
+    /*
+	Opdracht 5 
+
+Ga nog eens terug naar de eerste media query waarin je je richtte op schermen met een minimale breedte van 320 px en een maximale breedte van 480 px. Laten we ook het logo en de tekst verticaal verschijnen als het scherm in ‘portrait’ oriëntatie staat. 
+*/
+    .page-title, .logo {
+        display: block;
+        margin: auto;
+    }
+}
+/*
+Opdracht 3 
+
+Schrijf een media query om een logo van een hogere kwaliteit te tonen als de bezoeker naar de Amazing Space website kijkt op een scherm met hoge resolutie. Een beeldscherm met hoge resolutie heeft mogelijk een min-resolutie van 150 dpi. 
+
+ 
+
+Als je je pagina opent op een scherm met een resolutie groter dan 150 dpi, zul je de verandering van het logo zien. Als dit niet het geval is (omdat je een kleinere resolutie hebt), kun je in de media query de min-resolution op een lagere waarde zetten om de verandering te zien. 
+*/
+@media (min-width: 320px) {
+    .logo {
+        background-image: url("../images/spaceship2.png");
+    }
+}
+/*
+Opdracht 6 
+
+De laatste breakpoint waar we rekening mee willen houden is een tablet in liggende stand (landscape). De Amazing Space website zou het formaat moeten veranderen om de gallery afbeeldingen aan de rechterkant weer te geven, terwijl het logo en de beschrijving aan de linkerkant staan. Schrijf een media query die aan de volgende vereisten voldoet: 
+
+ 
+
+Het scherm heeft een minimale breedte van 768px; 
+
+Het scherm heeft een maximale breedte van 1024px; 
+
+Het scherm heeft als oriëntatie ‘landscape’. 
+
+ 
+
+Deze query zorgt ervoor dat de paginatitel en beschrijving links van de gallery afbeeldingen komen te zweven. Pas het formaat van de browser aan om deze veranderingen op verschillende schermbreedtes te observeren via element inspection. 
+*/
+/* iPads (portrait and landscape) ----------- */
+@media(min-width : 768px) and (max-width : 1024px) {
+    .main {
+        display: flex;
+		
+/*
+		justify-content: center;
+		align-items: center;
+*/
+    }
+    .page-title, .page-description {
+        display: inline-block;
+    }
+}
