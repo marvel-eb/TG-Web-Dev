@@ -1,0 +1,27 @@
+/* Menu 
+  =========*/
+header nav {
+  float: right;
+  margin-right: 25px;
+  padding-top: 0.7em;
+}
+header nav ul {
+  list-style: none;
+  float: right;
+}
+nav ul li {
+  float: left;
+  margin-right: 25px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: all 0.3s linear;
+  font-size: 15px;
+}
+ul li a {
+  color: #989898;
+  text-decoration: none;
+}
+
+ul li:hover a {
+  color: #ffffff;
+}
