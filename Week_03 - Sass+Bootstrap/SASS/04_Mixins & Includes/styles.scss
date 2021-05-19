@@ -11,18 +11,21 @@ body {
   box-sizing: border-box;
 }
 
-hr {
-  border-top-color: #243035;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-bottom-color: #5c7988;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  margin: 20px 0 20px;
-}
-
 .container {
   background-color: #dee4e7;
-  width: 100%;
+  // width: 100%;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 10%;
+  hr {
+    border-top-color: #243035;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-color: #5c7988;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    margin: 20px 0 20px;
+  }
 }
