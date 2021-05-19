@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kim Sing</title>
+<link href="css/styles-kim-sing.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+<style>
+.checked {
+    color: indianred;
+}
+	
+	
+	
+/*menu*/
+	
+
+
+/*
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+*/
+
+
+ 
+
+.sidebar-toggle svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.sidebar {
+  height: 100%;
+}
+
+.sidebar {
+  width: 100%;
+  height: 100%;
+  transform: translateX(-40%);
+  transition: transform 250ms ease-in-out;
+}
+.sidebar-body {
+  background: #f2f2f2;
+  margin-left: 30%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5em;
+}
+.sidebar-body:after, .sidebar-body:before {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.sidebar-panel {
+ background-color: #4b86cb;
+  color: white;
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+}
+#sidebarToggle {
+  display: none;
+}
+.sidebar-toggle {
+  color: black;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  background: white;
+  border: 1px solid #ccc;
+  position: absolute;
+  z-index: 99;
+  left: 2em;
+  top: 2em;
+  cursor: pointer;
+  margin-left: 0;
+  transition: margin-left 250ms ease-in-out;
+}
+
+
+input[type="checkbox"]:checked + .sidebar-toggle {
+  background-color: #ccc;
+  margin-left: 40%;
+}
+input[type="checkbox"]:checked ~ .sidebar {
+  transform: translateX(0);
+}
+input[type="checkbox"]:checked ~ .sidebar {
+  position: fixed;
+}
+	
+	
+	
+
+</style>
+</head>
+
+	<body class="sidebarMenu=">
+
+<!--	Header Main Menu
+=========================================-->
+<header>
+	
+	
+<!--
+  <div id="mySidebar" class="sidebar">
+    <h4> Menu</h4>
+	  
+
+    <hr>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 
+	  
+	  <a href="#"><i class="fas fa-tasks"></i> DASHBOARD</a> <a href="#"> <i class="fas fa-user"></i> USER PROFILE</a> <a href="#members"> <i class="fas fa-users"></i> MEMBERS</a> <a href="#"> <i class="fas fa-sticky-note"></i> ASSIGNMNETS</a> <a href="#"> <i class="fab fa-blogger-b"></i> BLOG</a> </div>
+-->
+	
+	
+
+
+	
+</header>
+	
+	
+	
+	
+<div class="main"> 
+
+	
+	
+	  <!--
+    Required markup
+    Watch out, order matters!
+    Especially: #sidekickToggle, .sidekick-toggle, .sidekick-panel
+    -->
+  <input type="checkbox" id="sidebarToggle">
+  <label class="sidebar-toggle" for="sidebarToggle">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+      <g>
+        <rect x="96" y="241" width="320" height="32" />
+        <rect x="96" y="145" width="320" height="32" />
+        <rect x="96" y="337" width="320" height="32" />
+      </g>
+    </svg>
+    <span class="sr-only">Menu Toggle</span>
+  </label>
+  <!-- .sidekick-toggle -->
+  <div class="sidebar">
+    <nav class="sidebar-panel">
+      <h1>Sidekick Menu</h1>
+      <ul>
+        <li><a href="#">Nav Item 1</a></li>
+        <li><a href="#">Nav Item 2</a></li>
+        <li><a href="#">Nav Item 3</a></li>
+        <li><a href="#">Nav Item 4</a></li>
+        
+        <li><a href="#">Nav Item 3</a></li>
+        <li><a href="#">Nav Item 4</a></li>
+        <li><a href="#">Nav Item 1</a></li>
+        <li><a href="#">Nav Item 2</a></li>
+        <li><a href="#">Nav Item 3</a></li>
+        <li><a href="#">Nav Item 4</a></li>
+      </ul>
+    </nav>
+	
+	
+	  <!-- .sidekick-panel -->
+    <div class="sidebar-body">
+  
+  <!--	///-->
+<!--  <button class="openbtn" onclick="openNav()">☰ </button>-->
+  <!--  ///-->
+  
+  <div class="container"> 
+    
+    <!--	kim Sing
+=========================================-->
+    <div class="profile-wraper">
+      <div class="col-left one">
+        <div class="profile-img-bg">
+          <div class="kim"> <img  src="images/kim-sing.png" alt="kim" height="200"> </div>
+        </div>
+        <div style="margin-top: 100px">
+          <h1 class="title">Kim Sing</h1>
+          <a class="twiiter-link" href="#">@KimSing</a>
+          <blockquote> "Being open minded of other solutios gains better result than using the first encountered solution" </blockquote>
+          <ul class="social-icons">
+            <li> <i class="far fa-thumbs-up"> +1000</i></li>
+            <li> <i class="far fa-heart"> +999</i></li>
+            <li> <i class="far fa-thumbs-down"> 0</i></li>
+          </ul>
+          <hr>
+          <img class="img" src="images/leadership.png" alt="kim" height="300"> </div>
+      </div>
+      <div class="col-right two"> 
+        <!--	Personal Informations
+=========================================-->
+        <div class="info">
+          <h4> Personal Informations</h4>
+          <p> <span><strong>Name: </strong> Kim Sing</span> <span><strong>Surname: </strong> Chang</span></p>
+          <p> <span> <strong>Age: </strong> 43</span> <span><strong> Sex:</strong> Male</span> <span> <strong>Birth of Date: </strong> 01-1-1980</span></p>
+          <p> <span><strong>Address: </strong> Osdorpplein 16</span> <span> <strong> Post code:</strong> 1234AB</span> </p>
+          <p><span><strong>City: </strong> Amsterdam</span> <span><strong> Country:</strong> NL</span> <span><strong>Profession: </strong> Full stack developer</span></p>
+          <p> <span><strong> Hobby: </strong> Table tennis</span></p>
+        </div>
+        <!--	Languages
+=========================================-->
+        <h4> Languages</h4>
+        <div class="language">
+          <ul>
+            <li>
+              <ul class="lang-list">
+                <li style="width:25%">
+                  <p>HTML:</p>
+                </li>
+                <li>
+                  <p> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="lang-list">
+                <li style="width:25%">
+                  <p>CSS:</p>
+                </li>
+                <li>
+                  <p> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star checked"></span> </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="lang-list">
+                <li style="width:25%">
+                  <p>Javascript:</p>
+                </li>
+                <li>
+                  <p> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="lang-list">
+                <li style="width:25%">
+                  <p>Java:</p>
+                </li>
+                <li>
+                  <p> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="lang-list">
+                <li style="width:25%">
+                  <p>Kotlin:</p>
+                </li>
+                <li>
+                  <p> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star checked"></span> </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="lang-list">
+                <li style="width:25%">
+                  <p>Groovy:</p>
+                </li>
+                <li>
+                  <p> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> </p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <br>
+        </div>
+        
+        <!--	Frameworks & Tools 
+=========================================-->
+        <h4> Frameworks & Tools </h4>
+        <div class="cloud-text"> <span class="txt-1">REST</span><br>
+          <span class="txt-2">Kubernetes</span><br>
+          <span class="txt-3">Tailwind- CSS</span> <span class="txt-5"> Bootstrap</span> <span class="txt-6"> Firebase</span> <span class="txt-4"> Azure</span> <span class="txt-8"> apache</span> <span class="txt-7"> JQuery</span> <span class="txt-9"> Jenkins</span> <span class="txt-10"> HipoCMS</span> <span class="txt-11"> nginx</span> <span class="txt-12"> Rancher</span> <span class="txt-13"> SOAP</span> <span class="txt-14"> AEM</span> <span class="txt-15"> AWS</span> <span class="txt-16"> Vue.js</span> <span class="txt-17"> React</span> <span class="txt-18"> grafana</span> <span class="txt-19"> OAuth-2.0</span> <span class="txt-20"> Spring-Boot</span> </div>
+      </div>
+    </div>
+    
+    <!--	Members
+=========================================-->
+    
+    <div class="members">
+      <h2> Members</h2>
+      <table style="width: 100%">
+        <tr>
+          <th>First Name</th>
+          <th>Surname</th>
+          <th>Age</th>
+        </tr>
+        <tr  style="background-color:#a0aec0">
+          <td>Klaas</td>
+          <td>Jan</td>
+          <td>34</td>
+        </tr>
+        <tr>
+          <td>Jennis</td>
+          <td>Lee</td>
+          <td>25</td>
+        </tr>
+        <tr  style="background-color:#a0aec0">
+          <td>Cameron</td>
+          <td>Lion</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>Anthony</td>
+          <td>Boss</td>
+          <td>66</td>
+        </tr>
+        <tr  style="background-color:#a0aec0">
+          <td>Frits</td>
+          <td>Kosnovia</td>
+          <td>33</td>
+        </tr>
+        <tr>
+          <td>Bosnia</td>
+          <td>Kovic</td>
+          <td>43</td>
+        </tr>
+      </table>
+      
+      <!--
+    	Additional Information
+=========================================
+-->
+      <h3> Additional Information</h3>
+      <div class="form-wraper">
+		  
+        <div>
+			
+			
+          <form style="width: 100%">
+			  
+            <div> <span style="display: inline-block"> <span style="display-inline; float: left">
+              <label for="first name" >First Name:</label>
+              <br>
+              <input type="name"  size="60">
+              </span> <span style="isplay-inline; float: left">
+              <label for="surname">Surname</label>
+              <br>
+              <input type="text"  size="30">
+              </span> <span style="isplay-inline; float: left">
+              <label for="age">Age:</label>
+              <br>
+              <input type="text"  size="10">
+              </span> </span> </div>
+            <div> <span style="display: inline-block"> <span style="isplay-inline; float: left">
+              <label for="first name">Company:</label>
+              <br>
+              <input type="name"  size="40">
+              </span> <span style="isplay-inline; float: left">
+              <label for="surname">User Name:</label>
+              <br>
+              <input type="text" size="20">
+              </span> <span style="isplay-inline; float: left">
+              <label for="age">Email:</label>
+              <br>
+              <input type="text" size="40">
+              </span> </span> </div>
+            <div> <span style="display: inline-block"> <span style="isplay-inline; float: left">
+              <label for="first name">Address:</label>
+              <br>
+              <input type="name" size="110">
+              </span></span> </div>
+            <div> <span style="display: inline-block"> <span style="display-inline; float: left">
+              <label for="first name">City:</label>
+              <br>
+              <input type="name" size="33">
+              </span> <span style="display-inline; float: left">
+              <label for="surname">Country:</label>
+              <br>
+              <input type="text"  size="33">
+              </span> <span style="display-inline; float: left">
+              <label for="age">Postalcode:</label>
+              <br>
+              <input type="text"  size="33">
+              </span> </span> </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	
+		
+		 </div>
+	  
+	    </div>
+  <!-- .sidekick -->
+<!--		sidebar  -->
+		
+	
+		
+<!--
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+	
+-->
+	
+</body>
+</html>
