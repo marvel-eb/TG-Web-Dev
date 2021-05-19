@@ -39,6 +39,10 @@ h1 {
 
   text-align: center;
 }
+img {
+  width: 100%;
+  height: auto;
+}
 // Variables
 $translucent-white: rgba(255, 255, 255, 0.3);
 // $icon-square-length:300px;
@@ -50,7 +54,7 @@ $standard-border: 4px solid black;
 
   font-family: "Pacifico", cursive;
 
-  icon {
+  .icon {
     display: inline-block;
 
     margin: 2%;
@@ -66,9 +70,9 @@ $standard-border: 4px solid black;
 
   height: 400px;
 
-  background-image: url("lemonade.jpg");
+  background-image: url("../lemonade.jpg");
 
-  slogan {
+  .slogan {
     position: absolute;
 
     border: 4px solid $translucent-white;
