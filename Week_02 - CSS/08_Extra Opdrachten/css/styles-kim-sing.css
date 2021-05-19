@@ -35,7 +35,9 @@ h3 {
 }
 .main {
     transition: margin-left .6s;
-    padding: 15px;
+}
+.container {
+    margin: 0 auto;
 }
 .profile-wraper {
     display: flex;
@@ -44,12 +46,13 @@ h3 {
 .col-left {
     padding: 15px;
     margin-top: 5px;
-    /*    flex-shrink: 1;*/
     text-align: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 30%;
 }
 .col-right {
-    padding: 0 15px 15px;
-    /*    flex-grow: 4;*/
+    flex-grow: 0;
 }
 .profile-img-bg {
     background-image: url(../images/Coding.jpg);
@@ -107,15 +110,15 @@ hr {
     background-color: #faf7f3;
 }
 /*Language*/
-.language ul {
-    padding-inline-start: 0;
+.language ul, .language ul li {
+    /*    padding-inline-start: 0;*/
+    padding: 0;
 }
-.language ul li {
+.language ul li, .language ul li {
     list-style-type: none;
 }
 .lang-list li {
     display: inline-block;
-    list-style-type: none;
 }
 .lang-list span {
     margin: 0px 10px;
@@ -127,6 +130,11 @@ hr {
     border-bottom-color: #455160;
     padding: 5px;
     margin: 5px;
+}
+.info-title {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #EFEFE3;
 }
 .col-right h4 {
     background-color: #7aa5d6;
@@ -348,7 +356,7 @@ input[type="checkbox"]:checked ~ .sidebar {
     padding: 10px;
     box-sizing: border-box;
 }
-.sidebar a {
+.sidebar-panel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     color: #f1f1f1;
@@ -356,9 +364,11 @@ input[type="checkbox"]:checked ~ .sidebar {
     transition: 0.3s;
     font-size: 15px;
 }
-.sidebar h3 {
-    /*    text-align: center;*/
+.sidebar-panel h3 {
     color: #f1f1f1;
+}
+.sidebar-panel .menu{
+	text-align: center;
 }
 /* Media Queries
 ================*/
@@ -377,6 +387,16 @@ input[type="checkbox"]:checked ~ .sidebar {
         width: 100%;
         margin: 5px;
         padding: 5px;
+    }
+    .info span {
+        /*	margin: 10px;*/
+        /*	padding:10px;*/
+        /*	width:100%;*/
+        display: inline-block;
+    }
+    .lang-list {
+        width: 100%;
+        display: inline-block;
     }
 }
 @media(min-width : 768px) and (max-width : 1024px) {
