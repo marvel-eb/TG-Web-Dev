@@ -69,11 +69,16 @@ h3 {
     text-align: center;
     left: 0;
     bottom: 0;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 .kim {
     position: absolute;
     top: 100px;
-    left: 25%;
+
+	
 }
 .kim img {
     height: 120px;
@@ -308,13 +313,13 @@ table td {
     margin-left: 40%;
     width: 100%;
     box-sizing: border-box;
-    padding: 5em;
+/*    padding: 5em;*/
 }
 .sidebar-panel {
     background-color: #4b86cb;
     color: white;
     position: absolute;
-    width: 40%;
+    width: 25%;
     height: 100%;
     overflow-y: scroll;
     top: 0;
@@ -340,7 +345,7 @@ table td {
 }
 input[type="checkbox"]:checked + .sidebar-toggle {
     background-color: #EAEAEA;
-    margin-left: 40%;
+    margin-left: 25%;
 }
 input[type="checkbox"]:checked ~ .sidebar {
     transform: translateX(0);
@@ -370,6 +375,16 @@ input[type="checkbox"]:checked ~ .sidebar {
 .sidebar-panel .menu{
 	text-align: center;
 }
+
+.sidebar-panel hr {
+    border-top-color: #2c517b;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-color: #7ab1f2;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+
+}
 /* Media Queries
 ================*/
 @media (max-width: 480px) {}
@@ -398,6 +413,13 @@ input[type="checkbox"]:checked ~ .sidebar {
         width: 100%;
         display: inline-block;
     }
+	
+	.sidebar-panel {
+
+    width: 40%;
+
+    
+}
 }
 @media(min-width : 768px) and (max-width : 1024px) {
     .col-left {
