@@ -1,0 +1,61 @@
+.profile-img-bg {
+  background-image: url(images/Coding.jpg);
+  height: 150px;
+  position: relative;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: 24% 13%;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .kim {
+    position: absolute;
+    top: 100px;
+  }
+  .kim img {
+    height: 120px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: $primary-color;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+  }
+  .twiiter-link {
+    color: #4b86cb;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .social-icons li {
+    display: inline-block;
+    margin-right: 5%;
+  }
+  .title {
+    margin-bottom: 5px;
+  }
+  hr {
+    border-top-color: #e2e1e1;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-color: #fff;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+}
+
+.profile-wraper,
+.members {
+  background-color: #faf7f3;
+}

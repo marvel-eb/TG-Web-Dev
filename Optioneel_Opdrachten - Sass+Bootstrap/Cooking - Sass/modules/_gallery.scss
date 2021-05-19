@@ -1,0 +1,41 @@
+/* Gallery Area 
+================*/
+.gallery-wraper {
+  background-color: $background-color;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.gallery-wraper > div {
+  width: 420px;
+  margin: auto;
+  padding: 20px;
+}
+.center {
+  text-align: center;
+}
+.thumbnail {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  margin: 30px;
+  border-radius: 50%;
+}
+.card {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.card:hover {
+  -moz-box-shadow: 0 0 20px #fff;
+  -webkit-box-shadow: 0 0 20px #fff;
+  box-shadow: 0 0 20px #fff;
+}

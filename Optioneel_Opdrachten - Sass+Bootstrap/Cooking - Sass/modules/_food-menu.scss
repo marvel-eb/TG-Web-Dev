@@ -1,0 +1,42 @@
+/* Menu Area
+==================*/
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  /*    width: 90%;*/
+  /*    margin: auto;*/
+  /*	flex-wrap: wrap;*/
+  justify-content: center;
+}
+.col-2-item {
+  display: flex;
+  /*	flex-direction: row;*/
+}
+.price-wraper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.col-2-item div {
+  flex: 1;
+}
+.col-1 {
+  display: flex;
+}
+.chef {
+  align-self: flex-end;
+}
+.price {
+  clear: both;
+}
+.price-left {
+  float: left;
+}
+.price-right {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
