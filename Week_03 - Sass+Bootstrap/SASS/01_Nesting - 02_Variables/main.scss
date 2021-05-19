@@ -45,7 +45,7 @@ img {
 }
 // Variables
 $translucent-white: rgba(255, 255, 255, 0.3);
-// $icon-square-length:300px;
+$icon-square-length: 300px;
 $standard-border: 4px solid black;
 
 // Nesting
@@ -70,7 +70,12 @@ $standard-border: 4px solid black;
 
   height: 400px;
 
-  background-image: url("../lemonade.jpg");
+  background-image: url("images/lemonade.jpg");
+
+  // Custom Code //
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 
   .slogan {
     position: absolute;
