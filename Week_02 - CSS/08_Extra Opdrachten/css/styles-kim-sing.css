@@ -5,10 +5,13 @@
 ======================================================*/
 /* Global Styles
 =================*/
-body {
+html, body {
     box-sizing: border-box;
     background-color: #faf7f3;
     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 p {
     color: #1A1A1A;
@@ -18,7 +21,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .container {
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
+    padding: 30px;
 }
 h1 {
     font-size: 40px;
@@ -36,11 +40,6 @@ h3 {
 .profile-wraper {
     display: flex;
     flex-direction: row;
-    /*    flex-wrap: wrap;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
-    /*    text-align: center;*/
-    /*    width: 100%;*/
 }
 .col-left {
     padding: 15px;
@@ -283,21 +282,71 @@ table td {
     top: -45px;
 }
 /*Sidebar Menu
-===============*/
-.sidebar {
+=============== */
+.checked {
+    color: indianred;
+}
+.sidebar-toggle svg {
+    width: 100%;
     height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
+}
+.sidebar {
+    width: 100%;
+    height: 100%;
+    transform: translateX(-40%);
+    transition: transform 250ms ease-in-out;
+}
+.sidebar-menu-wraper {
+    margin-left: 40%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5em;
+}
+.sidebar-panel {
+    background-color: #4b86cb;
+    color: white;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    overflow-y: scroll;
     top: 0;
     left: 0;
-    background-color: #4b86cb;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
 }
-.sidebar h4 {
-    text-align: center;
+#sidebarToggle {
+    display: none;
+}
+.sidebar-toggle {
+    color: #4b86cb;
+    font-size: 30px;
+    background: white;
+    border: 2px solid #4b86cb;
+    position: absolute;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    cursor: pointer;
+    top: 50px;
+    left: 50px;
+}
+input[type="checkbox"]:checked + .sidebar-toggle {
+    background-color: #EAEAEA;
+    margin-left: 40%;
+}
+input[type="checkbox"]:checked ~ .sidebar {
+    transform: translateX(0);
+}
+input[type="checkbox"]:checked ~ .sidebar {
+    position: fixed;
+}
+.sidebar a:hover {
+    color: #fff;
+}
+.sidebar li {
+    list-style: none;
+    padding: 10px;
+    box-sizing: border-box;
 }
 .sidebar a {
     padding: 8px 8px 8px 32px;
@@ -307,31 +356,12 @@ table td {
     transition: 0.3s;
     font-size: 15px;
 }
-.sidebar a:hover {
-    color: #fff;
-}
-.sidebar h4 {
+.sidebar h3 {
+    /*    text-align: center;*/
     color: #f1f1f1;
 }
-.sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-.openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #4b86cb;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-}
-.openbtn:hover {
-    background-color: #444;
-}
-/*Custom*/
+/* Media Queries
+================*/
 @media (max-width: 480px) {}
 @media (max-width: 767px) {
     .profile-wraper {
@@ -339,13 +369,6 @@ table td {
     }
     .container {
         width: 100%;
-    }
-    /*	sidebar menu*/
-    .sidebar {
-        padding-top: 15px;
-    }
-    .sidebar a {
-        font-size: 18px;
     }
 }
 @media (min-width: 320px) and (max-width: 480px) {}

@@ -76,6 +76,7 @@ ul li:hover a {
     flex-direction: row;
     height: 700px;
 }
+
 .hero-img {
     background-image: url("../images/cooking.jpg");
     background-repeat: no-repeat;
@@ -83,6 +84,7 @@ ul li:hover a {
     background-position: center;
     height: 100%;
 }
+
 .hero-title {}
 .hero-txt {
     display: inline-block;
@@ -230,12 +232,14 @@ footer {
 }
 .social li {
     display: inline-block;
-    padding-right: 10px;
-    text-align: left;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
 }
 .social li:hover {
-    background-color: #756C6C;
-    color: #fff
+    background-color: #756c6c;
+    color: #fff;
+    padding: 15px;
 }
 @media (max-width: 480px) {}
 @media (max-width: 767px) {
