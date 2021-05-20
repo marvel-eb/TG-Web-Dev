@@ -11,6 +11,10 @@
 /* Detail Page   
 ====================*/
 /* Button */
+
+.button-wraper{
+	position: relative;
+}
 .nice-number button {
     position: absolute;
     top: 0;
@@ -61,4 +65,11 @@ form#feedbackForm {
 }
 .form-control {
     background-color: #bdc1c5;
+}
+
+/* Common
+====================*/
+.round-border{
+	border-radius: 10px; 
+		
 }
