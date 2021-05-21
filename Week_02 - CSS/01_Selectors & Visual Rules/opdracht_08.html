@@ -10,7 +10,6 @@ body {
     height: 100%;
     background-color: #37474f;
     color: #f1f1f1;
-    margin: 50px 100px;
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
     font-size: 14px;
     font-weight: normal;
@@ -25,11 +24,17 @@ hr {
     border-bottom-style: solid;
     margin: 20px 0 20px;
 }
+.main-content {
+/*    margin: 0 auto;*/
+    margin: 50px 100px;
+}
 .container {
     background-color: #dee4e7;
     border-radius: 10px;
-    padding: 10% 10%;
+    padding: 10% 5%;
     color: #101010;
+/*    margin: 0 auto;*/
+    margin: 50px 100px;
 }
 .class-selector {
     color: blue;
@@ -46,20 +51,20 @@ hr {
     color: green;
     border: 1px dashed red;
 }
-<br>
-}
 </style>
 </head>
 
 <body>
-<h1>1. Selectors & Visual rules</h1>
-<h3>Opdracht 08 </h3>
-<p> Styling die je toepast wordt toegepast in een bepaalde volgorde. Het kan voorkomen dat je styling toepast en vervolgens niet het gewenste resultaat ziet. Cascade en Inheritance zijn belangrijke concepten om te begrijpen hoe styling werkt. Lees hier in de officiële documentatie meer over cascade en inheritance.
-  Zoek ook andere referenties om het concept te begrijpen.
-  
-  Leg in eigen woorden uit wat met cascade en inheritance wordt bedoeld. Maak voorbeelden om je antwoord uit te leggen.
-<hr>
-</p>
+<section class="main-content">
+  <h1>1. Selectors & Visual rules</h1>
+  <h3>Opdracht 08 </h3>
+  <p> Styling die je toepast wordt toegepast in een bepaalde volgorde. Het kan voorkomen dat je styling toepast en vervolgens niet het gewenste resultaat ziet. Cascade en Inheritance zijn belangrijke concepten om te begrijpen hoe styling werkt. Lees hier in de officiële documentatie meer over cascade en inheritance.
+    Zoek ook andere referenties om het concept te begrijpen.
+    
+    Leg in eigen woorden uit wat met cascade en inheritance wordt bedoeld. Maak voorbeelden om je antwoord uit te leggen.
+  <hr>
+  </p>
+</section>
 <div class="container">
   <h3>The Cascade</h3>
   <p>Cascade by order of importance, If different styles have the same level of specificity and are conflicting, the last rule wins.</p>

@@ -10,7 +10,6 @@ body {
     height: 100%;
     background-color: #37474f;
     color: #f1f1f1;
-    margin: 50px 100px;
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
     font-size: 14px;
     font-weight: normal;
@@ -25,18 +24,22 @@ hr {
     border-bottom-style: solid;
     margin: 20px 0 20px;
 }
+.main-content {
+    margin: 50px 100px;
+}
 .container {
     background-color: #dee4e7;
     border-radius: 10px;
-    padding: 10% 10%;
+    padding: 10% 5%;
     color: #101010;
-    display: flex;
-    justify-content: center;
+    margin: 50px 100px;
+		display: flex;
+	justify-content: center;
 }
 /*	Transition Animation 
 	===================*/
-	
-	
+
+
 .wraper {
     background-color: #D3E2E4;
     padding: 10px;
@@ -49,7 +52,7 @@ hr {
     justify-content: center;
     align-items: center;
 }
-.wraper> div {
+.wraper>div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,15 +95,15 @@ hr {
     animation-duration: 3.5s;
     animation-delay: 0.2s;
 }
-	
-	
-	
-/* -----------
+
+
+
+        /* -----------
    keyframes 
 -------------*/
 
-/*	Box 1 */
-@keyframes box-1 {
+        /*	Box 1 */
+        @keyframes box-1 {
 0% {
 transform: translate(50, 50);
 animation-duration: 2s;
@@ -115,8 +118,8 @@ animation-duration: 5s;
 }
 75% {
 /*transform: translate(310px, -100px) ; */
-	
-	
+
+
 }
 100% {
 transform: translate(0, 0);
@@ -124,8 +127,9 @@ transition: 4s ease-in-out;
 animation-duration: 5s;
 }
 }
-/*	Box 2 */
-@keyframes box-2 {
+
+        /*	Box 2 */
+        @keyframes box-2 {
 0% {
 transform: translate(-50, 50);
 animation-duration: 2s;
@@ -140,8 +144,8 @@ animation-duration: 5s;
 }
 75% {
 /*transform: translate(310px, -100px) ; */
-	
-	
+
+
 }
 100% {
 transform: translate(0, 0);
@@ -149,10 +153,10 @@ transition: 4s ease-in-out;
 animation-duration: 5s;
 }
 }
-	
-	
-/*	Box 3 */
-@keyframes box-3 {
+
+
+        /*	Box 3 */
+        @keyframes box-3 {
 0% {
 transform: translate(0, 0);
 animation-duration: 2s;
@@ -178,8 +182,11 @@ animation-duration: 2s;
 </head>
 
 <body>
-<h1>06 - TRANSITIONS</h1>
-<h3>Opdracht 04 </h3>
+<section class="main-content">
+  <h1>06 - TRANSITIONS</h1>
+  <h3>Opdracht 04 </h3>
+  <hr>
+</section>
 <div class="container">
   <div class="wraper">
     <div class="box-1"> 1 </div>

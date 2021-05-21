@@ -10,7 +10,6 @@ body {
     height: 100%;
     background-color: #37474f;
     color: #f1f1f1;
-    margin: 50px 100px;
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
     font-size: 14px;
     font-weight: normal;
@@ -25,13 +24,17 @@ hr {
     border-bottom-style: solid;
     margin: 20px 0 20px;
 }
+.main-content {
+    margin: 50px 100px;
+}
 .container {
     background-color: #dee4e7;
     border-radius: 10px;
-    padding: 10% 10%;
+    padding: 10% 5%;
     color: #101010;
-    display: flex;
-    justify-content: center;
+    margin: 50px 100px;
+		display: flex;
+	justify-content: center;
 }
 .wraper {
     background-color: #f1f1f1;
@@ -67,7 +70,7 @@ hr {
 }
 /* Animation
 ============*/
-	
+
 .box-1 {
     width: 200px;
     height: 200px;
@@ -87,9 +90,9 @@ hr {
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;/*transition: ease 0.2s transform;*/
 }
-	
-	
-/*
+
+
+        /*
 .rectangle {
     background-color: #F4AFAF;
 	display: inline-block;
@@ -123,32 +126,37 @@ hr {
     cursor: pointer;
 }
 */
-	
-	
-@keyframes box-1 {
+
+
+        @keyframes box-1 {
 0% {
-background-color:#D8B9B9;
+background-color: #D8B9B9;
 }
 100% {
-background-color:#FF0000;
+background-color: #FF0000;
 }
 50% {
-background-color:#CA7373;
+background-color: #CA7373;
 }
 75% {
-background-color:#f1f1f1;
+background-color: #f1f1f1;
 }
 100% {
-background-color:#D53232;
+background-color: #D53232;
 }
 }
 </style>
 </head>
 
 <body>
-<h1>06 - TRANSITIONS</h1>
-<h3>Opdracht 05 </h3>
-<p> Hieronder zie je wederom een voorbeeld van een transition. Je kunt op verschillende properties transitions aangeven. Zoek uit op welke properties de transitions zitten en maak het na. Je eigen creativiteit gebruiken is uiteraard toegestaan. </p>
+<section class="main-content">
+  <h1>06 - TRANSITIONS</h1>
+  <h3>Opdracht 05 </h3>
+  <hr>
+</section>
+<p> Hieronder zie je wederom een voorbeeld van een transition. Je kunt op verschillende properties transitions
+  aangeven. Zoek uit op welke properties de transitions zitten en maak het na. Je eigen creativiteit gebruiken is
+  uiteraard toegestaan. </p>
 <hr>
 <div class="container"> 
   <!--

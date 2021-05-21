@@ -10,7 +10,6 @@ body {
     height: 100%;
     background-color: #37474f;
     color: #f1f1f1;
-    margin: 50px 100px;
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
     font-size: 14px;
     font-weight: normal;
@@ -25,29 +24,40 @@ hr {
     border-bottom-style: solid;
     margin: 20px 0 20px;
 }
+.main-content {
+/*    margin: 0 auto;*/
+    margin: 50px 100px;
+}
 .container {
     background-color: #dee4e7;
     border-radius: 10px;
-    padding: 10% 10%;
-    color: #101010;/*
-   box-
+    padding: 10% 5%;
+    color: #101010;
+/*    margin: 0 auto;*/
+    margin: 50px 100px;
 }
 </style>
 </head>
 
 <body>
-<h1>2. Het box-model</h1>
+	
+<section class="main-content">
+	
+	<h1>2. Het box-model</h1>
 <h3>Opdracht 0 </h3>
 <p> Welke CSS property kun je gebruiken om ervoor te zorgen dat de waarde van
   width en height de totale breedte en hoogte is van het blok van de
   voorgaande opdracht? </p>
 <hr>
+	
+	</section>
+
 <div class="container">
-  <p> <b> "box-sizing" rule declaration </b><br /><br />
+  <p> <b> "box-sizing" rule declaration </b><br />
+    <br />
     Because if we do not declare this rule the total width and height of the
-    box will be affected, meaning BORDER and PADDING will be calculated.
- </p>
-	<p>/* box-sizing: border-box; */</p>
+    box will be affected, meaning BORDER and PADDING will be calculated. </p>
+  <p>/* box-sizing: border-box; */</p>
 </div>
 </body>
 </html>

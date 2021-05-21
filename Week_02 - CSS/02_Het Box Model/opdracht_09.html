@@ -10,7 +10,6 @@ body {
     height: 100%;
     background-color: #37474f;
     color: #f1f1f1;
-    margin: 50px 100px;
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
     font-size: 14px;
     font-weight: normal;
@@ -25,11 +24,17 @@ hr {
     border-bottom-style: solid;
     margin: 20px 0 20px;
 }
+.main-content {
+/*    margin: 0 auto;*/
+    margin: 50px 100px;
+}
 .container {
     background-color: #dee4e7;
     border-radius: 10px;
-    padding: 10% 10%;
+    padding: 10% 5%;
     color: #101010;
+/*    margin: 0 auto;*/
+    margin: 50px 100px;
 }
 </style>
 <style>
@@ -81,12 +86,14 @@ hr {
 </head>
 
 <body>
-<h1>2. Het box-model</h1>
-<p> Opdracht 9<br>
-  <br>
-  Maak een aantal voorbeelden van boxen en maak gebruik van steeds verschillende margin,
-  padding en border properties. </p>
-<hr>
+<section class="main-content">
+  <h1>2. Het box-model</h1>
+  <p> Opdracht 9<br>
+    <br>
+    Maak een aantal voorbeelden van boxen en maak gebruik van steeds verschillende margin,
+    padding en border properties. </p>
+  <hr>
+</section>
 <div class="container">
   <div class="box1">
     <p>Content Box</p>
