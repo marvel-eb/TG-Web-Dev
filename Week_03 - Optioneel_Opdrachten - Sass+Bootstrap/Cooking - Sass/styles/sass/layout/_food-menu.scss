@@ -11,6 +11,14 @@
 .col-2-item {
   display: flex;
   /*	flex-direction: row;*/
+	
+	
+		@include md {
+    display: flex;
+    flex-direction: column;
+    }
+	
+	
 }
 .price-wraper {
   display: flex;
@@ -19,9 +27,17 @@
 }
 .col-2-item div {
   flex: 1;
+	
+	
+	
 }
 .col-1 {
   display: flex;
+	
+	
+		@include md {
+       display: none;
+    }
 }
 .chef {
   align-self: flex-end;
@@ -40,3 +56,7 @@
   clear: both;
   display: table;
 }
+
+
+
+  

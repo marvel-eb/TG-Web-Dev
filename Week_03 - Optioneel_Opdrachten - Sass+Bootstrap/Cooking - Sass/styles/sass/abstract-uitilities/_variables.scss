@@ -8,3 +8,12 @@ $light-color: antiquewhite;
 // Button
 $button-color: #80b380;
 $button-hover-color: #6187d8;
+
+
+// Media Queries - Breakpoints
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;

@@ -20,8 +20,17 @@ nav ul li {
 ul li a {
   color: #989898;
   text-decoration: none;
+	
+		@include md {
+		
+		    color: #101010;
+		
+		}
+	
+	
 }
 
 ul li:hover a {
   color: #ffffff;
 }
+

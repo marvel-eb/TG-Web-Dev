@@ -1,0 +1,19 @@
+header {
+  width: 100%;
+  height: auto;
+  background-color: $dark-color;
+  position: fixed;
+	
+		@include md {
+    display: flex;
+    justify-content: center;
+    background-color: $light-color;
+			
+
+    }
+
+}
+
+
+
+
