@@ -1,35 +1,32 @@
 /* Opdracht 01.1: 
 =================*/
 
-// a
-//
+//a)
 // let letOefening = "Let Tekst";
-//let letOefening = "Let Tekst Twee!";
-//console.log(letOefening); 
+// let letOefening = "Let Tekst Twee!";
+//  console.log(letOefening); 
 
 
-// b
+//b)
 //let letOefening = "Let Tekst";
 //console.log(letOefening);
-
-//let letOefening = "Let Tekst Twee!";
+//
+//letOefening = "Let Tekst Twee!";
 //console.log(letOefening);
 
-// c
-
-//const constOefeing = "Const Tekst";
-//console.log(constOefeing);
+//c
+//const constOefening = "Const Tekst";
+//console.log(constOefening);
 //
-//constOefeing = "Const Tekst Twee!";
-//console.log(constOefeing);
+//constOefening = "Const Tekst Twee!";
+//console.log(constOefening);
 
-//  d
-
+//d)
 //varOefening = "Var Tekst";
 //console.log(varOefening);
 //
-//var varOefening = "Var Tekst Twee";
-//console.logo(varOefening);
+//var varOefening = "Var Tekst Twee!";
+//console.log(varOefening);
 //
 //var varOefening = "Var Tekst Drie!";
 //console.log(varOefening);
@@ -86,7 +83,6 @@
 //console.log("This is a" + typeof typeQuestion + ", with the value" + typeQuestion);
 
 
-
 /* Opdracht 1.3: 
 =================*/
 
@@ -97,7 +93,6 @@
 //console.log(someNumber === anotherNumber); // true
 //console.log(someNumber != anotherNumber); //  false
 //console.log(someNumber !== anotherNumber); // false
- 
 
 
 /* Opdracht 01.4: 
@@ -137,24 +132,3 @@
 
 //f) ?
 //g) ?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
