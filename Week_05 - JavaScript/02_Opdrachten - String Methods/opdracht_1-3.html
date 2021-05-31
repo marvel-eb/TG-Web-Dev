@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Opdracht 01</title>
+<style>
+body {
+    height: 100%;
+    /* background: linear-gradient(to top left, #28b487, #7dd56f); */
+    background: linear-gradient(to top left, #4d774e, #164a41);
+    color: #9dc88d;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    font-size: 14px;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+h1 {
+   font-size: 3rem;
+    font-size: calc(3rem + 1vw);
+}
+}
+h2 {
+    font-size: 1.7rem;
+}
+hr {
+    border-top-color: #1e3c2d;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-color: #3b8664;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    margin: 20px 0 20px;
+}
+.container hr {
+    border-top-color: #7da070;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-color: #b8eaa7;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    margin: 20px 0 20px;
+}
+.main-content {
+    margin: 50px 100px;
+}
+.container {
+    background-color: #9dc88d;
+    border-radius: 10px;
+      padding: 5% 3%;
+    color: #164a41;
+    margin: 50px 100px;/*
+    display: flex;
+    justify-content: center;
+*/
+}
+.footer {
+    /*        background-color: #164a41;*/
+    background: linear-gradient(to top right, #164a41, #4d774e);
+    padding: 50px;
+}
+.text-align {
+    text-align: center;
+}
+
+@media (max-width:499px) {
+.main-content {
+    margin: 30px 30px;
+}
+.container {
+    margin: 30px 15px;
+}
+}
+</style>
+</head>
+
+<body>
+<section class="main-content">
+  <h1>INTRO TO JAVASCRIPT </h1>
+  <h2> STRING METHODS</h2>
+</section>
+<hr>
+<section class="main-content">
+  <h3>Opdracht 02.1 </h3>
+</section>
+<div class="container">
+  <h4>Gegeven de volgende String:</h4>
+  <hr>
+  <h4>a) - Splits de string op in 2 aparte zinnen. Stop beiden in een aparte variabele. </h4>
+  <p>__De poes van de buuren heeft kittens gehad!</p>
+  <p>__Hij vraagt of wij nog kittens willen?</p>
+  <hr>
+  <h4>b) - Zo’n geweldig nieuws verdient upper case. Zet someKittens om naar hoofdletters. </h4>
+  <h4>c) - Geef de eerste en laatste index van KITTENS</h4>
+  <h4>d) - Gebruik charAt() op beiden. Welk teken krijg je terug? </h4>
+  <p>*<strong>Antwoord B, C & D </strong></p>
+  <p>__ De poes van de buuren heeft kittens gehad! </p>
+  <p>__Hij vraagt of wij nog kittens willen?</p>
+  <p>__The character at index 6 is e</p>
+  <hr>
+</div>
+<hr>
+<section class="main-content">
+  <h3>Opdracht 02.2</h3>
+</section>
+<div class="container">
+  <h4>substring() en slice() lijken erg op elkaar. We onderzoeken de verschillen. Test dit met een eigen string, of gebruik het vorige voorbeeld. </h4>
+  <h4>substring() en slice() kunnen 2 waardes meegegeven worden - een index waar de nieuwe waarde begint en een index waar deze moet eindigen. </h4>
+  <hr>
+  <h4>a) - 
+    Wat doet substring() als het eerste getal hoger is dan het tweede getal? </h4>
+  <p> - if indexStart is greater than indexEnd, meaning that a string is still returned. </p>
+  <hr>
+  <h4>b) -  
+    Wat doet slice() als het eerste getal hoger is dan het tweede getal? </h4>
+  <p> - if indexStart is greater than indexEnd, returns an empty string </p>
+  <hr>
+  <h4>Deze waardes hoeven niet per se positief te zijn - je kan ook negatieve getallen meegeven. </h4>
+  <hr>
+  <h4>c) - 
+    Wat doet substring() bij negatieve waardes? </h4>
+  <p>__ it subtracts the number from the string's length</p>
+  <hr>
+  <h4>d) - 
+    Wat doet slice() bij negatieve waardes? </h4>
+  <p>__extracts the last  elements in the sequence.</p>
+  <hr>
+</div>
+<hr>
+<section class="main-content">
+  <h3>Opdracht 02.3 </h3>
+</section>
+<div class="container">
+  <h4>Gegeven het volgende voorbeeld:</h4>
+  <h4>- Gebruik split() om alle woorden apart in een Array te zetten.</h4>
+  <p>__ <br>
+    // Array [ "Die nieuwe kittens zijn zo schattig!" ] <br>
+    // 0: "Die nieuwe kittens zijn zo schattig!"<br>
+    // length: 1</p>
+</div>
+<footer class="text-align footer">
+  <p> Ephrem</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
