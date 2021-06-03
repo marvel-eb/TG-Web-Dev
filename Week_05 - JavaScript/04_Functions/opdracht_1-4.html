@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript - Functions</title>
+<style>
+body {
+    height: 100%;
+    /* background: linear-gradient(to top left, #28b487, #7dd56f); */
+    background: linear-gradient(to top left, #4d774e, #164a41);
+    color: #9dc88d;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    font-size: 14px;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 1.7rem;
+}
+hr {
+    border-top-color: #1e3c2d;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-color: #3b8664;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    margin: 20px 0 20px;
+}
+.container hr {
+    border-top-color: #7da070;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-color: #b8eaa7;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    margin: 20px 0 20px;
+}
+.main-content {
+    margin: 50px 100px;
+}
+.container {
+    background-color: #9dc88d;
+    border-radius: 10px;
+    padding: 5% 3%;
+    color: #164a41;
+    margin: 50px 100px;/*
+    display: flex;
+    justify-content: center;
+*/
+}
+.footer {
+    /*        background-color: #164a41;*/
+    background: linear-gradient(to top right, #164a41, #4d774e);
+    padding: 50px;
+}
+.text-align {
+    text-align: center;
+}
+
+@media (max-width:499px) {
+.main-content {
+    margin: 30px 30px;
+}
+.container {
+    margin: 30px 15px;
+}
+}
+/* Button*/
+.myButton {
+    background-color: #5a9446;
+    padding: 15px;
+    border-color: #b3e0a4;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 7px;
+    color: #215344;
+    width: 25%;
+}  
+    
+/*
+ .line {
+  display: block;
+  height: 1px;
+  position: absolute;
+  bottom: -.05rem;
+  left: 0;
+ width: 100%;
+  background-color: #f57100;
+}
+*/
+</style>
+</head>
+
+<body>
+<section class="main-content">
+  <h1>INTRO TO JAVASCRIPT </h1>
+  <h2> FUNCTIONS</h2>
+</section>
+<hr>
+<section class="main-content">
+  <h3>Opdracht 04.1 </h3>
+</section>
+<div class="container">
+  <h4>a) - Maak een button en verbind er een functie aan. Zorg ervoor dat de functie in de console “Hello World” logt. </h4>
+  <p>__ </p>
+  <button class="myButton" onclick="myFunction()">Click me</button>
+  <hr>
+  <h4>b) - Maak een input element en geef het een bepaald ID. Sla dat ID op in een variabele via document.GetElementByID(). </h4>
+  <p id="ephrem">Hello World</p>
+  <button class="myButton" onclick="changeMyColor('#ffffff');">White</button>
+  <hr>
+  <h4>c) - Maak een functie met een parameter die deze in de console logt. Geef de ID variabele hier aan mee. Wat zie je in de console? </h4>
+  <p id="ephrem-2">Hello World</p>
+  <button class="myButton" onclick="changeMyColor('#ffffff');">White</button>
+  <hr>
+  <h4>d)  - Geef je functie een return waarde, bijvoorbeeld de parameter * 2. Maak vervolgens een nieuwe variabele “result”. Roep je functie op met een getal als parameter en wijs de return waarde toe aan “result”. Log de variabele daarna in je console. </h4>
+  <hr>
+</div>
+<hr>
+<section class="main-content">
+  <h3>Opdracht 04.2</h3>
+</section>
+<div class="container">
+  <h4>We gaan een paar veelgebruikte DOM methods onderzoeken. Je bent inmiddels bekend met document.GetElementById(). Veel andere DOM methods geven Arrays terug - je hebt het inmiddels al vaker gelezen maar hoe je die verwerkt gaan we later nog leren :) </h4>
+  <h4>a) - Onderzoek de volgende DOM methodes en gebruik ze in een voorbeeld: </h4>
+  <div class="homework-4">
+    <h4> - i) - document.getElementsByClassName</h4>
+  </div>
+  <button class="myButton" onclick="myFunction()">Click Me</button>
+  <hr>
+  <p>ii) - document.getElementsByTagName</p>
+  <p> Test-1</p>
+  <p> Test-2</p>
+  <p> Test-3</p>
+  <p> Test-4</p>
+  <p>Click the button to display the innerHTML of the second "p" element (index 1).</p>
+  <button class="myButton"  onclick="myFunction()">Clike Me</button>
+  <p id="homework-2"></p>
+  <hr>
+  <h4 class="homework-5">iii) - document.querySelector</h4>
+  <button class="myButton" onclick="myFunction()">Click Me</button>
+  <hr>
+  <h4 class="homework-3">iv) - document.querySelectorAll</h4>
+  <button class="myButton"  onclick="myFunction()">Click Me</button>
+  <hr>
+  <p id="homework-4" onclick="myFunction()">Click me to change my HTML content (innerHTML).</p>
+  <hr>
+  <h4> vi) -  
+    element.innerText</h4>
+  <button class="myButton" onclick="myFunction()" id="myBtn">Click Me</button>
+  <p id="content"></p>
+  <hr>
+</div>
+<hr>
+<section class="main-content">
+  <h3>Opdracht 04.3 </h3>
+</section>
+<div class="container"> ... </div>
+<footer class="text-align footer">
+  <p> Ephrem</p>
+</footer>
+<script src="../04_Opdrachten - Functions/script.js"></script>
+</body>
+</html>
