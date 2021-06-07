@@ -1,7 +1,17 @@
 /* Opdracht 03.1: 
 =================*/
-//c, d)
-//
+
+/////////////////////////////////////////////////////////
+// a) Wat is het verschil tussen == en ===? -------------// ???? - check again//
+
+/////////////////////////////////////////////////////////
+// b) Wat is het verschil tussen > en >=? En tussen < en -------------// ???? - check again//
+
+
+/////////////////////////////////////////////////////////
+// c) Schrijf de If conditie zo, dat je alleen Results ziet als x==4 en y==8
+// d) Schrijf het nu zo dat je alleen Results ziet als x==4 OF y==8
+
 //let x = 4;
 //let y = 8;
 //if (x == 4) {
@@ -9,43 +19,60 @@
 //} else {
 //}
 
-//e)
 
-let x = 4;
-let y = 8;
-if (x == 4) {} else {
-  console.log("Result!");
-}
+/////////////////////////////////////////////////////////
+// e) Zet nu de console.log(“Results”) in een Else { } na de If. Kan je de conditie omdraaien zodat je alsnog Results te zien krijgt?
 
-//f)???
+
+//let x = 4;
+//let y = 8;
+//if (x == 4) {} else {
+//  console.log("Result!");
+//}
+
+
+/////////////////////////////////////////////////////////
+// f) Kan je het vorige antwoord ook geven zonder || te gebruiken? ------------// ???? - check again//
 
 //let value = 1;
-////g)
+
+/////////////////////////////////////////////////////////
+// g) Log het in je console als de waarde groter dan 5 EN kleiner dan 10 is.
+
 //if (value > 5 || value< 10) { 
 //console.log("greater than 5");
 //console.log("less than 10");
 //}
-////h)
+
+
+/////////////////////////////////////////////////////////
+// h) Zo niet, log dan in je console als de waarde 11 of groter EN 20 of kleiner is.
 //else if (value > 11 || value< 20){
 //
 //console.log("greater than 11");
 //console.log("less than 20");
 //}
-//
-////i)
+
+/////////////////////////////////////////////////////////
+// i) Zo niet, log dan in je console als de waarde 21 of 23 is.
 //else if (value > 21 || value < 23){
 //
 //console.log("greater than 21");
 //console.log("less than 23");
 //}
-//
-////j)
+
+
+/////////////////////////////////////////////////////////
+// j) Zo niet, log dan in je console als de waarde kleiner dan 35 OF tussen de 40 en 45 is.
 //else if (value > 35 || value < 35){
 //
 //console.log("greater than 35");
 //console.log("less than 35");
 //}
-////k)
+
+/////////////////////////////////////////////////////////
+// k) Test of je bij alle uitkomsten kan komen. Verandert er iets als je alle If/Else omzet in aparte If blokken?
+
 //
 //else {
 //   console.log("b/n 40 & 45");
@@ -55,8 +82,16 @@ if (x == 4) {} else {
 /* Opdracht 03.2: 
 =================*/
 
+/////////////////////////////////////////////////////////
+/*
+a) Schrijf een If/Else blok die een eigen variabele controleert:
+- i) Gelijk aan 3?
+- ii) Groter dan 4?
+- iii) Groter dan 11?
+- iv) Kleiner dan 3?
+b) Test je variabele met 2, 3, 4, 5 en 20. Gebeurt er iets onverwachts?
 
-//a),  b)
+*/
 // Method 1 //
 
 //var x = 2;
@@ -89,7 +124,9 @@ if (x == 4) {} else {
 //}
 
 
-//c)
+/////////////////////////////////////////////////////////
+// c) Schrijf een If/Else die een variabele op numerieke waarde controleert, en de passende maand in je console logt.
+
 
 //let value = 01;
 //if (value == 02) {
@@ -121,8 +158,8 @@ if (x == 4) {} else {
 //  console.log("Geen Geldige Maand");
 //}
 
-
-//d)
+/////////////////////////////////////////////////////////
+// d) Bouw nu opdracht C met een Switch/case.
 
 //let value = 01;
 //switch (value = 01) {
@@ -172,8 +209,8 @@ if (x == 4) {} else {
 //    console.log("Geen Geldige Maand");
 //}
 
-
-//e) ???
+/////////////////////////////////////////////////////////
+// e) Herschrijf dit als een Ternary Operator. -------------// ???? - check again//
 
 //let x = 3;
 //let results;
@@ -186,4 +223,20 @@ if (x == 4) {} else {
 //    results = 5;
 //}
 //console.log(results);
-/
+
+
+/////////////////////////////////////////////////////////
+//Gegeven de volgende code:
+
+//let x = 3;
+//let results;
+//if (x<4=4 & x>=0) {
+//    results = 2
+//}
+//
+//else {
+//    results = 5
+//}
+//console.log(results)
+//Antwood
+//let result = x =< 4 && x=>0 ? 2 : 5;
