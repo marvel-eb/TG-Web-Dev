@@ -192,7 +192,7 @@ hr {
   color: #044e40;
   font-size: 90px;
   background: linear-gradient(65deg, #72ffe0, #006262);
-/* -webkit-linear-gradient(to right, #72ffe0, #006262);*/
+  /* -webkit-linear-gradient(to right, #72ffe0, #006262);*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
