@@ -69,6 +69,10 @@ hr {
 }
 /* Carousel 
 ===========*/
+.carousel .carousel__item--visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
 .carousel-wraper {
   background-color: #6e9e5d;
   padding: 20px;
@@ -76,6 +80,7 @@ hr {
   /* height: 100vh;*/
   height: auto;
   border-radius: 10px;
+  overflow: hidden;
 }
 .carousel {
   width: 75%;
@@ -85,18 +90,21 @@ hr {
   border-radius: 1.2rem;
   overflow: hidden;
   background-color: #6e9e5d;
+  transition: 300ms transform ease-in;
 }
-.slide {
+.slideTwo {
+  display: none;
+}
+.slideTwo, .slideOne {
   width: 100%;
   height: 100%;
   animation: fade 1.5s;
-  /*   display: none;*/
   text-align: center;
   align-items: center;
   justify-items: center;
   justify-content: center;
 }
-.slide img {
+.slideTwo img, .slideOne img {
   width: 100%;
   height: auto;
   border-radius: 10px;
