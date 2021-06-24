@@ -109,11 +109,11 @@ hr {
   background-image: linear-gradient(180deg, rgba(27, 110, 95, 0.63) 33.12%, rgba(1, 47, 39, 1.00) 33.12%, rgba(6, 48, 40, 1.00) 60.86%, rgba(10, 49, 42, 0.46) 60.86%);
   box-shadow: 0 0 10px;
 }
-.brand {
+.swatch-brand {
   font-size: 40px;
   color: #014234;
 }
-.timer {
+.swatch-timer {
   color: #044e40;
   font-size: 90px;
   background: linear-gradient(65deg, #72ffe0, #006262);
@@ -121,7 +121,7 @@ hr {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.controle {
+.swatch-controle {
   display: flex;
   flex-direction: row;
   width: 280px;
