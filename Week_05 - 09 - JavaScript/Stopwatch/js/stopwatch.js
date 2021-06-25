@@ -56,11 +56,7 @@ function timer() {
       minutes++;
       seconds = 0;
     }
-    //    if (minutes == 60) {
-    //      hour++;
-    //      minutes = 0;
-    //    }
-
+    
 
     //  Zero padding operation
     if (millisecond < 10) {
