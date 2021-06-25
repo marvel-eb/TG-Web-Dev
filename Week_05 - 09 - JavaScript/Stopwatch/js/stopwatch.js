@@ -56,11 +56,7 @@ function timer() {
       minutes++;
       seconds = 0;
     }
-<<<<<<< HEAD
-    
-=======
-  
->>>>>>> master
+   
 
     //  Zero padding operation
     if (millisecond < 10) {
