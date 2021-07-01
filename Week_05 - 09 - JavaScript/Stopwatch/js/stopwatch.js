@@ -46,7 +46,7 @@ resetButton.onclick = function () {
 //=== Timing function
 
 function timer() {
-  // Assignment operation, store the timer in the global scope variable
+ 
   time = setInterval(function () {
     millisecond++;
     if (millisecond == 100) {
