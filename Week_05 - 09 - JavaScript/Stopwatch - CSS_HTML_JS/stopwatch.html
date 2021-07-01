@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript - Stopwatch</title>
+<link rel="stylesheet" href="css/stopwatch.css">
+</head>
+
+<body>
+<section class="main-content" id="main-content">
+  <h1>INTRO TO JAVASCRIPT </h1>
+  <h2>STOPWATCH - PURE CSS, HTML & JS</h2>
+</section>
+<hr>
+<div class="container">
+  <div class="circle-wraper">
+    <div class="circle-outer">
+      <div class="circle-inner"> 
+        <!-- Brand Name -->
+        <div class="swatch-brand">
+          <h4>SKMEI</h4>
+        </div>
+        
+        <!-- Time Display -->
+        <div class="swatch-timer" id="swatch-timer">
+       
+            <time>00:00:00</time>
+        
+        </div>
+        
+        <!-- Time Controle Buttons -->
+        <div class="swatch-controle">
+          <button id="start" class="btn start">START</button>
+          <button id="pause" class="btn pause" disabled>PAUSE</button>
+          <button id="reset" class="btn stop" disabled>RESET</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="text-align footer">
+  <p> EPHREM</p>
+</footer>
+<script src="js/stopwatch.min.js"></script>
+</body>
+</html>
