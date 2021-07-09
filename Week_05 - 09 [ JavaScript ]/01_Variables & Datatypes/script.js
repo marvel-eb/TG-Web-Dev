@@ -120,9 +120,9 @@ de dag met je groep.
 
 /////////////////////////////////////////////////////////
 // e) Wat komt er uit als je de + vervangt door:
-
+// console.log(someNumber + anotherNumber)
 // i) ==
-//console.log(someNumber = anotherNumber); // 5
+//console.log(someNumber == anotherNumber); // 5
 
 // ii) ===
 //console.log(someNumber === anotherNumber); // true

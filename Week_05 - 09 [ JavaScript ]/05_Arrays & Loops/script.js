@@ -133,24 +133,49 @@
 //console.log(numbers3);
 
 
-// g) Begin met het array [0,1]. Maak vervolgens een loop die dit array vult met de eerste 50 getallen van de Reeks van Fibonacci. Log dit array.  -------------// ???? - check again //
+/*g) Begin met het array [0,1]. Maak vervolgens een loop die dit array vult met de eerste 50 getallen van de Reeks van Fibonacci. Log dit array.  !!! -- //
 
 
-//Begin met het array [0,1]. Maak vervolgens een loop die dit array vult met de eerste 50
-//getallen van de Reeks van Fibonacci. Log dit array.
+Begin met het array [0,1]. Maak vervolgens een loop die dit array vult met de eerste 50
+getallen van de Reeks van Fibonacci. Log dit array.
 
-//for (let i = 0; i < numbers1.length; i++) {
-//  for (let j = 0; j < numbers2.length; j++) {
-//   for (let j = 0; j < numbers3.length; k++) {
-//    if (numbers1[i] === numbers3[k]) {
-//      // console.log('Both loops have the number: ' + numbers3[k])
+*/
+
+//Fibonacci Series
+
+//const fibonacciSeries = [0, 1]
+//
+//for (i = 0; i <= 50; i++) {
+//  nextNumber = fibonacciSeries[i] + fibonacciSeries[i + 1]
+//  fibonacciSeries.push(nextNumber)
+//}
+//console.log(fibonacciSeries)
+
+
+/*
+for (let i = 0; i < numbers1.length; i++) {
+  for (let j = 0; j < numbers2.length; j++) {
+   for (let j = 0; j < numbers3.length; k++) {
+    if (numbers1[i] === numbers3[k]) {
+//       console.log('Both loops have the number: ' + numbers3[k])
+    }
+  }
+}
+};
+
+*/
+
+// h)  Bouw een loop die het gegeven array met bubblesort sorteert. !!! -- //
+//list = [2, 7, 5, 10, 4, 9, 3, 1, 8, 6]
+//for (item in bubblesortList) {
+//  for (i = 0; i <= bubblesortList.length; i++) {
+//    if (bubblesortList[i] > bubblesortList[i + 1]) {
+//      bubblesortList.splice(i, 0, bubblesortList[i + 1])
+//      bubblesortList.splice(i + 2, 1)
+//      console.log(bubblesortList)
 //    }
 //  }
 //}
-//};
-
-
-// h)  Bouw een loop die het gegeven array met bubblesort sorteert.  -------------// ???? - check again //
 
 
 /* Opdracht 5.3:
