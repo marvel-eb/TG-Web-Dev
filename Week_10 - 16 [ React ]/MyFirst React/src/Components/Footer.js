@@ -2,7 +2,7 @@ const Footer = () => {
   const today = new Date();
   return (
     <footer className="footer">
-      <p>Copyright &copy; {today.getFullYear()} </p>
+      <p>EPHREM | Copyright &copy; {today.getFullYear()} </p>
     </footer>
   );
 };

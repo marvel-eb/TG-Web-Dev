@@ -6,11 +6,16 @@
 }
 body {
   height: 100%;
-  /* background: linear-gradient(to top left, #28b487, #7dd56f); */
+
   background: linear-gradient(to top left, #805d15, #553900);
-  /* color: #9dc88d; */
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
-    "DejaVu Sans", Verdana, "sans-serif";
+
+  /* font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "DejaVu Sans", Verdana, "sans-serif"; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-size: 14px;
   font-weight: normal;
   box-sizing: border-box;
@@ -76,7 +81,6 @@ hr {
   align-items: center; */
 }
 .footer {
-  /* background-color: #164a41;*/
   background: linear-gradient(to bottom right, #a5771b, #553900);
   padding: 50px;
   text-shadow: none;
@@ -92,7 +96,6 @@ hr {
     margin: 30px 15px;
   }
 }
-/*=================*/
 
 input {
   background-color: #b38a34;
@@ -119,39 +122,4 @@ input {
 
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-.App-link {
-  color: #fbdc61;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

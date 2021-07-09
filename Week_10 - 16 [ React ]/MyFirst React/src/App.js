@@ -1,22 +1,26 @@
-// import logo from "./logo.svg";
-
-import "./App.css";
 import Header from "./Components/Header";
-import Content from "./Components/Content";
+
 import Footer from "./Components/Footer";
 
-import ClassComponent from "./Components/ClassComponent";
-import FunctionalComponent from "./Components/FunctionalComponent";
+import ComponentenJSXReactDOM from "./Components/ComponentenJSXReactDOM";
 
+import ControlledComponentsSharedState from "./Components/ControlledComponentsSharedState";
+import ListsKeys from "./Components/ListsKeys";
+import SideEffectsLifecycleMethods from "./Components/SideEffectsLifecycleMethods";
+import RandomNames from "./Components/RandomNames";
 function App() {
   return (
     <div className="App">
       <Header />
       <main>
-        <ClassComponent />
-        <FunctionalComponent />
+        <ComponentenJSXReactDOM />
 
-        <Content />
+        <ControlledComponentsSharedState />
+
+        <ListsKeys />
+
+        <SideEffectsLifecycleMethods />
+        <RandomNames />
       </main>
 
       <Footer />
