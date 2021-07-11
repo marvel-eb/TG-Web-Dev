@@ -20,10 +20,19 @@ function ComponentenJSXReactDOM() {
       <div className="output-result">
         {" "}
         <h5>
-          Hallo! Mr <span class="changable-text"> {name}</span>{" "}
+          Hallo! Mr <span className="changable-text"> {name}</span>{" "}
         </h5>
       </div>
+      <hr />
       <h4>- Class Component </h4>
+      <br />
+      <input type="text" onChange={handleChangeName} />
+      <div className="output-result">
+        {" "}
+        <h5>
+          Hallo! Mr <span className="changable-text"> {name}</span>{" "}
+        </h5>
+      </div>
     </div>
   );
 }

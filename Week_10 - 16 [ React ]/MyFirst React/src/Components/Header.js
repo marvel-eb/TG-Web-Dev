@@ -1,8 +1,9 @@
 const header = () => {
   return (
     <header className="App-header">
-      <section class="content">
-        <h1> Introduction to React</h1>
+      <section className="content">
+        <h1> Getting started With React</h1>
+        <h2>Handleiding React</h2>
       </section>
       <hr />
     </header>

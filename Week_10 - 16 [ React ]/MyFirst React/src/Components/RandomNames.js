@@ -7,7 +7,7 @@ const Content = () => {
 
   return (
     <div className="container">
-      <h2> // Random Names // </h2>
+      <h2>05// Random Names </h2>
       <hr />
       <p>{handleNameChange()}!</p>
     </div>
