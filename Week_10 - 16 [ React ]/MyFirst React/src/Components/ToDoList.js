@@ -1,73 +1,114 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 
-import ToDoItems from "./ToDoItems";
+// function Task({ task, index, completeTask, removeTask }) {
+const Task = ({ task, index, removeTask }) => {
+  return (
+    <div
+      className="ToDo"
+      style={{ textDecoration: task.completed ? "line-through" : "" }}
+    >
+      {task.title}
 
-class ToDoList extends Component {
-  constructor(props) {
-    super(props);
+      <button className="btn btn--task" onClick={() => removeTask(index)}>
+        Task Complete!
+      </button>
+      {/* <button onClick={() => completeTask(index)}>Complete</button> */}
+    </div>
+  );
+};
 
-    this.state = {
-      items: [],
-    };
+const CreateTask = ({ addTask }) => {
+  const [value, setValue] = useState("");
 
-    this.addItem = this.addItem.bind(this);
-    this.deleteItem = this.deleteItem.bind(this);
-  }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (!value) return;
+    addTask(value);
+    setValue("-");
+  };
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        className="input"
+        value={value}
+        placeholder="Add a new task to do"
+        onChange={(e) => setValue(e.target.value)}
+      />
 
-  addItem(e) {
-    if (this._inpputElement.value !== "") {
-      var newItem = {
-        text: this._inputElement.value,
-        key: Date.now(),
-      };
-      this.setState((prevState) => {
-        return {
-          items: prevState.items.concat(newItem),
-        };
-      });
-    }
-    this._inputElement.value = "";
-    console.log(this.state.items);
-    e.preventDefault();
-  }
+      <button type="submit" className="btn btn--submit">
+        Submit To Do
+      </button>
+    </form>
+  );
+};
+// To Do List
+//==============
+function ToDoList() {
+  // const [tasksRemaining, setTasksRemaining] = useState(0);
+  const [tasks, setTasks] = useState([
+    // {
+    //   title: "Grab some Pizza",
+    //   completed: true,
+    // },
+    // {
+    //   title: "Do your workout",
+    //   completed: true,
+    // },
+    // {
+    //   title: "Hangout with friends",
+    //   completed: false,
+    // },
+  ]);
 
-  deleteItem(key) {
-    // this.props.delete(key);
-    console.log("key in deleteItem:" + key);
-    console.log("Items at delete:" + this.state.ietms);
+  // useEffect(() => {
+  //   setTasksRemaining(tasks.filter((task) => !task.completed).length);
+  // });
 
-    let filteredItems = this.state.items.filter(function (item) {
-      return item.key !== key;
-    });
-    this.setState({
-      items: filteredItems,
-    });
-  }
+  const addTask = (title) => {
+    const newTasks = [...tasks, { title, completed: false }];
+    setTasks(newTasks);
+  };
 
-  render() {
-    return (
-      <div className="container">
-        <h2> 04// Side Effects en Lifecycle Methods </h2>
-        <hr />
+  const completeTask = (index) => {
+    const newTasks = [...tasks];
+    newTasks[index].completed = true;
+    setTasks(newTasks);
+  };
 
-        <h4>- To-Do Opdracht</h4>
+  const removeTask = (index) => {
+    const newTasks = [...tasks];
+    newTasks.splice(index, 1);
+    setTasks(newTasks);
+  };
 
-        <div className="header">
-          <form onSubmit={this.addItem}>
-            <input
-              ref={(a) => (this._inputElement = a)}
-              placeholder="Enter Your Task"
-            ></input>
-            <button type="submit" className="btn">
-              {" "}
-              Add plz
-            </button>
-          </form>
-        </div>
+  return (
+    <div className="container">
+      <h2> 04// Side Effects en Lifecycle Methods </h2>
+      <hr />
+      <h4>- To-Do Opdracht</h4>
 
-        <ToDoItems entries={this.state.items} delete={this.deleteItem} />
+      {/* <div className="header">
+        <h4> Pending tasks ({tasksRemaining}) </h4>
+      </div> */}
+
+      <div className="tasks">
+        {tasks.map((task, index) => (
+          <Task
+            task={task}
+            index={index}
+            completeTask={completeTask}
+            removeTask={removeTask}
+            key={index}
+          />
+        ))}
       </div>
-    );
-  }
+
+      <div className="create-task">
+        <CreateTask addTask={addTask} />
+      </div>
+    </div>
+  );
 }
+
 export default ToDoList;

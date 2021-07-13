@@ -1,5 +1,8 @@
+// Main Component - Child components reader
+
 import Header from "./Components/Header";
-import Introductie from "./Components/Introductie";
+import FunctionalComponent from "./Components/FunctionalComponent";
+import ClassComponent from "./Components/ClassComponent";
 import SharedState from "./Components/SharedState";
 import ListsKeys from "./Components/ListsKeys";
 import ToDoList from "./Components/ToDoList";
@@ -11,7 +14,8 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <Introductie />
+        <FunctionalComponent />
+        <ClassComponent />
         <SharedState />
         <ListsKeys />
         <ToDoList />
