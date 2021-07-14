@@ -4,7 +4,7 @@ import React from "react";
 class ClassComponent extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { name: "Change Me, Please" };
+    this.state = { name: "Please, Change Me" };
   }
   handleChangeName = (event) => {
     this.setState({ name: event.target.value });
@@ -15,14 +15,17 @@ class ClassComponent extends React.Component {
       <div className="container">
         <hr />
         <h4>- Input on change: Class Component </h4> <br />
-        <input type="text" onChange={this.handleChangeName} />
+        <input
+          placeholder="Type..."
+          type="text"
+          onChange={this.handleChangeName}
+        />
         <div className="output-result">
           {" "}
           <h5>
-            Hallo! Mr <span className="changable-text"> {this.state.name}</span>{" "}
+            Hello! Mr <span className="changable-text"> {this.state.name}</span>{" "}
           </h5>
         </div>
-        <hr />
       </div>
     );
   }

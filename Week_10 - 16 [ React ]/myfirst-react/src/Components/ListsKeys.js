@@ -15,7 +15,11 @@ const ListsKeys = () => {
       <h2> 03// Lists en Keys </h2>
       <hr />
       <h4>- Lists en Keys Opdracht</h4>
-      <input value={name} onChange={(e) => setName(e.target.value)} />
+      <input
+        placeholder="Type..."
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
       <button className="btn btn--submit" onClick={handleInput}>
         Submit Name
       </button>

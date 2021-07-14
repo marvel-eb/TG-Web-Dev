@@ -49,7 +49,14 @@ h6 {
 .italic {
   font-style: italic;
 }
+.tagline {
+  color: rgb(86 58 0);
 
+  background-color: rgb(212 178 106);
+  padding: 10px;
+
+  border-radius: 7px;
+}
 .content {
   margin: 50px 100px;
   color: #d4b26a;
@@ -140,7 +147,9 @@ h6 {
 .App {
   text-align: center;
 }
-
+.App-header h2 {
+  color: #b38a34;
+}
 .listItems,
 .ToDo,
 .output-result {
@@ -178,7 +187,7 @@ input:focus {
 }
 .listItems hr {
   padding-bottom: 5px;
-  width: 60%;
+
   margin: 0 auto;
 }
 .listItems p,
@@ -205,9 +214,7 @@ hr {
   border-bottom-style: solid;
   margin: 20px 0 20px;
 }
-.App-header h2 {
-  color: #926a16;
-}
+
 .container hr,
 .App-header hr {
   border-top-width: 1px;
@@ -232,6 +239,9 @@ hr {
   background: linear-gradient(to bottom right, #a5771b, #553900);
   padding: 50px;
   text-shadow: none;
+}
+.footer > p {
+  font-size: 13px;
 }
 /* Media Queries
 ===========================*/
