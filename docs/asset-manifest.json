@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/TG-Web-Dev/static/css/main.e948892f.chunk.css",
-    "main.js": "/TG-Web-Dev/static/js/main.e217fe32.chunk.js",
-    "main.js.map": "/TG-Web-Dev/static/js/main.e217fe32.chunk.js.map",
+    "main.css": "/TG-Web-Dev/static/css/main.6e7eb766.chunk.css",
+    "main.js": "/TG-Web-Dev/static/js/main.e7ea36a6.chunk.js",
+    "main.js.map": "/TG-Web-Dev/static/js/main.e7ea36a6.chunk.js.map",
     "runtime-main.js": "/TG-Web-Dev/static/js/runtime-main.bd98eab3.js",
     "runtime-main.js.map": "/TG-Web-Dev/static/js/runtime-main.bd98eab3.js.map",
     "static/js/2.9ac68993.chunk.js": "/TG-Web-Dev/static/js/2.9ac68993.chunk.js",
     "static/js/2.9ac68993.chunk.js.map": "/TG-Web-Dev/static/js/2.9ac68993.chunk.js.map",
     "index.html": "/TG-Web-Dev/index.html",
-    "static/css/main.e948892f.chunk.css.map": "/TG-Web-Dev/static/css/main.e948892f.chunk.css.map",
+    "static/css/main.6e7eb766.chunk.css.map": "/TG-Web-Dev/static/css/main.6e7eb766.chunk.css.map",
     "static/js/2.9ac68993.chunk.js.LICENSE.txt": "/TG-Web-Dev/static/js/2.9ac68993.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bd98eab3.js",
     "static/js/2.9ac68993.chunk.js",
-    "static/css/main.e948892f.chunk.css",
-    "static/js/main.e217fe32.chunk.js"
+    "static/css/main.6e7eb766.chunk.css",
+    "static/js/main.e7ea36a6.chunk.js"
   ]
 }
