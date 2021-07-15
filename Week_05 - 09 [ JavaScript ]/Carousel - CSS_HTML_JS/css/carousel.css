@@ -27,7 +27,7 @@ h4 {
   font-size: 1rem;
 }
 p {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 hr {
   border-top-color: #1e3c2d;
@@ -170,7 +170,7 @@ main, menu, nav, section {
   width: 100%;
   display: block;
   padding: 8px 16px;
-  text-align: left;
+  text-align: center;
   border: none;
   white-space: normal;
   float: none;
