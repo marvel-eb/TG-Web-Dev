@@ -9,37 +9,49 @@
 </head>
 
 <body>
-<section class="main-content">
-  <h1>INTRO TO JAVASCRIPT </h1>
-  <h2>CAROUSEL - PURE CSS, HTML & JS</h2>
-</section>
-<hr>
-
-<section class="main-content">
-  <h4>Version #01</h4>
-</section>
-<div class="container">
-  <div class="carousel-wraper">
-    <div class="carousel">
-      <div class="slideOne active"> <img id="slide-image" src="img/slide-img-01.jpg" alt="slide" height="375"/> </div>
-      <button id="carousel-btn--prev-" class="carousel-btn--prev carousel-btn"> &lt; </button>
-      <button id="carousel-btn--next-" class="carousel-btn--next carousel-btn"> &gt;</button>
+<div class="sidebarMenu menu--bar-block menu--card menu--animate-left" style="display:none" id="mySidebar">
+  <button class="menu--bar-item menu--button menu--large"
+  onclick="sidebarMenu_close()">Close &times; </button>
+    
+  <a href="../Stopwatch - CSS_HTML_JS/stopwatch.html" class="menu--bar-item menu--button">Stopwatch</a>
+    <a href="../Carousel - CSS_HTML_JS/carousel.html" class="menu--bar-item menu--button">Carousel</a> 
+    <a href="../QuizApp - CSS_HTML_JS/quiz.html" class="menu--bar-item menu--button">Quiz App</a> 
+    
+    </div>
+    
+<div id="main">
+  <section class="main-content menu--teal">
+    <button id="openNav" class="menu--button menu--teal menu--xlarge" onclick="sidebarMenu_open()">☰</button>
+    <h1>INTRO TO JAVASCRIPT </h1>
+    <h2>CAROUSEL - PURE CSS, HTML & JS</h2>
+  </section>
+  <hr>
+  <section class="main-content">
+    <h4>Version #01</h4>
+  </section>
+  <div class="container">
+    <div class="carousel-wraper">
+      <div class="carousel">
+        <div class="slideOne active"> <img id="slide-image" src="img/slide-img-01.jpg" alt="slide" height="375"/> </div>
+        <button id="carousel-btn--prev-" class="carousel-btn--prev carousel-btn"> &lt; </button>
+        <button id="carousel-btn--next-" class="carousel-btn--next carousel-btn"> &gt;</button>
+      </div>
     </div>
   </div>
-</div>
-<!--/.container-->
-<hr>
-<section class="main-content">
-  <h4>Version #02</h4>
-</section>
-<div class="container">
-  <div class="carousel-wraper">
-    <div class="carousel">
-      <div class="slideTwo active"> <img src="img/slide-img-01.jpg" alt="slide 01"> </div>
-      <div class="slideTwo"> <img src="img/slide-img-02.jpg" alt="slide 02"> </div>
-      <div class="slideTwo"> <img src="img/slide-img-03.jpg" alt="slide 03"> </div>
-      <button onclick="plusSlides(-1)" class="carousel-btn--prev carousel-btn" id="prev"> &lt; </button>
-      <button onclick="plusSlides(1)" class="carousel-btn--next carousel-btn" id="next"> &gt;</button>
+  <!--/.container-->
+  <hr>
+  <section class="main-content">
+    <h4>Version #02</h4>
+  </section>
+  <div class="container">
+    <div class="carousel-wraper">
+      <div class="carousel">
+        <div class="slideTwo active"> <img src="img/slide-img-01.jpg" alt="slide 01"> </div>
+        <div class="slideTwo"> <img src="img/slide-img-02.jpg" alt="slide 02"> </div>
+        <div class="slideTwo"> <img src="img/slide-img-03.jpg" alt="slide 03"> </div>
+        <button onclick="plusSlides(-1)" class="carousel-btn--prev carousel-btn" id="prev"> &lt; </button>
+        <button onclick="plusSlides(1)" class="carousel-btn--next carousel-btn" id="next"> &gt;</button>
+      </div>
     </div>
   </div>
 </div>

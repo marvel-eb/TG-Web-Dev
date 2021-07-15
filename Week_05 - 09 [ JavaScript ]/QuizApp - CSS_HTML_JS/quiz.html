@@ -11,25 +11,37 @@
 </head>
 
 <body>
-<section class="main-content">
-  <h1>INTRO TO JAVASCRIPT </h1>
-  <h2>QUIZ - PURE CSS, HTML & JS</h2>
-</section>
-<hr>
-<div class="container"> 
-  <!-- Quiz Container -->
-  <div id="quiz-container" class="hide">
-    <h2>Math Problem</h2>
-    <div id="progress" class="progress">1/6</div>
-    <hr>
-    <div id="question">Question</div>
-    <div id="answersContainer"> </div>
-  </div>
-  <!-- Quiz Controle buttons-->
-  <div class="controls">
-    <button id="start-btn" class="btn start-btn">Start</button>
-    <button id="prev-btn" class="btn prev-btn hide">Vorige</button>
-    <button id="next-btn" class="btn next-btn hide">Volgende </button>
+<div class="sidebarMenu menu--bar-block menu--card menu--animate-left" style="display:none" id="mySidebar">
+  <button class="menu--bar-item menu--button menu--large"
+  onclick="sidebarMenu_close()">Close &times; </button>
+    
+  <a href="../Stopwatch - CSS_HTML_JS/stopwatch.html" class="menu--bar-item menu--button">Stopwatch</a>
+    <a href="../Carousel - CSS_HTML_JS/carousel.html" class="menu--bar-item menu--button">Carousel</a> 
+    <a href="../QuizApp - CSS_HTML_JS/quiz.html" class="menu--bar-item menu--button">Quiz App</a> 
+    
+    </div>
+<div id="main">
+  <section class="main-content menu--teal">
+    <button id="openNav" class="menu--button menu--teal menu--xlarge" onclick="sidebarMenu_open()">☰</button>
+    <h1>INTRO TO JAVASCRIPT </h1>
+    <h2>QUIZ - PURE CSS, HTML & JS</h2>
+  </section>
+  <hr>
+  <div class="container"> 
+    <!-- Quiz Container -->
+    <div id="quiz-container" class="hide">
+      <h2>Math Problem</h2>
+      <div id="progress" class="progress">1/6</div>
+      <hr>
+      <div id="question">Question</div>
+      <div id="answersContainer"> </div>
+    </div>
+    <!-- Quiz Controle buttons-->
+    <div class="controls">
+      <button id="start-btn" class="btn start-btn">Start</button>
+      <button id="prev-btn" class="btn prev-btn hide">Vorige</button>
+      <button id="next-btn" class="btn next-btn hide">Volgende </button>
+    </div>
   </div>
 </div>
 <!-- Footer -->

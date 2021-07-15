@@ -1,16 +1,20 @@
+ /*
+    document.body.appendChild(element)
+    element.appendChild(another element)
+    */
 
  //let progress1 = document.createElement('div')
  //progress1.classList.add('progress')
  //progress1.innerHTML = '1/7========================='
 
- // list.forEach((item, index) => console.log(item, (index + 1).toString().padStart(2, '0')))
+// list.forEach((item, index) => console.log(item, (index + 1).toString().padStart(2, '0')))
 
 
  ///=============================
  let startButton = document.getElementById("start-btn");
  let nextButton = document.getElementById("next-btn");
  let prevButton = document.getElementById("prev-btn");
- let questionContainer = document.getElementById("quiz-container");
+ let questionContainerElement = document.getElementById("quiz-container");
  let questionElement = document.getElementById("question");
  let answersContainer = document.getElementById("answersContainer");
  let shuffledQuestions, currentQuestionIndex;
@@ -18,134 +22,114 @@
 
  startButton.addEventListener("click", startQuiz);
  nextButton.addEventListener("click", () => {
-     currentQuestionIndex++;
-     NextQuestion();
+   currentQuestionIndex++;
+   NextQuestion();
+   //     setPrevQuestion();
+ });
 
-   }
 
-   // ===== Previous                         
-//     prevButton.addEventListener("click", () => {
-//      currentQuestionIndex--;
-//      prevQuestion();
-//      
-//    }                            
-
- );
+ //   // ===== Previous
+ // prevButton.addEventListener("click", () => {
+ //   currentQuestionIndex--;
+ //   setPrevQuestion();
+ // });
 
 
  function startQuiz() {
    startButton.classList.add("hide");
    shuffledQuestions = questions.sort(() => Math.random() - 0.6);
    currentQuestionIndex = 0;
-   questionContainer.classList.remove("hide");
+   questionContainerElement.classList.remove("hide");
    NextQuestion();
    //   setPrevQuestion();
 
    // ===== Previous
-//      shuffledQuestions = questions.sort(() => Math.random() + 0.7;
-//      currentQuestionIndex = 0;
-//      questionContainer.classList.remove("hide");
-//      prevQuestion();
+   //   shuffledQuestions = questions.sort(() => Math.random() + 0.7;
+   //   currentQuestionIndex = -1;
+   //   questionContainerElement.classList.remove("hide");
+   //   setPrevQuestion();
+
 
  }
 
- // function setNextQuestion() {
+// function setNextQuestion() {
  function NextQuestion() {
-   resetActivity();
+   resetState();
    showQuestion(shuffledQuestions[currentQuestionIndex]);
  }
-
-// ===== previous
-// function prevQuestion() {
-//   resetActivity();
-//   showQuestion(shuffledQuestions[currentQuestionIndex]);
-// }
-
 
 
  function showQuestion(question) {
    questionElement.innerText = question.question;
    question.answers.forEach((answer) => {
 
-
-     //   Right side -  Defining Variables to creat HTML Eelements
-     let quizSelectLeft = document.createElement("div");
-     let quizMaskLeft = document.createElement("div");
-     let quizTitleLeft = document.createElement("div");
-       
-     quizSelectLeft.classList.add("quiz-select");
-     quizMaskLeft.classList.add("circle-l");
-     quizTitleLeft.classList.add("q-title");
-
-     quizSelectLeft.append(quizMaskLeft); //append
-     quizSelectLeft.append(quizTitleLeft); //appendChild
-     quizTitleLeft.innerText = answer.answ;
-     quizMaskLeft.innerText = answer.textOdd;
-       
-      //   Left side -  Defining Variables to creat HTML Eelements    
-     let quizSelectRight = document.createElement("div");
+     //    Defining Variables to creat HTML Eelements
+     let quizSelect = document.createElement("div");
      let quizMaskRight = document.createElement("div");
-     let quizTitleRight = document.createElement("div");
-       
-     quizSelectRight.classList.add("quiz-select");
+     let quizMaskLeft = document.createElement("div");
+     let quizTitle = document.createElement("div");
+
+     //    Enjecting CSS Styles
+     quizSelect.classList.add("quiz-select");
      quizMaskRight.classList.add("circle-r");
-     quizTitleRight.classList.add("q-title");
+     quizMaskLeft.classList.add("circle-l");
+     quizTitle.classList.add("q-title");
 
-     quizSelectRight.append(quizTitleRight); //appendChild
-     quizSelectRight.append(quizMaskRight) //appendChild
-     quizTitleRight.innerText = answer.answ;
+     quizSelect.append(quizMaskLeft);
+     quizSelect.appendChild(quizTitle);
+     quizSelect.appendChild(quizMaskRight)
+     quizTitle.innerText = answer.answ;
+
+     quizMaskLeft.innerText = answer.textOdd;
      quizMaskRight.innerText = answer.textEven;
-       
-       
 
- 
+     if (answer.correct) {
+       quizSelect.dataset.correct = answer.correct;
+     }
+
+       
+       
+///////////
   
+   
+ 
+/////////
+
        
        
-
-     if (answer.correct) {
-       quizSelectLeft.dataset.correct = answer.correct;
-     }
-
-     if (answer.correct) {
-       quizSelectRight.dataset.correct = answer.correct;
-     }
-
-
-     quizSelectLeft.addEventListener("click", selectAnswer);
-     answersContainer.appendChild(quizSelectLeft);
-
-
-     quizSelectRight.addEventListener("click", selectAnswer);
-     answersContainer.appendChild(quizSelectRight);
        
+       
+     quizSelect.addEventListener("click", selectAnswer);
+     answersContainer.appendChild(quizSelect);
    });
  }
 
 
- function resetActivity() {
 
+ function resetState() {
+//--! clearStatusClass(document.body);
    clearStatus(document.getElementById("quiz-container"));
-
+     
    nextButton.classList.add("hide");
    while (answersContainer.firstChild) {
      answersContainer.removeChild(answersContainer.firstChild);
    }
-   // ===== Previous
-   prevButton.classList.add("hide");
+        // ===== Previous
+    prevButton.classList.add("hide");
    while (answersContainer.firstChild) {
      answersContainer.removeChild(answersContainer.firstChild);
-   }
-
-
+   }  
+     
+     
  }
 
 
  function selectAnswer(e) {
    let selectedButton = e.target;
    let correct = selectedButton.dataset.correct;
-
-   Status(document.getElementById("quiz-container"), correct);
+   //--!Status(document.body, correct);
+     
+     Status(document.getElementById("quiz-container"), correct);
 
    Array.from(answersContainer.children).forEach((button) => {
      Status(button, button.dataset.correct);
@@ -153,7 +137,7 @@
 
 
    // ===== Previous
-   if (shuffledQuestions.length > currentQuestionIndex - 1) {
+   if (shuffledQuestions.length > currentQuestionIndex + 1) {
      prevButton.classList.remove("hide");
    } else {
      startButton.innerText = "Restart";
@@ -168,24 +152,23 @@
      startButton.classList.remove("hide");
    }
  }
-
- function Status(e, correct) {
-
-   clearStatus(e);
+// function setStatusClass(element, correct) {
+ function Status(element, correct) {
+//   clearStatusClass(element);
+      clearStatus(element);
    if (correct) {
-     e.classList.add("correct");
+     element.classList.add("correct");
    } else {
-     e.classList.add("wrong");
+     element.classList.add("wrong");
    }
  }
 
- function clearStatus(e) {
-   e.classList.remove("correct");
-   e.classList.remove("wrong");
+ function clearStatus(element) {
+   element.classList.remove("correct");
+   element.classList.remove("wrong");
  }
 
-
-// ================ Questions + Answers ================
+ // ================ Questions + Answers ================
 // ======================================================
 let questions = [
   {
@@ -273,17 +256,3 @@ let questions = [
   
 ];
 
-//Sidebar Collapsable Menu
-
-function sidebarMenu_open() {
-  document.getElementById("main").style.marginLeft = "25%";
-  document.getElementById("mySidebar").style.width = "25%";
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("openNav").style.display = 'none';
-}
-function sidebarMenu_close() {
-  document.getElementById("main").style.marginLeft = "0%";
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("openNav").style.display = "inline-block";
-}
-// End of Scripting //
