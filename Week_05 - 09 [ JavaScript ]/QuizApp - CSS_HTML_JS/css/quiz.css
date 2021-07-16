@@ -101,10 +101,18 @@ li.menu--bar-item.menu--button {
   border-width: 1px 0 1px;
   background-color: #2b5b46;
   font-size: 16px;
-  padding: 15px;
 }
 li.menu--bar-item.menu--button a {
   color: #9dc88e;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+li.menu--bar-item.menu--button.home {
+  background-color: #e2c42d;
+}
+li.menu--bar-item.menu--button.home a {
+  color: #8c7500;
 }
 .menu-title {
   padding: 15px;
@@ -138,22 +146,23 @@ li.menu--bar-item.menu--button a {
   overflow: hidden;
   text-decoration: none;
   color: inherit;
-  background-color: inherit;
   text-align: center;
   cursor: pointer;
   white-space: nowrap;
   font-size: 30px;
-}
-.menu--btn:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}
-.menu--btn, .menu--button {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none
+  user-select: none;
+  background-color: #2e6f4b;
+}
+#openNav {
+  margin-bottom: 25px;
+}
+.menu--btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 .menu--disabled, .menu--btn:disabled, .menu--button:disabled {
   cursor: not-allowed;

@@ -13,7 +13,9 @@ body {
   font-weight: normal;
   box-sizing: border-box;
 }
-h1, h2, h3, h4, h5, h6, p {}
+h1, h2, h3, h4, h5, h6, p {
+
+}
 h1 {
   font-size: 3rem;
 }
@@ -87,6 +89,10 @@ hr {
   overflow: auto;
   padding-top: 100px;
 }
+#openNav {
+    background-color: #2e6b47;
+    margin-bottom: 25px;
+}
 .sidebarMenu ul {
   list-style-type: none;
   margin: 0;
@@ -99,10 +105,18 @@ li.menu--bar-item.menu--button {
   border-width: 1px 0 1px;
   background-color: #2b5b46;
   font-size: 16px;
-  padding: 15px;
 }
 li.menu--bar-item.menu--button a {
   color: #9dc88e;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+li.menu--bar-item.menu--button.home {
+  background-color: #e2c42d;
+}
+li.menu--bar-item.menu--button.home a {
+  color: #8c7500;
 }
 .menu-title {
   padding: 15px;
