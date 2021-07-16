@@ -24,7 +24,7 @@ h3 {
   font-size: 1.5rem;
 }
 h4 {
-  font-size: 1rem;
+/*  font-size: 1rem;*/
 }
 p {
   font-size: 1rem;
@@ -78,76 +78,108 @@ hr {
 }
 /* Sidebar Collapsable menu 
 ============================*/
+#main {
+  transition: margin-left .4s;
+}
+#mySidebar {
+  width: 25%
+}
 .sidebarMenu {
   height: 100%;
   width: 200px;
-  background-color: #022f27;
+  background-color: #043028;
   position: fixed !important;
   z-index: 1;
   overflow: auto;
-  padding-top: 100px;
+  padding-top: 50px;
 }
-.sidebarMenu ul {
+.sidebarMenu > ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-li.menu--bar-item.menu--button {
+.sidebarMenu hr {
+  border-top-color: #010a08;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-bottom-color: #0a5a4c;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin: 20px 0 20px;
+}
+li.menu-item {
   display: block;
-  border-color: #398468 #275745 #1a3a2e;
+  border-color: #41965f #3b8564 #0f2d1a;
   border-style: solid none solid;
   border-width: 1px 0 1px;
-  background-color: #2b5b46;
+  background-color: #266d3f;
   font-size: 16px;
 }
-li.menu--bar-item.menu--button a {
-  color: #9dc88e;
+li.menu-item:hover {
+  background-color: #2b7d48;
+}
+li.menu-item.css {
+  border-right-color: #9ecaef;
+  border-right-width: 5px;
+  border-right-style: solid;
+}
+li.menu-item.js {
+  border-right-color: #9dc88d;
+  border-right-width: 5px;
+  border-right-style: solid;
+}
+li.menu-item.react {
+  border-right-color: #d88b00;
+  border-right-width: 5px;
+  border-right-style: solid;
+}
+li.menu-item.home {
+  border-right-color: #e6c000;
+  border-right-width: 5px;
+  border-right-style: solid;
+  background-color: #9c8616;
+}
+li.menu-item.home a {
+  color: #e6c000;
+}
+li.menu-item a {
+  color: #80bd6b;
   display: block;
-  padding: 15px;
+  padding: 15px 0;
   text-decoration: none;
-}
-li.menu--bar-item.menu--button.home {
-  background-color: #e2c42d;
-}
-li.menu--bar-item.menu--button.home a {
-  color: #8c7500;
 }
 .menu-title {
   padding: 15px;
   text-align: center;
-  background-color: #9dc88e;
-  color: #1f5144;
+  color: #9dc88e;
 }
-.menu--card {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+.menu-large {
+  font-size: 18px !important
 }
-.menu--animate-left {
+.menu-xlarge {
+  font-size: 24px !important
+}
+button#openNav {
+  margin-bottom: 25px;
+  border-radius: 7px;
+}
+button.close {
   position: relative;
-  animation: animateleft 0.4s
+  right: -80%;
+  border-radius: 7px;
 }
-.menu--large {
-  font-size: 30px !important;
-  margin-bottom: 30px;
-}
-.menu--button:hover {
-  color: #022f27 !important;
-  background-color: #71A160 !important
-}
-.menu--main, #main {
-  transition: margin-left .4s
-}
-.menu--btn, .menu--button {
+.menu-btn, .menu-button {
   border: none;
   display: inline-block;
-  padding: 8px 16px;
+  padding: 10px 16px;
   vertical-align: middle;
   overflow: hidden;
   text-decoration: none;
   color: inherit;
+  /*  background-color: inherit;*/
   text-align: center;
   cursor: pointer;
   white-space: nowrap;
-  font-size: 30px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -156,39 +188,25 @@ li.menu--bar-item.menu--button.home a {
   user-select: none;
   background-color: #2e6f4b;
 }
-#openNav {
-  margin-bottom: 25px;
+.menu-btn, .menu-button:hover {
+  background-color: #9dc88e;
+  color: #235445;
 }
-.menu--btn:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}
-.menu--disabled, .menu--btn:disabled, .menu--button:disabled {
+.menu-button:disabled {
   cursor: not-allowed;
   opacity: 0.3
 }
-.menu--bar .menu--bar-item {
-  padding: 8px 16px;
-  float: left;
-  width: auto;
-  border: none;
-  display: block;
-  outline: 0;
-}
-.menu--bar .menu--button {
-  white-space: normal
-}
-.menu--bar-block .menu--bar-item {
-  width: 100%;
+.sidebar-block .menu-item {
+  max-width: 100%;
   display: block;
   padding: 8px 16px;
   text-align: center;
-  border: none;
   white-space: normal;
   float: none;
-  outline: 0;
+  outline: 0
 }
-.menu--bar-block.menu--center .menu--bar-item {
-  text-align: center
+.menuCard {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
 }
 @media (max-width:600px) {
   .menu--bar-item.menu--mobile {
@@ -207,6 +225,25 @@ li.menu--bar-item.menu--button.home a {
   .menu--main {
     margin-left: 0 !important;
     margin-right: 0 !important
+  }
+}
+@media (max-width:600px) {
+  #mySidebar {
+    width: 100%
+  }
+}
+.menuAnimate-left {
+  position: relative;
+  animation: animateleft 0.4s
+}
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0
+  }
+  to {
+    left: 0;
+    opacity: 1
   }
 }
 /* Stopwatch 

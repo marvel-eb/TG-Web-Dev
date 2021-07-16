@@ -153,23 +153,24 @@ animation-duration: 2s;
 </head>
 
 <body>
-<div class="sidebarMenu menu--bar-block menu--card menu--animate-left" style="display:none" id="mySidebar">
-  <button class="menu--bar-item menu--button menu--large"
-  onclick="sidebarMenu_close()">Close &times; </button>
+<div class="sidebarMenu sidebar-block menuCard menuAnimate-left" style="display:none" id="mySidebar">
+  <button class="menu-item menu-button menu-large close"
+  onclick="menu_close()"> &times;</button>
   <h3 class="menu-title"> CSS  - Animation</h3>
+  <hr>
   <ul>
-    <li class="menu--bar-item menu--button"> <a href="opdracht_02.html">Opdracht_02</a> </li>
-    <li class="menu--bar-item menu--button"> <a href="opdracht_03.html">Opdracht_03</a></li>
-    <li class="menu--bar-item menu--button"> <a href="opdracht_04.html"> Opdracht_04</a></li>
-    <li class="menu--bar-item menu--button"> <a href="opdracht_05.html">Opdracht_05</a></li>
-    <li class="menu--bar-item menu--button"> <a href="opdracht_06.html">Opdracht_06</a></li>
-    <li class="menu--bar-item menu--button"> <a href="opdracht_07.html" >Opdracht_07</a></li>
-    <li class="menu--bar-item menu--button home"> <a href="https://marvel-eb.github.io/TG-Web-Dev/">Home</a></li>
+    <li class="menu-item menu-button"> <a href="opdracht_02.html">Opdracht_02</a> </li>
+    <li class="menu-item menu-button"> <a href="opdracht_03.html">Opdracht_03</a></li>
+    <li class="menu-item menu-button"> <a href="opdracht_04.html"> Opdracht_04</a></li>
+    <li class="menu-item menu-button"> <a href="opdracht_05.html">Opdracht_05</a></li>
+    <li class="menu-item menu-button"> <a href="opdracht_06.html">Opdracht_06</a></li>
+    <li class="menu-item menu-button"> <a href="opdracht_07.html" >Opdracht_07</a></li>
+    <li class="menu-item menu-button home"> <a href="https://marvel-eb.github.io/TG-Web-Dev/">Home</a></li>
   </ul>
 </div>
 <div id="main">
-  <section class="main-content menu--teal">
-    <button id="openNav" class="menu--button menu--teal menu--xlarge" onclick="sidebarMenu_open()">☰</button>
+  <section class="main-content w3-container" id="main-content">
+    <button id="openNav" class="menu-button menu-xlarge" onclick="menu_open()">☰</button>
     <h1>06 - TRANSITIONS</h1>
     <h3>Opdracht 04 </h3>
     <hr>
@@ -182,9 +183,12 @@ animation-duration: 2s;
     </div>
   </div>
 </div>
+<!--/#main -->
+
 <hr>
+<!-- Footer -->
 <footer class="text-align footer">
-  <p> Ephrem</p>
+  <p> EPHREM</p>
 </footer>
 <script src="js/scripts.js"></script>
 </body>

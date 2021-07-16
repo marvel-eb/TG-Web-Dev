@@ -9,27 +9,37 @@
 </head>
 
 <body>
-<div class="sidebarMenu menu--bar-block menu--card menu--animate-left" style="display:none" id="mySidebar">
-  <button class="menu--bar-item menu--button menu--large"
-  onclick="sidebarMenu_close()">Close &times; </button>
+<div class="sidebarMenu sidebar-block menuCard menuAnimate-left" style="display:none" id="mySidebar">
+  <button class="menu-item menu-button menu-large close"
+  onclick="menu_close()"> &times;</button>
   <h3 class="menu-title">Live Projects</h3>
+  <hr>
   <ul>
-    <li class="menu--bar-item menu--button"> <a href="Week_02 - CSS/06_Transitions/opdracht_02.html" target="_blank">CSS</a> </li>
-    <li class="menu--bar-item menu--button"> <a href="Week_05 - 09 [ JavaScript ]/Stopwatch - CSS_HTML_JS/stopwatch.html" target="_blank">JAVASCRIPT</a></li>
-    <li class="menu--bar-item menu--button"> <a href="Week_10 - 16 [ React ]/myfirst-react/build/index.html" target="_blank">REACT</a></li>
-    <li class="menu--bar-item menu--button home"> <a href="https://marvel-eb.github.io/TG-Web-Dev/" target="_blank">Home</a></li>
+    <li class="menu-item menu-button css"> <a href="Week_02 - CSS/06_Transitions/opdracht_02.html" target="_blank">CSS</a> </li>
+    <li class="menu-item menu-button js"> <a href="Week_05 - 09 [ JavaScript ]/Stopwatch - CSS_HTML_JS/stopwatch.html" target="_blank">JAVASCRIPT</a></li>
+    <li class="menu-item menu-button react"> <a href="Week_10 - 16 [ React ]/myfirst-react/build/index.html" target="_blank">REACT</a></li>
+    <li class="menu-item menu-button home"> <a href="https://marvel-eb.github.io/TG-Web-Dev/" target="_blank">Home</a></li>
   </ul>
 </div>
+    
 <div id="main">
-  <section class="main-content menu--teal" id="main-content">
-    <button id="openNav" class="menu--button menu--teal menu--xlarge" onclick="sidebarMenu_open()">☰</button>
+  <section class="main-content" id="main-content">
+    <button id="openNav" class="menu-button menu-xlarge" onclick="menu_open()">☰</button>
     <h1>Live Projects </h1>
     <h2>CSS | JAVASCRIPT | REACT</h2>
   </section>
   <hr>
-  <div class="container"> ...... </div>
+  <div class="container">
+    <h3> <strong>CSS 3 - </strong> <span class="light">Animations</span> </h3>
+    <hr>
+    <h3> <strong>JAVASCRIPT - </strong> <span class="light">Stopwatch | Quiz App | Carousel </span> </h3>
+    <hr>
+    <h3> <strong>REACT - </strong> <span class="light">Miscellaneous</span> </h3>
+  </div>
 </div>
+<!--/#main -->
 
+<hr>
 <!-- Footer -->
 <footer class="text-align footer">
   <p> EPHREM</p>

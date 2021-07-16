@@ -6,41 +6,89 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/styles.css">
 <title>Opdracht 07</title>
+    <style>
+/*	Transition Animation 
+	===================*/
+
+.animation-box {
+  background-color: #831B1D;
+  width: 150px;
+  height: 150px;
+  padding: 15px;
+  animation-name: ephrem;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  /*	animation-timing-function: ease-in-out;*/
+  animation-timing-function: linear;
+  transform: rotate(360deg)
+}
+@keyframes ephrem {
+  0% {
+    border-radius: 0 0 0 0;
+    transform: rotate(60deg);
+    background-color: #AB181B;
+  }
+  25% {
+    border-radius: 50% 0 0 0;
+    transform: rotate(90deg);
+    background-color: #CE996A;
+  }
+  50% {
+    border-radius: 50% 50% 0 0;
+    transform: rotate(120deg);
+    background-color: #E78A75;
+  }
+  75% {
+    border-radius: 50% 50% 50% 0;
+    transform-rotate: (-180deg);
+    background-color: #FD0808;
+  }
+  100% {
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(-360deg);
+    background-color: #663601;
+  }
+}
+    </style>
 </head>
 
 <body>
-<div class="sidebarMenu menu--bar-block menu--card menu--animate-left" style="display:none" id="mySidebar">
-  <button class="menu--bar-item menu--button menu--large"
-  onclick="sidebarMenu_close()">Close &times; </button>
+<div class="sidebarMenu sidebar-block menuCard menuAnimate-left" style="display:none" id="mySidebar">
+  <button class="menu-item menu-button menu-large close"
+  onclick="menu_close()"> &times;</button>
   <h3 class="menu-title"> CSS  - Animation</h3>
+  <hr>
   <ul>
-    <li class="menu--bar-item menu--button"> <a href="opdracht_02.html">Opdracht_02</a> </li>
-    <li class="menu--bar-item menu--button"> <a href="opdracht_03.html">Opdracht_03</a></li>
-    <li class="menu--bar-item menu--button"> <a href="opdracht_04.html"> Opdracht_04</a></li>
-    <li class="menu--bar-item menu--button"> <a href="opdracht_05.html">Opdracht_05</a></li>
-    <li class="menu--bar-item menu--button"> <a href="opdracht_06.html">Opdracht_06</a></li>
-    <li class="menu--bar-item menu--button"> <a href="opdracht_07.html" >Opdracht_07</a></li>
-    <li class="menu--bar-item menu--button home"> <a href="https://marvel-eb.github.io/TG-Web-Dev/">Home</a></li>
+   <li class="menu-item menu-button"> <a href="opdracht_02.html">Opdracht_02</a> </li>
+    <li class="menu-item menu-button"> <a href="opdracht_03.html">Opdracht_03</a></li>
+    <li class="menu-item menu-button"> <a href="opdracht_04.html"> Opdracht_04</a></li>
+    <li class="menu-item menu-button"> <a href="opdracht_05.html">Opdracht_05</a></li>
+    <li class="menu-item menu-button"> <a href="opdracht_06.html">Opdracht_06</a></li>
+    <li class="menu-item menu-button"> <a href="opdracht_07.html" >Opdracht_07</a></li>
+    <li class="menu-item menu-button home"> <a href="https://marvel-eb.github.io/TG-Web-Dev/">Home</a></li>
   </ul>
 </div>
 <div id="main">
-  <section class="main-content menu--teal">
-    <button id="openNav" class="menu--button menu--teal menu--xlarge" onclick="sidebarMenu_open()">☰</button>
+  <section class="main-content w3-container" id="main-content">
+    <button id="openNav" class="menu-button menu-xlarge" onclick="menu_open()">☰</button>
     <h1>06 - TRANSITIONS</h1>
     <h3>Opdracht 07 </h3>
- 
     <p>Opdracht 7 - extra opdracht (optioneel)<br>
       Zie de onderstaande animatie en probeer deze na te maken. Hier is gebruik gemaakt van keyframe animatie. </p>
-      <hr>
+    <hr>
   </section>
   <div class="container">
     <hr>
     <div class="animation-box"> </div>
   </div>
 </div>
+<!--/#main -->
+
 <hr>
+<!-- Footer -->
 <footer class="text-align footer">
-  <p> Ephrem</p>
+  <p> EPHREM</p>
 </footer>
 <script src="js/scripts.js"></script>
 </body>

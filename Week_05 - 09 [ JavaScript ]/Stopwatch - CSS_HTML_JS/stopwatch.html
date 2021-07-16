@@ -9,20 +9,21 @@
 </head>
 
 <body>
-<div class="sidebarMenu menu--bar-block menu--card menu--animate-left" style="display:none" id="mySidebar">
-  <button class="menu--bar-item menu--button menu--large"
-  onclick="sidebarMenu_close()">Close &times; </button>
+<div class="sidebarMenu sidebar-block menuCard menuAnimate-left" style="display:none" id="mySidebar">
+  <button class="menu-item menu-button menu-large close"
+  onclick="menu_close()"> &times;</button>
   <h3 class="menu-title"> JS  - Stopwatch</h3>
+      <hr>
   <ul>
-    <li class="menu--bar-item menu--button"> <a href="../Stopwatch - CSS_HTML_JS/stopwatch.html">Stopwatch</a> </li>
-    <li class="menu--bar-item menu--button"> <a href="../Carousel - CSS_HTML_JS/carousel.html">Carousel</a></li>
-    <li class="menu--bar-item menu--button"> <a href="../QuizApp - CSS_HTML_JS/quiz.html">Quiz App</a></li>
-    <li class="menu--bar-item menu--button home"> <a href="https://marvel-eb.github.io/TG-Web-Dev/">Home</a></li>
+    <li class="menu-item menu-button"> <a href="../Stopwatch - CSS_HTML_JS/stopwatch.html">Stopwatch</a> </li>
+    <li class="menu-item menu-button"> <a href="../Carousel - CSS_HTML_JS/carousel.html">Carousel</a></li>
+    <li class="menu-item menu-button"> <a href="../QuizApp - CSS_HTML_JS/quiz.html">Quiz App</a></li>
+    <li class="menu-item menu-button home"> <a href="https://marvel-eb.github.io/TG-Web-Dev/">Home</a></li>
   </ul>
 </div>
 <div id="main">
-  <section class="main-content menu--teal" id="main-content">
-    <button id="openNav" class="menu--button menu--teal menu--xlarge" onclick="sidebarMenu_open()">☰</button>
+  <section class="main-content w3-container" id="main-content">
+    <button id="openNav" class="menu-button menu-xlarge" onclick="menu_open()">☰</button>
     <h1>INTRO TO JAVASCRIPT </h1>
     <h2>STOPWATCH - PURE CSS, HTML & JS</h2>
   </section>
@@ -52,7 +53,9 @@
     </div>
   </div>
 </div>
+<!--/#main -->
 
+<hr>
 <!-- Footer -->
 <footer class="text-align footer">
   <p> EPHREM</p>
