@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/marvel-eb/TG-Web-Dev/tree/master/Week_10%20-%2016%20%5B%20React%20%5D/myfirst-react/build/static/css/main.3f253b5c.chunk.css",
-    "main.js": "/marvel-eb/TG-Web-Dev/tree/master/Week_10%20-%2016%20%5B%20React%20%5D/myfirst-react/build/static/js/main.b7baff8c.chunk.js",
-    "main.js.map": "/marvel-eb/TG-Web-Dev/tree/master/Week_10%20-%2016%20%5B%20React%20%5D/myfirst-react/build/static/js/main.b7baff8c.chunk.js.map",
-    "runtime-main.js": "/marvel-eb/TG-Web-Dev/tree/master/Week_10%20-%2016%20%5B%20React%20%5D/myfirst-react/build/static/js/runtime-main.932f7a0d.js",
-    "runtime-main.js.map": "/marvel-eb/TG-Web-Dev/tree/master/Week_10%20-%2016%20%5B%20React%20%5D/myfirst-react/build/static/js/runtime-main.932f7a0d.js.map",
-    "static/js/2.9ac68993.chunk.js": "/marvel-eb/TG-Web-Dev/tree/master/Week_10%20-%2016%20%5B%20React%20%5D/myfirst-react/build/static/js/2.9ac68993.chunk.js",
-    "static/js/2.9ac68993.chunk.js.map": "/marvel-eb/TG-Web-Dev/tree/master/Week_10%20-%2016%20%5B%20React%20%5D/myfirst-react/build/static/js/2.9ac68993.chunk.js.map",
-    "index.html": "/marvel-eb/TG-Web-Dev/tree/master/Week_10%20-%2016%20%5B%20React%20%5D/myfirst-react/build/index.html",
-    "static/css/main.3f253b5c.chunk.css.map": "/marvel-eb/TG-Web-Dev/tree/master/Week_10%20-%2016%20%5B%20React%20%5D/myfirst-react/build/static/css/main.3f253b5c.chunk.css.map",
-    "static/js/2.9ac68993.chunk.js.LICENSE.txt": "/marvel-eb/TG-Web-Dev/tree/master/Week_10%20-%2016%20%5B%20React%20%5D/myfirst-react/build/static/js/2.9ac68993.chunk.js.LICENSE.txt"
+    "main.css": "/REACT-Preview/static/css/main.3f253b5c.chunk.css",
+    "main.js": "/REACT-Preview/static/js/main.b7baff8c.chunk.js",
+    "main.js.map": "/REACT-Preview/static/js/main.b7baff8c.chunk.js.map",
+    "runtime-main.js": "/REACT-Preview/static/js/runtime-main.bf3759d8.js",
+    "runtime-main.js.map": "/REACT-Preview/static/js/runtime-main.bf3759d8.js.map",
+    "static/js/2.9ac68993.chunk.js": "/REACT-Preview/static/js/2.9ac68993.chunk.js",
+    "static/js/2.9ac68993.chunk.js.map": "/REACT-Preview/static/js/2.9ac68993.chunk.js.map",
+    "index.html": "/REACT-Preview/index.html",
+    "static/css/main.3f253b5c.chunk.css.map": "/REACT-Preview/static/css/main.3f253b5c.chunk.css.map",
+    "static/js/2.9ac68993.chunk.js.LICENSE.txt": "/REACT-Preview/static/js/2.9ac68993.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.932f7a0d.js",
+    "static/js/runtime-main.bf3759d8.js",
     "static/js/2.9ac68993.chunk.js",
     "static/css/main.3f253b5c.chunk.css",
     "static/js/main.b7baff8c.chunk.js"
