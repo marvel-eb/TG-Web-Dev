@@ -13,14 +13,13 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <main>
-        <FunctionalComponent />
-        <ClassComponent />
-        <SharedState />
-        <ListsKeys />
-        <ToDoList />
-        <RandomNames />
-      </main>
+
+      <FunctionalComponent />
+      <ClassComponent />
+      <SharedState />
+      <ListsKeys />
+      <ToDoList />
+      <RandomNames />
 
       <Footer />
     </div>

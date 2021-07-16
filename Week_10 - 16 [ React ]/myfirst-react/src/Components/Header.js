@@ -3,7 +3,6 @@ const header = () => {
     <header className="App-header">
       <section className="content">
         <h1>
-          {" "}
           Getting started With <span className="tagline"> React</span>
         </h1>
         <br />
