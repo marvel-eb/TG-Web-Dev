@@ -12,10 +12,9 @@ body {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
   font-weight: normal;
   box-sizing: border-box;
+  line-height: 1.5;
 }
-h1, h2, h3, h4, h5, h6, p {
-
-}
+h1, h2, h3, h4, h5, h6, p {}
 h1 {
   font-size: 3rem;
 }

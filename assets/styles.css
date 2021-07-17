@@ -12,14 +12,15 @@ body {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
   font-weight: normal;
   box-sizing: border-box;
+  line-height: 1.5;
 }
 a:link {
   color: #593b7b;
-    -webkit-transition: background-color .15s linear, color .15s linear;
-    -moz-transition: background-color .15s linear, color .15s linear;
-    -o-transition: background-color .15s linear, color .15s linear;
-    -ms-transition: background-color .15s linear, color .15s linear;
-    transition: background-color .15s linear, color .15s linear;
+  -webkit-transition: background-color .15s linear, color .15s linear;
+  -moz-transition: background-color .15s linear, color .15s linear;
+  -o-transition: background-color .15s linear, color .15s linear;
+  -ms-transition: background-color .15s linear, color .15s linear;
+  transition: background-color .15s linear, color .15s linear;
 }
 a:visited {
   color: #625175
@@ -27,10 +28,10 @@ a:visited {
 a:hover {
   color: #fff;
   text-shadow: none;
-      text-decoration: underline;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
+  text-decoration: underline;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
 a:active {
   color: #593b7b
@@ -86,7 +87,6 @@ hr {
 */
 }
 .footer {
-  /* background-color: #164a41;*/
   background: linear-gradient(to top right, #1D053A, #563b77);
   padding: 50px;
 }
@@ -103,6 +103,24 @@ span.light {
   .container {
     margin: 30px 15px;
   }
+}
+/*Flex Box*/
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.flex-box > div {
+  border-width: 1px;
+  border-color: #c1a6e2;
+  border-style: solid;
+  border-radius: 7px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  flex: 1;
 }
 /* Sidebar Collapsable menu 
 ============================*/
