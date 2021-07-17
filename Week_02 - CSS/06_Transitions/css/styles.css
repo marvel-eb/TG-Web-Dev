@@ -12,7 +12,7 @@ body {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
   font-weight: normal;
   box-sizing: border-box;
-    line-height: 1.5;
+  line-height: 1.5;
 }
 h1, h2, h3, h4, h5, h6, p {}
 h1 {
@@ -78,6 +78,21 @@ hr {
   }
   .container {
     margin: 30px 15px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
   }
 }
 /* Sidebar Collapsable menu 
@@ -157,9 +172,6 @@ li.menu-item a {
   color: #728da5;
 }
 .menu-large {
-  font-size: 18px !important
-}
-.menu-xlarge {
   font-size: 24px !important
 }
 button#openNav {

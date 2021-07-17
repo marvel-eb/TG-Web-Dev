@@ -157,9 +157,6 @@ li.menu-item a {
   color: #9dc88e;
 }
 .menu-large {
-  font-size: 18px !important
-}
-.menu-xlarge {
   font-size: 24px !important
 }
 button#openNav {
@@ -219,6 +216,21 @@ button.close {
 @media (min-width:993px) {
   .sidebarMenu.menu--collapse {
     display: block !important
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
   }
 }
 @media (max-width:992px) {

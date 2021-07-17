@@ -103,6 +103,21 @@ span.light {
   .container {
     margin: 30px 15px;
   }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
 }
 /*Flex Box*/
 .flex-box {
@@ -201,11 +216,9 @@ li.menu-item a {
   color: #9078ad;
 }
 .menu-large {
-  font-size: 18px !important
+  font-size:24px !important
 }
-.menu-xlarge {
-  font-size: 24px !important
-}
+
 button#openNav {
   margin-bottom: 25px;
   border-radius: 7px;
