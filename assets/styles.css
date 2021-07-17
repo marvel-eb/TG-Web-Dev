@@ -112,6 +112,7 @@ span.light {
   justify-content: center;
 }
 .flex-box > div {
+  padding-top: 30px;
   border-width: 1px;
   border-color: #c1a6e2;
   border-style: solid;
