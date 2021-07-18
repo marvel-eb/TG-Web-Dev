@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/*
+=========== CODDED BY EPHREM ==========================
+=========== AMSTERDAM - 2021 ==========================
+======================================================*/
+/*Global Styles 
+---------------*/
+body {
+  background-color: #f1f1f1;
+  font-size: 12px;
+  font-family: 'sans-serif';
+    color:#444444;
+}
+h1 {
+  text-transform: capitalize;
+  font-size: 45px;
+  text-align: center;
+}
+h2 {
+  text-transform: capitalize;
+  font-size: 30px;
+  text-align: center;
+}
+h3 {
+  font-size: 20px;
+  color: #a0a0a0;
+}
+p {
+  background-color: #E87A7A;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.content, .content-1 {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+}
+hr {
+  border: 1px solid #ffffff;
+  border-top: 1px solid #dddddd;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.fluid-container {
+  text-align: center;
+  padding-top: 50px;
+}
+.content-wrapper {
+  border: 2px solid #d6d6d6;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.content {}
+.content-1 {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  overflow: scroll;
+}
+/* Flex Box  */
+/*---------------------*/
+.container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-container {
+  display: flex;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+}
+.row {
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.flex-item {
+  margin-left: 12px;
+  text-align: center;
+  margin-top: 15px;
+}
+.wrap {
+  /*  -webkit-flex-wrap: wrap;*/
+  flex-wrap: wrap;
+}
+/* Kim Images
+-------------*/
+.img-res {
+  width: 100%;
+  height: auto;
+}
+.img-res-horiz {
+  width: 100%;
+  height: auto;
+  margin-left: 80px;
+}
+/* Kim Buttons
+--------------*/
+.kim-btn-group-vert {
+  height: 70px;
+  width: 20px;
+}
+.kim-btn-group-horiz {
+  height: 16px;
+  width: 60%;
+}
+.kim-btn-group-vert, .kim-btn-group-horiz {
+  padding: 2px;
+}
+.kim-btn-group-vert, .kim-btn-group-horiz {
+  display: inline-block;
+  border-color: #d8d8d8;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 25px;
+}
+.kim-btn {
+  width: 15px;
+  height: 15px;
+  background-color: #d6d6d6;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 1px;
+  border: 1px solid #f1f1f1;
+}
+.home-btn-vert, .home-btn-horiz {
+  width: 40px;
+  height: 40px;
+  background-color: #2f2f2f;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #f1f1f1;
+}
+.home-btn-vert {
+  margin-left: 200px;
+}
+.home-btn-horiz {
+  margin-left: auto;
+}
