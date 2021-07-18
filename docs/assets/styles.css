@@ -21,7 +21,7 @@ a:link {
   -o-transition: background-color .15s linear, color .15s linear;
   -ms-transition: background-color .15s linear, color .15s linear;
   transition: background-color .15s linear, color .15s linear;
-  text-shadow: 0 1px 0 #b79ad8;
+  /*  text-shadow: 0 1px 0 #b79ad8;*/
 }
 a:visited {
   color: #6e39ad;
@@ -128,7 +128,7 @@ span.light {
   justify-content: center;
 }
 .flex-box > div {
-  padding-top: 30px;
+  padding: 30px 15px;
   border-width: 1px;
   border-color: #c1a6e2;
   border-style: solid;
@@ -138,6 +138,8 @@ span.light {
   line-height: 75px;
   font-size: 30px;
   flex: 1;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  /* background-color: #b595dc;*/
 }
 /* Sidebar Collapsable menu 
 ============================*/
