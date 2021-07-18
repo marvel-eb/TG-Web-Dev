@@ -15,15 +15,16 @@ body {
   line-height: 1.5;
 }
 a:link {
-  color: #4e2c77;
+  color: #43216d;
   -webkit-transition: background-color .15s linear, color .15s linear;
   -moz-transition: background-color .15s linear, color .15s linear;
   -o-transition: background-color .15s linear, color .15s linear;
   -ms-transition: background-color .15s linear, color .15s linear;
   transition: background-color .15s linear, color .15s linear;
+  text-shadow: 0 1px 0 #b79ad8;
 }
 a:visited {
-  color: #625175
+  color: #6e39ad;
 }
 a:hover {
   color: #fff;
@@ -216,9 +217,8 @@ li.menu-item a {
   color: #9078ad;
 }
 .menu-large {
-  font-size:24px !important
+  font-size: 24px !important
 }
-
 button#openNav {
   margin-bottom: 25px;
   border-radius: 7px;
