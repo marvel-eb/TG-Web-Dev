@@ -10,18 +10,18 @@
 /*	Transition Animation 
 	===================*/
 
-
 .wraper {
     background-color: #D3E2E4;
     padding: 10px;
     border-width: 5px;
     border-style: solid;
-    border-color: #00897B;
+    border-color: #0f91ff;
     width: 600px;
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .wraper>div {
     display: flex;
@@ -36,9 +36,9 @@
     position: relative;
     border-style: solid;
     border-left-width: 2px;
-    border-color: #00897B;
+    border-color: #0f91ff;
     font-size: 30px;
-    color: #00897B
+    color: #0f91ff;
 }
 .box-1 {
     top: 0;
@@ -66,25 +66,22 @@
     animation-duration: 3.5s;
     animation-delay: 0.2s;
 }
-
-
-
-        /* -----------
+/* -----------
    keyframes 
 -------------*/
 
-        /*	Box 1 */
-        @keyframes box-1 {
+/*	Box 1 */
+ @keyframes box-1 {
 0% {
 transform: translate(50, 50);
 animation-duration: 2s;
 }
 25% {
-transform: translate(250px, -225px);
+transform: translate(275px, -225px);
 animation-duration: 4s;
 }
 50% {
-transform: translate(250px, -100px);
+transform: translate(275px, -100px);
 animation-duration: 5s;
 }
 75% {
@@ -99,24 +96,22 @@ animation-duration: 5s;
 }
 }
 
-        /*	Box 2 */
-        @keyframes box-2 {
+/*	Box 2 */
+@keyframes box-2 {
 0% {
 transform: translate(-50, 50);
 animation-duration: 2s;
 }
 25% {
-transform: translate(-250px, -225px);
+transform: translate(-275px, -225px);
 animation-duration: 4s;
 }
 50% {
-transform: translate(-250px, -100px);
+transform: translate(-275px, -100px);
 animation-duration: 5s;
 }
 75% {
 /*transform: translate(310px, -100px) ; */
-
-
 }
 100% {
 transform: translate(0, 0);
@@ -124,9 +119,7 @@ transition: 4s ease-in-out;
 animation-duration: 5s;
 }
 }
-
-
-        /*	Box 3 */
+/*	Box 3 */
         @keyframes box-3 {
 0% {
 transform: translate(0, 0);
@@ -156,7 +149,7 @@ animation-duration: 2s;
 <div class="sidebarMenu sidebar-block menuCard menuAnimate-left" style="display:none" id="mySidebar">
   <button class="menu-item menu-button menu-large close"
   onclick="menu_close()"> X</button>
-  <h3 class="menu-title"> CSS  - ANIMATION</h3>
+  <h3 class="menu-title"> CSS- TRANSITIONS</h3>
   <hr>
   <ul>
     <li class="menu-item menu-button"> <a href="opdracht_02.html">OPDRACHT_02</a> </li>
@@ -165,14 +158,22 @@ animation-duration: 2s;
     <li class="menu-item menu-button"> <a href="opdracht_05.html">OPDRACHT_05</a></li>
     <li class="menu-item menu-button"> <a href="opdracht_06.html">OPDRACHT_06</a></li>
     <li class="menu-item menu-button"> <a href="opdracht_07.html" >OPDRACHT_07</a></li>
+  </ul>
+  <h3 class="menu-title"> CSS - PSEUDO ELEMENTS</h3>
+  <ul>
+    <li class="menu-item menu-button"> <a href="../04_Pseudo Elements/opdracht_04.html">OPDRACHT_04</a> </li>
+    <li class="menu-item menu-button"> <a href="../04_Pseudo Elements/opdracht_06.html">OPDRACHT_06</a></li>
+    <li class="menu-item menu-button"> <a href="../04_Pseudo Elements/opdracht_07.html"> OPDRACHT_07</a></li>
     <li class="menu-item menu-button home"> <a href="https://marvel-eb.github.io/TG-Web-Dev/">HOME</a></li>
   </ul>
 </div>
 <div id="main">
   <section class="main-content w3-container" id="main-content">
     <button id="openNav" class="menu-button menu-large" onclick="menu_open()">☰</button>
-    <h1>06 - TRANSITIONS</h1>
+    <h1>06// CSS - TRANSITIONS</h1>
     <h3>Opdracht 04 </h3>
+    <p>Je kunt op verschillende properties transitions aangeven. Zie hieronder een voorbeeld. Zoek
+      uit op welke properties de transitions zitten en maak het ongeveer hetzelfde na.</p>
     <hr>
   </section>
   <div class="container">
@@ -188,7 +189,7 @@ animation-duration: 2s;
 <hr>
 <!-- Footer -->
 <footer class="text-align footer">
- <p>EPHREM | COPYRIGHT &copy; 2021 </p>
+  <p>EPHREM | COPYRIGHT &copy; 2021 </p>
 </footer>
 <script src="js/scripts.js"></script>
 </body>

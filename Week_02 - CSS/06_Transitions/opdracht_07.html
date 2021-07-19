@@ -6,58 +6,59 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/styles.css">
 <title>Opdracht 07</title>
-    <style>
+<style>
 /*	Transition Animation 
 	===================*/
 
 .animation-box {
-  background-color: #831B1D;
-  width: 150px;
-  height: 150px;
-  padding: 15px;
-  animation-name: ephrem;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-delay: 2s;
-  /*	animation-timing-function: ease-in-out;*/
-  animation-timing-function: linear;
-  transform: rotate(360deg)
+    background-color: #831B1D;
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    animation-name: ephrem;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    /*	animation-timing-function: ease-in-out;*/
+    animation-timing-function: linear;
+    transform: rotate(360deg);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 @keyframes ephrem {
-  0% {
-    border-radius: 0 0 0 0;
-    transform: rotate(60deg);
-    background-color: #AB181B;
-  }
-  25% {
-    border-radius: 50% 0 0 0;
-    transform: rotate(90deg);
-    background-color: #CE996A;
-  }
-  50% {
-    border-radius: 50% 50% 0 0;
-    transform: rotate(120deg);
-    background-color: #E78A75;
-  }
-  75% {
-    border-radius: 50% 50% 50% 0;
-    transform-rotate: (-180deg);
-    background-color: #FD0808;
-  }
-  100% {
-    border-radius: 50% 50% 50% 50%;
-    transform: rotate(-360deg);
-    background-color: #663601;
-  }
+0% {
+border-radius: 0 0 0 0;
+transform: rotate(60deg);
+background-color: #AB181B;
 }
-    </style>
+25% {
+border-radius: 50% 0 0 0;
+transform: rotate(90deg);
+background-color: #D1A700;
+}
+50% {
+border-radius: 50% 50% 0 0;
+transform: rotate(120deg);
+background-color: #E78A75;
+}
+75% {
+border-radius: 50% 50% 50% 0;
+transform-rotate: (-180deg);
+background-color: #329F00;
+}
+100% {
+border-radius: 50% 50% 50% 50%;
+transform: rotate(-360deg);
+background-color: #0076C6;
+}
+}
+</style>
 </head>
 
 <body>
 <div class="sidebarMenu sidebar-block menuCard menuAnimate-left" style="display:none" id="mySidebar">
   <button class="menu-item menu-button menu-large close"
   onclick="menu_close()"> X</button>
-  <h3 class="menu-title"> CSS  - ANIMATION</h3>
+  <h3 class="menu-title"> CSS- TRANSITIONS</h3>
   <hr>
   <ul>
     <li class="menu-item menu-button"> <a href="opdracht_02.html">OPDRACHT_02</a> </li>
@@ -66,15 +67,21 @@
     <li class="menu-item menu-button"> <a href="opdracht_05.html">OPDRACHT_05</a></li>
     <li class="menu-item menu-button"> <a href="opdracht_06.html">OPDRACHT_06</a></li>
     <li class="menu-item menu-button"> <a href="opdracht_07.html" >OPDRACHT_07</a></li>
+  </ul>
+  <h3 class="menu-title"> CSS - PSEUDO ELEMENTS</h3>
+  <ul>
+    <li class="menu-item menu-button"> <a href="../04_Pseudo Elements/opdracht_04.html">OPDRACHT_04</a> </li>
+    <li class="menu-item menu-button"> <a href="../04_Pseudo Elements/opdracht_06.html">OPDRACHT_06</a></li>
+    <li class="menu-item menu-button"> <a href="../04_Pseudo Elements/opdracht_07.html"> OPDRACHT_07</a></li>
     <li class="menu-item menu-button home"> <a href="https://marvel-eb.github.io/TG-Web-Dev/">HOME</a></li>
   </ul>
 </div>
 <div id="main">
   <section class="main-content w3-container" id="main-content">
-    <button id="openNav" class="menu-button menu-xlarge" onclick="menu_open()">☰</button>
-    <h1>06 - TRANSITIONS</h1>
+    <button id="openNav" class="menu-button menu-large" onclick="menu_open()">☰</button>
+    <h1>06// CSS - TRANSITIONS</h1>
     <h3>Opdracht 07 </h3>
-    <p>Opdracht 7 - extra opdracht (optioneel)<br>
+    <p>Extra opdracht (optioneel)<br>
       Zie de onderstaande animatie en probeer deze na te maken. Hier is gebruik gemaakt van keyframe animatie. </p>
     <hr>
   </section>
