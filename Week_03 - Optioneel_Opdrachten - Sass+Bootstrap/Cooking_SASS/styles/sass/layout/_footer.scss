@@ -1,0 +1,40 @@
+/* Footer Area
+==================*/
+footer {
+  background-color: $secondary-color;
+  .footer-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 50px 15px;
+    width: 90%;
+    margin: auto;
+	  
+	  
+	  	@include md {
+     display: flex;
+    flex-direction: column;
+	justify-content: center;
+
+			align-items: center;
+    }
+  }
+  .footer-container > .box-1 {
+    width: 70%;
+    margin: 10px;
+  }
+  .footer-container > .box-2 {
+    width: 30%;
+    margin: 10px;
+  }
+}
+
+
+
+.box-1, .box-2{
+	
+	@include md {
+		
+		text-align: center;
+	}
+}
