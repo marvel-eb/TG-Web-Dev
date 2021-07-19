@@ -1,0 +1,78 @@
+/* Hero Area 
+  =============*/
+#hero {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  height: 700px;
+	
+ @include md {
+ 
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+			
+	
+	}
+ 
+}
+
+.hero-img {
+  background-image: url("../images/cooking.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+
+
+
+ .hero-txt {
+    display: inline-block;
+    margin-right: 15%;
+    margin-top: 5%;
+		 
+		 @include md {
+
+   margin-right: 0;
+ 		 
+
+    }
+  }
+
+
+
+
+
+	
+ .hero-txt h1 {
+
+	 
+	 	 @include md {
+			     padding-top: 90px;
+    font-size: 70px;
+    }
+  }
+
+
+
+  h2 {
+
+	   	 @include md {
+			    font-size: 60px; 
+    }
+  }
+  .hero-txt p {
+font-size: 25px;
+	   	 @include md {
+			    font-size: 27px; 
+    }
+  }
+  .hero-img {
+  
+	   	 @include md {
+		  padding: 30px;	 
+    }
+  }
