@@ -9,10 +9,17 @@
 <style>
 /*	Pseudo elements
 	===================*/
+.wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+30px;
+}
 .box {
     background: #C34244;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     position: relative;
     text-align: center;
 }
@@ -21,8 +28,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     background: #C34244;
 }
 .box:before {
@@ -66,7 +73,9 @@
     <hr>
   </section>
   <div class="container">
-    <div class="box"></div>
+    <div class="wraper">
+      <div class="box"></div>
+    </div>
   </div>
 </div>
 <!--/#main -->
