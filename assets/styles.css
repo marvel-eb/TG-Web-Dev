@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  /* background: linear-gradient(to top left, #28b487, #7dd56f); */
+  background: linear-gradient(to top left, #563b77, #1D053A);
+  color: #9078AD;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+  font-weight: normal;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+a:link {
+  color: #43216d;
+  -webkit-transition: background-color .15s linear, color .15s linear;
+  -moz-transition: background-color .15s linear, color .15s linear;
+  -o-transition: background-color .15s linear, color .15s linear;
+  -ms-transition: background-color .15s linear, color .15s linear;
+  transition: background-color .15s linear, color .15s linear;
+  /*  text-shadow: 0 1px 0 #b79ad8;*/
+}
+a:visited {
+  color: #6e39ad;
+}
+a:hover {
+  color: #fff;
+  text-shadow: none;
+  text-decoration: underline;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+a:active {
+  color: #593b7b
+}
+h1, h2, h3, h4, h5, h6, p {}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
+}
+p {
+  font-size: 1rem;
+}
+hr {
+  border-top-color: #190d27;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-bottom-color: #5d3390;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin: 20px 0 20px;
+}
+.container hr {
+  border-top-color: #3f2d54;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-bottom-color: #b592de;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin: 20px 0 20px;
+}
+.main-content {
+  padding: 50px 100px;
+}
+.container {
+  background-color: #9078AD;
+  border-radius: 10px;
+  padding: 5% 3%;
+  color: #391e5a;
+  margin: 50px 100px;
+  text-shadow: 0 1px 0 #e7d6fd;
+  /*
+  display: flex;
+  justify-content: center;
+  align-items: center;
+*/
+}
+.footer {
+  background: linear-gradient(to top right, #1D053A, #563b77);
+  padding: 50px;
+}
+.text-align {
+  text-align: center;
+}
+span.light {
+  color: #593b7b;
+}
+@media (max-width:499px) {
+  .main-content {
+    padding: 30px 30px;
+  }
+  .container {
+    margin: 30px 15px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+/*Flex Box*/
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.flex-box > div {
+  padding: 30px 15px;
+  border-width: 1px;
+  border-color: rgb(230 210 255);
+  border-style: solid;
+  border-radius: 7px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  flex: 1 1 0%;
+  box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+  background-color: #af96ce;
+}
+.flex-box p {
+  line-height: 3rem;
+}
+/* Sidebar Collapsable menu 
+============================*/
+#main {
+  transition: margin-left .4s;
+}
+#mySidebar {
+  width: 25%
+}
+.sidebarMenu {
+  height: 100%;
+  width: 200px;
+  background-color: #1c0735;
+  position: fixed !important;
+  z-index: 1;
+  overflow: auto;
+  padding-top: 50px;
+}
+.sidebarMenu > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebarMenu hr {
+  border-top-color: #130227;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-bottom-color: #331458;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin: 20px 0 20px;
+}
+li.menu-item {
+  display: block;
+  border-color: #603594 #442a64 #231435;
+  border-style: solid none solid;
+  border-width: 1px 0 1px;
+  background-color: #442a64;
+  font-size: 16px;
+}
+li.menu-item:hover {
+  background-color: #613d8c;
+}
+li.menu-item.css {
+  border-right-color: #9ecaef;
+  border-right-width: 5px;
+  border-right-style: solid;
+}
+li.menu-item.js {
+  border-right-color: #9dc88d;
+  border-right-width: 5px;
+  border-right-style: solid;
+}
+li.menu-item.react {
+  border-right-color: #d88b00;
+  border-right-width: 5px;
+  border-right-style: solid;
+}
+li.menu-item.home {
+  border-right-color: #e6c000;
+  border-right-width: 5px;
+  border-right-style: solid;
+  background-color: #9c8616;
+}
+li.menu-item.home a {
+  color: #efc700;
+}
+li.menu-item a {
+  color: #9078ad;
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+}
+.menu-title {
+  padding: 15px;
+  text-align: center;
+  color: #9078ad;
+}
+.menu-large {
+  font-size: 24px !important
+}
+button#openNav {
+  margin-bottom: 25px;
+  border-radius: 7px;
+}
+button.close {
+  position: relative;
+  right: -80%;
+  border-radius: 7px;
+}
+.menu-btn, .menu-button {
+  border: none;
+  display: inline-block;
+  padding: 10px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  /*  background-color: inherit;*/
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #432963;
+}
+.menu-btn, .menu-button:hover {
+  background-color: #9078ad;
+  color: #2b1249;
+}
+.menu-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3
+}
+.sidebar-block .menu-item {
+  max-width: 100%;
+  display: block;
+  padding: 8px 16px;
+  text-align: center;
+  white-space: normal;
+  float: none;
+  outline: 0
+}
+.menuCard {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+@media (max-width:600px) {
+  .menu--bar-item.menu--mobile {
+    text-align: center
+  }
+}
+@media (min-width:993px) {
+  .sidebarMenu.menu--collapse {
+    display: block !important
+  }
+}
+@media (max-width:992px) {
+  .sidebarMenu.menu--collapse {
+    display: none
+  }
+  .menu--main {
+    margin-left: 0 !important;
+    margin-right: 0 !important
+  }
+}
+@media (max-width:600px) {
+  #mySidebar {
+    width: 100%
+  }
+}
+.menuAnimate-left {
+  position: relative;
+  animation: animateleft 0.4s
+}
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0
+  }
+  to {
+    left: 0;
+    opacity: 1
+  }
+}

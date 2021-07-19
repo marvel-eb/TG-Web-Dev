@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Tabellen</title>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+</head>
+
+<body>
+<h1>Onderdeel-03 HTML Tabellen</h1>
+
+<!-- ========================================== HTML Tables ========================
+     =================================================================================== -->
+
+<p style="margin: 30px 0px"> 10.Om een tabel te maken heb je volgende elementen nodig:
+  HTML tables </p>
+<p> &lt;table &gt;	
+  
+  &lt;/table &gt;
+  = is table is an arrangement of data in rows and columns. </p>
+<p> &lt;thead &gt;	
+  
+  &lt;/thead &gt;	
+  
+  
+  = is a row at the top of a table. </p>
+<p> &lt;tbody &gt;	
+  
+  &lt;/tbody &gt;	
+  
+  
+  = is  main body content of the table </p>
+<p> &lt;tfoot &gt;	
+  
+  &lt;/tfoot &gt;	
+  
+  
+  = footer area of the table </p>
+<p> &lt;th &gt;	
+  
+  &lt;/th &gt;	
+  
+  = the head section of the table </p>
+<p> &lt;tr &gt;	
+  
+  &lt;/tr &gt;	
+  
+  = the horizontal section of the Table Row </p>
+<p> &lt;td &gt;	
+  
+  &lt;/td &gt;	
+  
+  = the main information of the table inside the body section of the Table </p>
+<p style="margin: 30px 0px"> 11.Maak een tabel met
+  
+  element. Zie hieronder: </p>
+<table style="width:600px">
+  <tr>
+    <th>Voornaam</th>
+    <th>Achternaam</th>
+    <th>Leef tijd</th>
+    <th>Telefoon nr</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>41</td>
+    <td> +31 12345678</td>
+  </tr>
+  <tr>
+    <td>Steven </td>
+    <td>Smith</td>
+    <td>32</td>
+    <td> +31 12345678</td>
+  </tr>
+  <tr>
+    <td>Alexander </td>
+    <td>Beave</td>
+    <td>16</td>
+    <td> +31 12345678</td>
+  </tr>
+</table>
+<hr>
+<p style="margin: 30px 0px"> 12. Maak een agenda tabel met
+  
+  element. Zie hieronder: </p>
+<table style="width:600px">
+  <tr>
+    <th>MA</th>
+    <th>DI</th>
+    <th>WO</th>
+    <th>DO</th>
+    <th>VR</th>
+  </tr>
+  <tr>
+    <td>Afspraak met tandarts</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Sporten</td>
+  </tr>
+  <tr>
+    <td colspan="1"></td>
+    <td>Huiswerk maken</td>
+    <td>Werken</td>
+    <td>Werken</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Afspraak met tandarts</td>
+    <td colspan="3"></td>
+    <td>Werken Bij Vrienden</td>
+  </tr>
+</table>
+<hr>
+<p style="margin: 30px 0px"> 13. Voor het maken van een tabel kan je ook gebruik maken van colspan en
+  rowspan attributen. Zoek uit wat colspan en rowspan attribuut doet en maak
+  het volgende: </p>
+<table width="600" border="1">
+  <tbody>
+    <tr>
+      <th scope="col">&nbsp;</th>
+      <th scope="col">Sport</th>
+      <th scope="col"> Antal recreanten</th>
+      <th scope="col"> Aantal Competitie spelers</th>
+      <th scope="col">Totale deelnemers</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td> Badminton</td>
+      <td>10 </td>
+      <td> 30</td>
+      <td> 40</td>
+    </tr>
+    <tr>
+      <td> Racket sport</td>
+      <td> Tafeltennis</td>
+      <td> 59</td>
+      <td> 30</td>
+      <td>89 </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tennis </td>
+      <td> 159</td>
+      <td>130 </td>
+      <td> 189</td>
+    </tr>
+    <tr>
+      <td> Tennis 159</td>
+      <td>130 </td>
+      <td> 180</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td> Voetbal</td>
+      <td> 88</td>
+      <td>40 </td>
+      <td> 128</td>
+    </tr>
+    <tr>
+      <td> Ball sport</td>
+      <td> Basketbal</td>
+      <td> 60</td>
+      <td> 40</td>
+      <td>100 </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td> Volleybal</td>
+      <td> 35</td>
+      <td> 20</td>
+      <td> 55</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<p style="margin: 30px 0px"> 14.Maak nu zelf een tabel met de elementen die je hiervoor hebt geleerd. </p>
+<table>
+  <tr>
+    <th rowspan="6"> Education</th>
+  </tr>
+  <tr>
+    <th>SKILL </th>
+    <th>2019</th>
+    <th>2020 </th>
+    <th>2021</th>
+  </tr>
+  <tr>
+    <td>HTML</td>
+    <td>Yes</td>
+    <th colspan="2"> </th>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>Yes</td>
+    <th colspan="2"> </th>
+  </tr>
+  <tr>
+    <td>JAVASCRIPT</td>
+    <th colspan="3"> Yes</th>
+  </tr>
+  <tr>
+    <td>WORDPRESS</td>
+    <td colspan="2"></td>
+    <th>Yes </th>
+  </tr>
+</table>
+</body>
+</html>
