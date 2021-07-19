@@ -1,0 +1,10 @@
+//Button
+
+.btn {
+  color: $button-color;
+
+  &--secondary {
+    @extend .btn;
+    color: #131212;
+  }
+}
