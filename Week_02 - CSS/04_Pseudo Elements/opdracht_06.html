@@ -49,7 +49,6 @@
     top: 50px;
     transform: rotate(-120deg);
     text-align: left;
-    
 }
 .ball-psedo::after {
     content: ".";
@@ -66,6 +65,26 @@
     /* transform: scale(-1); */
     transform: rotate(120deg);
     text-align: left;
+}
+/*Flex Box*/
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.flex-box > div {
+    padding: 30px 15px;
+    border-radius: 7px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    flex: 1 1 0%;
+    box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+}
+.flex-box p {
+    line-height: 3rem;
 }
 </style>
 </head>
