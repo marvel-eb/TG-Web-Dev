@@ -15,13 +15,16 @@ body {
   line-height: 1.5;
 }
 a:link {
-  color: #43216d;
+  color: #c1a3e4;
   -webkit-transition: background-color .15s linear, color .15s linear;
   -moz-transition: background-color .15s linear, color .15s linear;
   -o-transition: background-color .15s linear, color .15s linear;
   -ms-transition: background-color .15s linear, color .15s linear;
   transition: background-color .15s linear, color .15s linear;
-  /*  text-shadow: 0 1px 0 #b79ad8;*/
+  text-shadow: none;
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
 }
 a:visited {
   color: #6e39ad;
@@ -52,6 +55,16 @@ h4 {
 }
 p {
   font-size: 1rem;
+}
+.flex-box h3 {
+  background-color: #76559e;
+  margin: 10px;
+  border-radius: 7px;
+  box-shadow: rgb(38 57 77) 0px 7px 7px -5px;
+}
+.flex-box h3:hover {
+  color: #fff;
+  background-color: #947e0f;
 }
 hr {
   border-top-color: #190d27;
@@ -139,7 +152,7 @@ span.light {
   font-size: 30px;
   flex: 1 1 0%;
   box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
-  background-color: #af96ce;
+  /*  background-color: #af96ce;*/
 }
 .flex-box p {
   line-height: 3rem;
