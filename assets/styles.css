@@ -6,7 +6,6 @@
 }
 body {
   height: 100%;
-  /* background: linear-gradient(to top left, #28b487, #7dd56f); */
   background: linear-gradient(to top left, #563b77, #1D053A);
   color: #9078AD;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
@@ -22,8 +21,6 @@ a:link {
   -ms-transition: background-color .15s linear, color .15s linear;
   transition: background-color .15s linear, color .15s linear;
   text-shadow: none;
-  width: 100%;
-  display: inline-block;
   text-decoration: none;
 }
 a:visited {
@@ -139,9 +136,8 @@ hr {
   font-size: 30px;
   flex: 1 1 0%;
   box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
-  /*  background-color: #af96ce;*/
 }
-.flex-box p {
+.flex-box a {
   background-color: #66468e;
   margin: 10px;
   border-radius: 7px;
@@ -152,22 +148,22 @@ hr {
   font-size: 1.5rem;
   padding: 15px;
   line-height: 3rem;
+  display: block;
+  text-decoration: none;
 }
-.flex-box p:hover {
+.flex-box a:hover {
   color: #fff;
   background-color: #ffc107;
   border-style: solid;
   border-color: #fff;
   border-width: 1px 1px 7px;
 }
-.flex-box h6 {
-  line-height: 2rem;
-}
 span.light {
   color: #4e346f;
-  /*  text-shadow: none;*/
+  text-shadow: 0 1px 0 #cbb7e4;
   font-size: 16px;
   line-height: 2rem;
+    display: block;
 }
 /* Sidebar Collapsable menu 
 ============================*/
