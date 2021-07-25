@@ -15,7 +15,7 @@ body {
   line-height: 1.5;
 }
 a:link {
-  color: #c1a3e4;
+  color: #cda3ff;
   -webkit-transition: background-color .15s linear, color .15s linear;
   -moz-transition: background-color .15s linear, color .15s linear;
   -o-transition: background-color .15s linear, color .15s linear;
@@ -27,7 +27,7 @@ a:link {
   text-decoration: none;
 }
 a:visited {
-  color: #6e39ad;
+  color: #bb98e6;
 }
 a:hover {
   color: #fff;
@@ -55,16 +55,6 @@ h4 {
 }
 p {
   font-size: 1rem;
-}
-.flex-box h3 {
-  background-color: #76559e;
-  margin: 10px;
-  border-radius: 7px;
-  box-shadow: rgb(38 57 77) 0px 7px 7px -5px;
-}
-.flex-box h3:hover {
-  color: #fff;
-  background-color: #947e0f;
 }
 hr {
   border-top-color: #190d27;
@@ -106,9 +96,6 @@ hr {
 }
 .text-align {
   text-align: center;
-}
-span.light {
-  color: #593b7b;
 }
 @media (max-width:499px) {
   .main-content {
@@ -155,7 +142,32 @@ span.light {
   /*  background-color: #af96ce;*/
 }
 .flex-box p {
+  background-color: #66468e;
+  margin: 10px;
+  border-radius: 7px;
+  box-shadow: rgb(38 57 77) 0px 7px 7px -5px;
+  border-style: solid;
+  border-color: #47296d;
+  border-width: 1px 1px 7px;
+  font-size: 1.5rem;
+  padding: 15px;
   line-height: 3rem;
+}
+.flex-box p:hover {
+  color: #fff;
+  background-color: #ffc107;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px 1px 7px;
+}
+.flex-box h6 {
+  line-height: 2rem;
+}
+span.light {
+  color: #4e346f;
+  /*  text-shadow: none;*/
+  font-size: 16px;
+  line-height: 2rem;
 }
 /* Sidebar Collapsable menu 
 ============================*/
