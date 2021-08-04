@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.04c41871.chunk.css",
+    "main.js": "/static/js/main.bbbb666f.chunk.js",
+    "main.js.map": "/static/js/main.bbbb666f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3f5086c8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3f5086c8.js.map",
+    "static/js/2.ea5ce81d.chunk.js": "/static/js/2.ea5ce81d.chunk.js",
+    "static/js/2.ea5ce81d.chunk.js.map": "/static/js/2.ea5ce81d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.04c41871.chunk.css.map": "/static/css/main.04c41871.chunk.css.map",
+    "static/js/2.ea5ce81d.chunk.js.LICENSE.txt": "/static/js/2.ea5ce81d.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/weather-bg-0.702933d0.jpg",
+    "static/media/weather-icons.min.css": "/static/media/weathericons-regular-webfont.e218aee6.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3f5086c8.js",
+    "static/js/2.ea5ce81d.chunk.js",
+    "static/css/main.04c41871.chunk.css",
+    "static/js/main.bbbb666f.chunk.js"
+  ]
+}
