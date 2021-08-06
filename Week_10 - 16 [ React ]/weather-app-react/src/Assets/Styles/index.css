@@ -682,10 +682,10 @@ button.btn--close-popup:hover {
   margin: 20px 0 20px;
 }
 li.menu-item {
-  /* border-color: #4d0c7d #2f0c4d #290d42;
+  border-color: #44136f #2f0c4d #1c072f;
   border-style: solid solid solid;
   border-width: 1px 5px 1px 0;
-  background-color: #2c0c47; */
+  background-color: #2c0c47;
   font-size: 16px;
   border-right-color: #4d0c7d;
   border-right-width: 5px;

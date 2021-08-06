@@ -103,8 +103,7 @@ class App extends React.Component {
 
     if (city) {
       const api_call = await fetch(
-        // `http://api.openweathermap.org/data/2.5/weather?q=${city}&type=hour&appid=${Api_KEY}`
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&type=hour&appid=da1b504a959889b47a06cf25dcff8fe9`
+        `http://api.openweathermap.org/data/2.5/weather?q=${city}&type=hour&appid=${Api_KEY}`
       );
 
       const weatherData = await api_call.json();
