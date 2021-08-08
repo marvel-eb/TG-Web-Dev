@@ -1,15 +1,15 @@
 /*===============================================/
-  / WEATHER APP - REACT_20121 =====================/
+  / WEATHER APP - REACT_2021 =====================/
  /================================================/
  =| 01 - Global Styles
- =| 02 - 02 - Buttons
- =| 03 - Input
+ =| 02 - Buttons
+ =| 03 - Input - Form
  =| 04 - Horizontal Rules - Divider
  =| 05 - Weather
  =| 06 - Moving Clouds
  =| 07 - Forecast - popup
- =| 08 - Horizontal Collabsible Menu
- =| 09 - Sidebar - vertical Collapsable menu
+ =| 08 - Forecast - Horizontal Collabsible Menu
+ =| 09 - Sidebar - Vertical Collapsable menu
  =| 10 - Footer
  =| 11 - @ Keyframes -  Animations
  =| 12 - Media Queries
@@ -98,7 +98,7 @@ img {
 }
 .txt-left {
   float: left;
-  color: #bcace6;
+  color: #dbcffb;
 }
 .txt-right {
   float: right;
@@ -207,7 +207,7 @@ input,
   background-color: #41548a;
   padding: 10px 2rem;
   border-radius: 15px;
-  opacity: 0.8;
+  opacity: 0.9;
   max-width: 100%;
   margin: 50px 20px 10px;
   background: linear-gradient(to top left, #188698, #7054b9);
@@ -303,7 +303,7 @@ input,
 }
 .mainTemp p {
   font-size: 4rem;
-  color: #d7b7de;
+  color: #f4c0ff;
 }
 p.txt-lg {
   font-size: 1.2rem;

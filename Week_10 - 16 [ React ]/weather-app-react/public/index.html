@@ -17,34 +17,36 @@
 </head>
 
 <body>
-  <noscript>
-    You need to enable JavaScript to run this app.
-  </noscript>
-  <div class="sidebarMenu sidebar-block menuCard menuAnimate-left" style="display:none" id="mySidebar">
-    <button id="closeNav" class="menu-item menu-button menu-large" onclick="menu_close()"> X</button>
-    <h3 class="menu-title">React - Weather App </h3>
-    <hr>
+  <noscript> You need to enable JavaScript to run this app. </noscript>
+  <div class="sidebarMenu sidebar-block menuCard menuAnimate-left" style="display: none" id="mySidebar">
+    <button id="closeNav" class="menu-item menu-button menu-large" onclick="menu_close()">
+      X
+    </button>
+    <h3 class="menu-title">React - Weather App</h3>
+    <hr />
     <ul>
-      <li class="menu-item menu-button"> <a href="https://marvel-eb.github.io/WeatherApp_Preview/"
-          target="_blank">WeatherApp</a> </li>
-      <li class="menu-item menu-button"> <a href="https://marvel-eb.github.io/ReactMix_Preview/"
-          target="_blank">ReactMix </a> </li>
-      <li class="menu-item menu-button home"> <a href="https://marvel-eb.github.io/TG-Web-Dev/" target="_blank">Home</a>
+      <li class="menu-item menu-button">
+        <a href="https://marvel-eb.github.io/WeatherApp_Preview/" target="_blank">Weather App</a>
       </li>
-
+      <li class="menu-item menu-button">
+        <a href="https://marvel-eb.github.io/ReactMix_Preview/" target="_blank">React Mix
+        </a>
+      </li>
+      <li class="menu-item menu-button">
+        <a href="#" target="_blank">E-Commerce
+        </a>
+      </li>
+      <li class="menu-item menu-button home">
+        <a href="https://marvel-eb.github.io/TG-Web-Dev/" target="_blank">Home</a>
+      </li>
     </ul>
   </div>
   <div id="main">
-    <button id="openNav" class="menu-button menu-large" onclick="menu_open()">☰</button>
+    <button id="openNav" class="menu-button menu-large" onclick="menu_open()">
+      ☰
+    </button>
 
-    <div id="root">
-
-    </div>
-
-
-
-
-
+    <div id="root"></div>
   </div>
   <script>
     //Sidebar Collapsable Menu
@@ -55,15 +57,13 @@
       document.getElementById("openNav").style.display = "none";
     }
 
-
     function menu_close() {
       document.getElementById("main").style.marginLeft = "0%";
       document.getElementById("mySidebar").style.display = "none";
       document.getElementById("openNav").style.display = "inline-block";
     }
-
-
-  </script>;
+  </script>
+  ;
 </body>
 
 </html>

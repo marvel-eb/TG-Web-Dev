@@ -6,7 +6,12 @@ const formInputSearch = (props) => {
       <form className="margin" onSubmit={props.loadweather}>
         <div>{props.errorMessage ? errorMessage() : ""}</div>
 
-        <input type="text" placeholder="City" name="city" autoComplete="on" />
+        <input
+          type="text"
+          placeholder="City - search"
+          name="city"
+          autoComplete="on"
+        />
 
         <button className="btn btn--submit">Check Weather</button>
       </form>

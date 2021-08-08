@@ -19,24 +19,33 @@ class App extends React.Component {
       celsius: "",
       tempMax: "",
       tempMin: "",
-      Humidity: "",
+      humidity: "",
+      pressure: "",
+      sunrise: "", // test
       description: "",
       errorMessage: false,
     };
+    // Reference: https://openweathermap.org/weather-conditions  //
+    // ======================================================== //
 
     // Weather Icons
     this.weatherIcon = {
-      thunderstorm: "wi-thunderstorm",
-      drizzle: "wi-sleet",
-      rain: "wi-storm-showers",
-      snow: "wi-snow",
-      atmosphere: "wi-fog",
-      clear: "wi-day-sunny",
-      clouds: "wi-day-fog",
+      thunderstorm_weather: "wi-thunderstorm",
+      drizzle_weather: "wi-raindrops",
+      // rain: "wi-storm-showers",
+      rainLight_weather: "wi-rain ",
+      rainFreezing_weather: "wi-rain-mix",
+      rainShower_weather: "wi-showers",
+      snow_weather: "wi-snow",
+      atmosphere_weather: "wi-fog",
+      clear_weather: "wi-day-sunny",
+      // clouds_weather: "wi-day-fog",
+      cloudFew_weather: "wi-cloud ",
+      cloudScatered_weather: "wi-cloudy-gusts",
+      cloudOvercast_weather: "wi-cloudy",
     };
 
     // Weather Background
-
     this.weatherBackground = {
       thunderstormWeather: "bg-thunderstorm",
       drizzleWeather: "bg-sleet",
@@ -51,21 +60,42 @@ class App extends React.Component {
   // Weather Icons
   weatherIcons(icons, rangeId) {
     if (rangeId >= 200 && rangeId < 232) {
-      this.setState({ icon: icons.thunderstorm });
+      this.setState({ icon: icons.thunderstorm_weather });
     } else if (rangeId >= 300 && rangeId <= 321) {
-      this.setState({ icon: icons.drizzle });
-    } else if (rangeId >= 500 && rangeId <= 521) {
-      this.setState({ icon: icons.rain });
-    } else if (rangeId >= 600 && rangeId <= 622) {
-      this.setState({ icon: icons.snow });
+      this.setState({ icon: icons.drizzle_weather });
+    }
+    // else if (rangeId >= 500 && rangeId <= 531) {
+    //   this.setState({ bg: icons.rainWeather });
+    // }
+    else if (rangeId >= 500 && rangeId <= 504) {
+      this.setState({ icon: icons.rainLight_weather });
+    } else if (rangeId === 511) {
+      this.setState({ icon: icons.rainFreezing_weather });
+    } else if (rangeId >= 520 && rangeId <= 531) {
+      this.setState({ icon: icons.rainShower_weather });
+    }
+    //
+    else if (rangeId >= 600 && rangeId <= 622) {
+      this.setState({ icon: icons.snow_weather });
     } else if (rangeId >= 701 && rangeId <= 781) {
-      this.setState({ icon: icons.atmosphere });
+      this.setState({ icon: icons.atmosphere_weather });
     } else if (rangeId === 800) {
-      this.setState({ icon: icons.clear });
-    } else if (rangeId >= 801 && rangeId <= 804) {
-      this.setState({ icon: icons.clouds });
-    } else {
-      this.setState({ icon: icons.clouds });
+      this.setState({ icon: icons.clear_weather });
+    }
+    //  else if (rangeId >= 801 && rangeId <= 804) {
+    //   this.setState({ icon: icons.cloudsWeather });
+    // }
+    else if (rangeId === 801) {
+      this.setState({ icon: icons.cloudFew_weather });
+    } else if (rangeId === 802) {
+      this.setState({ icon: icons.cloudScatered_weather });
+    } else if (rangeId >= 803 && rangeId <= 804) {
+      this.setState({ icon: icons.cloudOvercast_weather });
+    }
+
+    //
+    else {
+      this.setState({ icon: icons.cloudsWeather });
     }
   }
 
@@ -76,7 +106,7 @@ class App extends React.Component {
       this.setState({ bg: background.thunderstormWeather });
     } else if (rangeId >= 300 && rangeId <= 321) {
       this.setState({ bg: background.drizzleWeather });
-    } else if (rangeId >= 500 && rangeId <= 521) {
+    } else if (rangeId >= 500 && rangeId <= 531) {
       this.setState({ bg: background.rainWeather });
     } else if (rangeId >= 600 && rangeId <= 622) {
       this.setState({ bg: background.snowWeather });
@@ -103,29 +133,33 @@ class App extends React.Component {
 
     if (city) {
       const api_call = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&type=hour&appid=${Api_KEY}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&dt={dt}&type=hour&appid=${Api_KEY}`
+        // `https://api.openweathermap.org/data/2.5/onecall??q=${city}&dt={dt}&type=hour&appid=${Api_KEY}`
       );
 
       const weatherData = await api_call.json();
       this.setState({
         city: `${weatherData.name}`,
         main: weatherData.weather[0].main,
+
         celsius: this.calCelsius(weatherData.main.temp),
         temp_max: this.calCelsius(weatherData.main.temp_max),
         temp_min: this.calCelsius(weatherData.main.temp_min),
         humidity: weatherData.main.humidity,
+
         description: weatherData.weather[0].description,
+        //
+        sunrise: weatherData.sys.sunrise,
+        //
         errorMessage: false,
       });
 
       // Setting icons + backgrounds
-
       this.weatherIcons(this.weatherIcon, weatherData.weather[0].id);
       this.weatherBackgrounds(
         this.weatherBackground,
         weatherData.weather[0].id
       );
-
       console.log(weatherData);
     } else {
       this.setState({
@@ -152,6 +186,7 @@ class App extends React.Component {
           tempMax={this.state.temp_max} // Mximum Temprature
           tempMin={this.state.temp_min} // Minimum Temprature
           humidity={this.state.humidity} // Humidity Temprature
+          pressure={this.state.pressure} // Pressure Temprature
           description={this.state.description} // Temprature Condition
         />
 
