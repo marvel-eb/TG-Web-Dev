@@ -20,8 +20,6 @@ class App extends React.Component {
       tempMax: "",
       tempMin: "",
       humidity: "",
-      pressure: "",
-      sunrise: "", // test
       description: "",
       errorMessage: false,
     };
@@ -146,11 +144,7 @@ class App extends React.Component {
         temp_max: this.calCelsius(weatherData.main.temp_max),
         temp_min: this.calCelsius(weatherData.main.temp_min),
         humidity: weatherData.main.humidity,
-
         description: weatherData.weather[0].description,
-        //
-        sunrise: weatherData.sys.sunrise,
-        //
         errorMessage: false,
       });
 
@@ -186,7 +180,6 @@ class App extends React.Component {
           tempMax={this.state.temp_max} // Mximum Temprature
           tempMin={this.state.temp_min} // Minimum Temprature
           humidity={this.state.humidity} // Humidity Temprature
-          pressure={this.state.pressure} // Pressure Temprature
           description={this.state.description} // Temprature Condition
         />
 

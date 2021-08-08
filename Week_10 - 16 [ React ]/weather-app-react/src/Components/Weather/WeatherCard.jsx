@@ -12,12 +12,13 @@ import Popup from "../Forecast/OpenPopup";
 //   month: "long",
 //   year: "numeric",
 // }).format(todaysdate);
+//  {
+//   <p> {todaysDate}</p>
+//     <CurrentTime thetimezone />
+//  }
 const WeatherCard = (props) => {
   return (
     <div className={`weather-container ${props.weatherBackground}`}>
-      {/* <p> {todaysDate}</p>
-      <CurrentTime thetimezone /> */}
-
       <div className="location-box">
         <p className="city">{props.cityName}</p>
 
@@ -44,21 +45,15 @@ const WeatherCard = (props) => {
 
           <div className="rightButton"></div>
         </div>
-        {forecast(
-          props.tempMin,
-          props.tempMax,
-          props.humidity,
-          props.pressure,
-          props.sunrise
-        )}
+        {forecast(props.tempMin, props.tempMax, props.humidity)}
         <Popup />
       </div>
     </div>
   );
 };
 
-function forecast(min, max, humidity, pressure) {
-  if (max && min && humidity && pressure) {
+function forecast(min, max, humidity) {
+  if (max && min && humidity) {
     return (
       <div>
         <div className="weather">
@@ -67,10 +62,6 @@ function forecast(min, max, humidity, pressure) {
           <span className="clearfix"> </span>
           <p className="txt-left txt-lg"> Max Temp:</p>
           <p className="txt-right txt-lg">{max}&deg;C</p>
-          <span className="clearfix"> </span>
-
-          <p className="txt-left txt-lg"> Pressure:</p>
-          <p className="txt-right txt-lg">{pressure} </p>
           <span className="clearfix"> </span>
           <p className="txt-left txt-lg"> Humidity:</p>
           <p className="txt-right txt-lg">{humidity} 0%</p>
