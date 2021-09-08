@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.daf4975f.chunk.css",
+    "main.js": "/static/js/main.a32a0871.chunk.js",
+    "main.js.map": "/static/js/main.a32a0871.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.decaaec5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.decaaec5.js.map",
+    "static/js/2.34b60764.chunk.js": "/static/js/2.34b60764.chunk.js",
+    "static/js/2.34b60764.chunk.js.map": "/static/js/2.34b60764.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.daf4975f.chunk.css.map": "/static/css/main.daf4975f.chunk.css.map",
+    "static/js/2.34b60764.chunk.js.LICENSE.txt": "/static/js/2.34b60764.chunk.js.LICENSE.txt",
+    "static/media/apple-MacBookAir13.2ca9db36.jpg": "/static/media/apple-MacBookAir13.2ca9db36.jpg",
+    "static/media/apple-MacPro.71f48679.jpg": "/static/media/apple-MacPro.71f48679.jpg",
+    "static/media/apple-MagicKeyboard.245c07d7.jpg": "/static/media/apple-MagicKeyboard.245c07d7.jpg",
+    "static/media/apple-MagicMouse.77a0522b.jpg": "/static/media/apple-MagicMouse.77a0522b.jpg",
+    "static/media/apple-first-gen.003f9847.jpg": "/static/media/apple-first-gen.003f9847.jpg",
+    "static/media/apple-iMac.86dece35.jpg": "/static/media/apple-iMac.86dece35.jpg",
+    "static/media/apple-iMac_m1.4e500508.jpg": "/static/media/apple-iMac_m1.4e500508.jpg",
+    "static/media/apple-iPad10.c0a3488b.jpg": "/static/media/apple-iPad10.c0a3488b.jpg",
+    "static/media/apple-iPhone12.6376860c.jpg": "/static/media/apple-iPhone12.6376860c.jpg",
+    "static/media/apple-macMini.1fb28098.jpg": "/static/media/apple-macMini.1fb28098.jpg",
+    "static/media/sales.2a2ee301.png": "/static/media/sales.2a2ee301.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.decaaec5.js",
+    "static/js/2.34b60764.chunk.js",
+    "static/css/main.daf4975f.chunk.css",
+    "static/js/main.a32a0871.chunk.js"
+  ]
+}

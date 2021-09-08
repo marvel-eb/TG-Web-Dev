@@ -1,0 +1,73 @@
+/* - Header -
+===========================================*/
+header.App-header {
+  overflow: hidden;
+
+  // position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: rgb(38 57 77) 0px 20px 30px -30px;
+}
+.top-header {
+  padding: 10px 20px;
+}
+.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #23282c;
+  padding: 20px 20px;
+}
+
+.item-bar {
+  background-color: #ffffff;
+}
+.top-header > div {
+  align-items: center;
+
+  text-align: center;
+
+  /* font-size: 30px; */
+  flex: auto 3 auto;
+}
+.top-header .header--logo {
+  display: flex;
+  flex: 0 0 auto;
+  color: #98a3af;
+}
+.header--search {
+  margin-top: 0;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  padding: 0;
+  background: 0 0;
+  flex: 1;
+  order: 0;
+}
+.header--callAction {
+  display: flex;
+  margin-left: auto;
+  color: #98a3af;
+  align-items: center;
+}
+.user,
+.cart {
+  width: 100px;
+}
+div#top {
+  display: block;
+}
+.header--logo a {
+  color: #6d757d;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 150px;
+}

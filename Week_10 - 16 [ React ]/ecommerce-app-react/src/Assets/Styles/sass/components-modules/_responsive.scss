@@ -1,0 +1,99 @@
+/*   - Media Queries -
+===========================================*/
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+  .main-content {
+    margin: 30px 30px;
+  }
+
+  .container {
+    margin: 30px 15px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  /* Footer */
+
+  .footer-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Header */
+  .top-header .header--logo,
+  .top-header .header--account {
+    flex: 1 1 0%;
+    justify-content: space-around;
+  }
+
+  .subscribe form {
+    width: 100%;
+  }
+
+  .item-bar {
+    // position: relative;
+
+    // top: -30px;
+  }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  // div#top {
+  //   margin-top: 200px;
+  // }
+
+  /* button#openNav {
+    top: 25px;
+  } */
+  .basket__toggle-content {
+    width: 100%;
+  }
+
+  .card-wraper {
+    flex-direction: column;
+  }
+  .banner-wrapper {
+    display: none;
+  }
+  .basket__toggle-content {
+    width: 90%;
+  }
+  .detail-page {
+    flex-direction: column;
+    margin-top: 150px;
+  }
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .header--search {
+    order: 1;
+  }
+  .header--search form {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-wraper > div {
+    min-width: 25%;
+  }
+}

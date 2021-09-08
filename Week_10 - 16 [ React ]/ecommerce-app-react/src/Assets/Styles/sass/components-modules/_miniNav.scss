@@ -1,0 +1,62 @@
+/* - Navigation -
+===========================================*/
+.NavBar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sales-wraper {
+  display: flex;
+  width: 50px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  width: auto;
+}
+
+.nav-links .main-links li {
+  color: #f2f2f2;
+  background-color: #ececed;
+}
+
+.nav-links .sales li {
+  color: #f2f2f2;
+  // background-color: #ffa4a4;
+}
+
+.nav-links .main-links li,
+.nav-links .sales li {
+  text-align: center;
+
+  text-decoration: none;
+  font-size: 17px;
+
+  display: inline-block;
+}
+.nav-links li a {
+  padding: 14px 16px;
+  display: block;
+}
+
+.nav-links li {
+  background-color: #ff7777;
+}
+.nav-links li:hover {
+  background: #ccffee;
+  color: #104956;
+}
+
+/* .nav-links li {
+
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #5d9482;
+} */
+.nav-links > ul > li:not(:last-child) {
+  border-right: 1px solid #fff;
+}
