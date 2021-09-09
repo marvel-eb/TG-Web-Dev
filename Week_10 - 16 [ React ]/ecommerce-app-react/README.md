@@ -45,4 +45,5 @@ A special thanks goes to my career buddy\_\_Thijs - who showed and teached me ho
 Of course, I would like to thank J E N S - who incourged and advised me to have unique/specific CompanyName for my app.
 
 What else? -- Joeri + Elias, Thank you so much for your positive valuable suggestions and encouragement, this includes all of you my classmates.
+
 Cheers!!
