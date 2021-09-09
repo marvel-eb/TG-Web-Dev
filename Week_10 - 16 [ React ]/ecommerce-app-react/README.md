@@ -1,10 +1,10 @@
-### =================================================
+###### =================================================
 
 ### About - EphiShop eCommerceApp | ReactJS
 
 ###### Designed and developed by Ephrem | A'dam, NL - 2021
 
-### ================================================
+## 
 
 Hi, Welcome to EPHISHOP
 
@@ -27,9 +27,10 @@ Over 90% of it's functionalities are finished.
 
 ## Technolgies:
 
-Repsonsivness - 100% Pure CSS (SASS - 7_in_1 architechtural structure tecnick applied) - no thired party plugins (frameworks) used
-ReactJS - Multiple sources used
-Firebase - Hosting & User Authentication
+- Repsonsivness - 100% Pure CSS (SASS - 7_in_1 architechtural structure tecnick applied) - no thired party plugins (frameworks) used
+- ReactJS - Multiple sources used
+- Firebase - Hosting & User Authentication
+
 
 ## In progress:
 
