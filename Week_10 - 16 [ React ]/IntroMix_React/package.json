@@ -1,6 +1,6 @@
-{
-    "homepage": "https://marvel-eb.github.io/ReactMix_Preview/",
-    "name": "weather-app-react",
+ {
+    "homepage": "https://marvel-eb.github.io/IntroMix_React_Preview/",
+    "name": "intro-mix-react",
     "version": "0.1.0",
     "private": true,
     "dependencies": {

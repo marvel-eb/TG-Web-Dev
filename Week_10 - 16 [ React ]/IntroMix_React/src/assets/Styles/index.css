@@ -9,8 +9,7 @@
 body {
   height: 100%;
   background: linear-gradient(to top left, #805d15, #553900);
-  /* font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
-    "DejaVu Sans", Verdana, "sans-serif"; */
+
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -25,6 +24,7 @@ body {
 p {
   font-size: 1.2rem;
 }
+
 h1 {
   font-size: 3rem;
 }
@@ -39,7 +39,7 @@ h4 {
 }
 h5 {
   font-size: 1.2rem;
-  color: ##805d16;
+  color: #805d16;
 }
 h6 {
   font-size: 1rem;
