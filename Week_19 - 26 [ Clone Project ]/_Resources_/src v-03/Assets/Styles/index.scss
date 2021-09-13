@@ -1,0 +1,44 @@
+@charset "UTF-8";
+//*                                                                 //
+//===================== CODDED BY EPHREM ==========================//
+// In Collaboration with Manon, Michell, Elias, Rashid & Frankie  //
+//========================== 2021 ===============================//
+//=============================================================*//
+
+// 1. Configuration
+
+// @import "../assets/styles/sass/abstract-uitilities/variables";
+// @import "../assets/styles/sass/abstract-uitilities/functions";
+// @import "../assets/styles/sass/abstract-uitilities/mixin";
+// @import "../assets/styles/sass/abstract-uitilities/extend";
+
+// 2. Base
+
+@import "../styles/sass/base/reset";
+@import "../Styles/sass/base/base";
+@import "../Styles/sass/base/fonts";
+@import "../Styles/sass/base/typography";
+
+// 3. Layout
+
+@import "../Styles/sass/layout/header";
+@import "../Styles/sass/layout/navigation";
+@import "../Styles/sass/layout/mainContent";
+@import "../Styles/sass/layout/footer";
+
+// 4. Components
+
+@import "../Styles/sass/components-modules/buttons.scss";
+@import "../Styles/sass/components-modules/contactForm.scss";
+@import "../Styles/sass/components-modules/detailPage.scss";
+@import "../Styles/sass/components-modules/hr.scss";
+@import "../Styles/sass/components-modules/pricing.scss";
+@import "../Styles/sass/components-modules/registration.scss";
+@import "../Styles/sass/components-modules/search.scss";
+@import "../Styles/sass/components-modules/specs.scss";
+@import "../Styles/sass/components-modules/subscribe.scss";
+@import "../Styles/sass/components-modules/responsive";
+@import "../Styles/sass/components-modules/logo";
+@import "../Styles/sass/components-modules/_home_featured_slider";
+@import "../Styles/sass/components-modules/_home_horiz_slider";
+@import "../Styles/sass/components-modules/_social";

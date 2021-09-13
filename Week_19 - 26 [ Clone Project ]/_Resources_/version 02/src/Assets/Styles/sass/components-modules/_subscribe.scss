@@ -1,0 +1,28 @@
+/* 03 -Subscribe
+===========================================*/
+
+.subscribe form input:focus {
+  background-color: #23282f;
+}
+.subscribe form ::placeholder {
+  color: #343a40;
+}
+
+.subscribe form {
+  display: flex;
+  padding: 2px;
+
+  min-width: 18% !important;
+
+  width: 60%;
+  margin: 0 auto;
+}
+
+.subscribe form input {
+  color: #98a3af;
+  background-color: #6d757d;
+  padding: 10px;
+  border-color: #4b545d;
+  border-style: solid;
+  border-width: 10px;
+}
