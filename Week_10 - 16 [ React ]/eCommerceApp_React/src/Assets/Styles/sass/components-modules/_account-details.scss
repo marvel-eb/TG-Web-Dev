@@ -1,0 +1,26 @@
+/*  - Subscribe -
+===========================================*/
+
+.account-detail__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.account-detail__body {
+  text-align: left;
+}
+.account-detail__body address a {
+  font-size: 13px;
+}
+
+img.profile-image {
+  padding: 5px;
+  border-color: #ccc;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: #26394d 0px 20px 30px -20px;
+  margin-bottom: 25px;
+}
+.account-detail__body a {
+  border-bottom: dotted 1px #00a592;
+}

@@ -1,0 +1,31 @@
+/* - Specs -
+===========================================*/
+.specs__list {
+  padding-bottom: 0;
+}
+.specs__list > div:nth-of-type(2n + 1) {
+  background-color: #f1f1f1; /* #fafafa; */
+}
+.specs__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.specs__title {
+  position: relative;
+  width: 60%;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  word-wrap: break-word;
+  flex: 0 0 auto;
+  min-height: 0;
+  min-width: 0;
+}
+.specs__value {
+  flex: 0 0 auto;
+  min-height: 0;
+  min-width: 0;
+  float: left;
+  width: 40%;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  margin: 0;
+  word-wrap: break-word;
+}

@@ -1,0 +1,250 @@
+import iMac from "../Assets/images/products/apple-iMac.jpg";
+import MacBook from "../Assets/images/products/apple-MacBookAir13.jpg";
+import AppleComputer from "../Assets/images/products/apple-first-gen.jpg";
+import iPad from "../Assets/images/products/apple-iPad10.jpg";
+import MacMini from "../Assets/images/products/apple-macMini.jpg";
+import iPhone from "../Assets/images/products/apple-iPhone12.jpg";
+import MacPro from "../Assets/images/products/apple-MacPro.jpg";
+import iMac2 from "../Assets/images/products/apple-iMac_m1.jpg";
+import Mouth from "../Assets/images/products/apple-MagicMouse.jpg";
+import Keyboard from "../Assets/images/products/apple-MagicKeyboard.jpg";
+import sales from "../Assets/images/products/sales.png";
+const data = {
+  featured: [
+    {
+      id: "1",
+      name: "New Arrivals",
+      actualPrice: 1679,
+      discountPrice: 1499,
+      // price: 1499,
+      priceCents: 99,
+      image: `${sales}`,
+      desc: "Collections",
+      longDesc:
+        "With the Apple iMac 24 (2021) you can edit photos and multitask effortlessly between all your windows.The Apple M1 chip is powerful enough for that.This Apple Silicon chip works closely with macOS for better performance.With 8 gigabytes of RAM, you can edit your photos without slowing down your iMac. ",
+
+      deliveryMethod: "Free Delivery",
+      rating: 4.5,
+      numReviews: 10,
+      url: "http://localhost:3000/ProductDetails/imac-2021",
+      category: "Computer",
+      tagline: "| iMac 2021",
+    },
+  ],
+  sales: [
+    {
+      id: "iMac",
+      name: "iMac",
+      actualPrice: 1679,
+      discountPrice: 1499,
+
+      priceCents: 99,
+      image: `${iMac}`,
+      smallDesc: "Apple iMac 27 inch SSD /2021",
+      deliveryMethod: "Free Delivery",
+      url: "http://localhost:3000/Sale",
+    },
+    {
+      id: "Apple-Magic-Mouse-2",
+      name: "Apple Magic Mouse ",
+      actualPrice: 1679,
+      discountPrice: 1499,
+
+      priceCents: 69,
+      image: `${Mouth}`,
+      smallDesc: "Apple Magic Mouse 2",
+      deliveryMethod: "Free Delivery",
+      url: "http://localhost:3000/Sale",
+    },
+    {
+      id: "Apple-Magic-Keyboard",
+      name: "Apple Magic keyboard",
+      actualPrice: 109,
+      discountPrice: 89,
+
+      priceCents: 79,
+      image: `${Keyboard}`,
+      smallDesc: "Apple MLA22N/A Magic keyboard",
+      deliveryMethod: "Free Delivery",
+      url: "http://localhost:3000/Sale",
+    },
+  ],
+  products: [
+    {
+      id: "imac-2021",
+      name: "iMac ",
+      actualPrice: 1934,
+      priceCents: 99,
+      image: `${iMac2}`,
+      smallDesc: "Apple iMac 24(2021)",
+      longDesc:
+        "With the Apple iMac 24 (2021) you can edit photos and multitask effortlessly between all your windows.The Apple M1 chip is powerful enough for that.This Apple Silicon chip works closely with macOS for better performance.With 8 gigabytes of RAM, you can edit your photos without slowing down your iMac. ",
+
+      deliveryMethod: "Free Delivery",
+      rating: 2.5,
+      numReviews: 4,
+      url: "http://localhost:3000/ProductDetails/imac-2021",
+      category: "Computer",
+      brand: "Apple",
+      color: "Blue",
+      guarantee: "2 Years",
+      storage: "512GB SSD",
+      processor: "Apple M1",
+      memory: "8GB RAM",
+    },
+    {
+      id: "iMac",
+      name: "iMac",
+      // discountPrice: 1499,
+      actualPrice: 1499,
+      priceCents: 99,
+      image: `${iMac}`,
+      smallDesc: "Apple iMac 27 inch SSD /2020",
+      longDesc:
+        "Edit your photos and videos in great detail with the Apple iMac 27 (2020) - It  is Retina 5K screen and has a resolution of 5120 x 2880",
+      deliveryMethod: "Free Delivery",
+      rating: 4.5,
+      numReviews: 10,
+      url: "http://localhost:3000/ProductDetails/iMac",
+      category: "Computer",
+      brand: "Apple",
+      color: "Siliver",
+      guarantee: "2 Years",
+      storage: "1TB Fusion Drive",
+      processor: "Intel Core i5",
+      memory: "8GB RAM",
+    },
+    {
+      id: "macbook-air",
+      name: "MacBook Air",
+      actualPrice: 1299,
+      priceCents: 89,
+      image: `${MacBook}`,
+      smallDesc: "Apple MacBook Air 13 inch",
+      longDesc:
+        "Edit your photos and videos in great detail with the Apple MacBook Air 2020) - It  is Retina 5K screen and has a resolution of 5120 x 2880",
+
+      deliveryMethod: "Free Delivery",
+      rating: 3.5,
+      numReviews: 8,
+      url: "http://localhost:3000/ProductDetails/macbook-air",
+      category: "Computer",
+      brand: "Apple",
+      color: "Siliver",
+      guarantee: "2 Years",
+      storage: "500GB SSD",
+      processor: "Apple M1",
+      memory: "8GB RAM",
+    },
+    {
+      id: "apple-computer",
+      name: "Apple Computer",
+      actualPrice: 499,
+      priceCents: 99,
+      image: `${AppleComputer}`,
+      smallDesc: "Apple Jubileum 20 years ago",
+      deliveryMethod: "Free Delivery",
+      rating: 4.5,
+      numReviews: 10,
+      url: "http://localhost:3000/ProductDetails/apple-computer",
+      category: "Computer",
+      brand: "Apple",
+      color: "Siliver",
+      guarantee: "2 Years",
+      storage: "250GB HDD",
+      processor: "Intel",
+      memory: "8GB RAM",
+    },
+    {
+      id: "ipad-air",
+      name: "iPad Air",
+      actualPrice: 379,
+      priceCents: 99,
+      image: `${iPad}`,
+      smallDesc: "Apple iPad Air_2 2019",
+      longDesc:
+        "Bring your creative ideas to life with the Apple iPad Air (2020) 10.9 inch 256 GB WiFi Space Gray + Apple Pencil 2. The included Apple Pencil (2nd generation) is an intuitive stylus with which you can comfortably draw and take notes. All apps open at lightning speed thanks to the powerful A14 Bionic Chip. For example, you can quickly get started with the apps from Adobe CC.",
+      deliveryMethod: "Free Delivery",
+      rating: 2.5,
+      numReviews: 4,
+      url: "http://localhost:3000/ProductDetails/ipad-air",
+      category: "Tablet",
+      brand: "Apple",
+      color: "Space Gray",
+      guarantee: "2 Years",
+      storage: "32GB",
+      processor: "Hex Core(6)",
+      memory: "8GB RAM",
+    },
+
+    {
+      id: "mac-pro",
+      name: "Mac Pro ",
+      actualPrice: 1299,
+      priceCents: 79,
+      image: `${MacPro}`,
+      smallDesc: "Apple Mac Pro 2019",
+      longDesc:
+        "With the Apple Mac Pro (2019) 256 GB + Apple Pro display XDR + stand, you get the ultimate Apple setup. Mac Pro with Intel Xeon processor and no less than 32 GB RAM is suitable for the most demanding software and of course multitasking",
+
+      deliveryMethod: "Free Delivery",
+      rating: 2.5,
+      numReviews: 4,
+      url: "http://localhost:3000/ProductDetails/mac-pro",
+      category: "Computer",
+      brand: "Apple",
+      color: "Black",
+      guarantee: "2 Years",
+      storage: "500GB HDD",
+      processor: "Intel Xeon E5",
+      memory: "8GB RAM",
+    },
+
+    {
+      id: "iphone-12",
+      name: "iPhone ",
+      actualPrice: 849,
+      priceCents: 99,
+      image: `${iPhone}`,
+      smallDesc: "Apple iPhone 12",
+      longDesc:
+        "With the Apple iPhone 12 64GB Blue + Apple Usb C Charger 20W you can charge your new iPhone for half within half an hour. ",
+
+      deliveryMethod: "Free Delivery",
+      rating: 2.5,
+      numReviews: 4,
+      url: "http://localhost:3000/ProductDetails/iphone-12",
+      category: "Telephone",
+      brand: "Apple",
+      color: "Black",
+      guarantee: "2 Years",
+      storage: "128GB",
+      processor: "Hex core (6)",
+      memory: "4GB RAM",
+    },
+
+    {
+      id: "mac-mini",
+      name: "Mac Mini ",
+      actualPrice: 589,
+      priceCents: 99,
+      image: `${MacMini}`,
+      smallDesc: "Apple Mac Mini SSD",
+      longDesc:
+        "With the Apple Mac Mini (2020) 16GB/512GB Apple M1 chip, you can multitask with heavy programs such as Adobe Photoshop. Thanks to Apple's own M1 chip, you can do this smoothly and without hitches.",
+
+      deliveryMethod: "Free Delivery",
+      rating: 4,
+      numReviews: 4,
+      url: "http://localhost:3000/ProductDetails/mac-mini",
+      category: "Computer",
+      brand: "Apple",
+      color: "Siliver",
+      guarantee: "2 Years",
+      storage: "500GB SSD",
+      processor: "Intel Core i3",
+      memory: "8GB RAM",
+    },
+  ],
+};
+export default data;

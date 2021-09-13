@@ -1,0 +1,105 @@
+/* - Registration / SignIn / SignUp -
+===========================================*/
+.form {
+  width: 100%;
+  max-width: 40rem;
+  border-color: #343a40;
+  border-width: 1px;
+  border-style: dashed;
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-wrapper > div {
+  width: 100%;
+}
+input.formInput {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 20px 15px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+input.formInput:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+.btn--signUp,
+.btn--signIn-email,
+.btn--signIn-google {
+  padding: 15px 10px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+
+  border-style: solid;
+  border-width: 1px 2px 7px;
+
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+}
+.btn--signIn-email,
+.btn--signUp {
+  background-color: #00a592;
+  border-color: #007d6f;
+  color: #f6f6f6;
+}
+
+.btn--signIn-google {
+  background-color: #4285f4;
+  border-color: #316bcc;
+  color: #f6f6f6;
+}
+
+.btn--signIn-email:hover,
+.btn--signUp:hover {
+  background-color: #02bda8;
+}
+
+.btn--signIn-google:hover {
+  background-color: #5a98ff;
+}
+
+.btn--register {
+  border-style: dotted;
+  border-width: 2px;
+  border-color: #00a592;
+  padding: 30px 15px;
+  background-color: #eefffd;
+  width: 100%;
+}
+
+.btn--register:hover {
+  background-color: #e2f3f2;
+}
+
+/* Error Message */
+
+li.error-message {
+  border-bottom-width: 2px;
+  color: #f00;
+  list-style: none;
+  border-bottom-color: #ff0d0d;
+  border-bottom-style: solid;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  width: auto;
+}

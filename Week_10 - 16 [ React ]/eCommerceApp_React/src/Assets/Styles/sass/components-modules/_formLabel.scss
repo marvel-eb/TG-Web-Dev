@@ -1,0 +1,23 @@
+/* - Form Label -
+===========================================*/
+.form__separator:before {
+  border-top: 2px solid #ace2d0;
+  content: " ";
+  display: block;
+  position: relative;
+  top: 12px;
+}
+
+.form__label {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.form__label a {
+  text-decoration: underline;
+}
+
+.vertical-align {
+  vertical-align: inherit;
+}

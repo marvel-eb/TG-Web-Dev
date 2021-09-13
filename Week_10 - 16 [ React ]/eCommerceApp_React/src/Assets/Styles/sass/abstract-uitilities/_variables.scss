@@ -1,0 +1,36 @@
+/* - Variables 
+===========================================*/
+
+// Main Colors //
+$primary-color: $turquoise;
+$secondary-color: $red;
+
+$turquoise: #00a592;
+$light: #e1e8ee;
+$dark: #23282d;
+$red: #dc3545;
+$white: #fff;
+
+// Link Colors  //
+$link-color: #00a592;
+$hover-color: #101010;
+
+// Background Colors //
+$background-color: #dee4e7;
+$dark-color: #171a25;
+$semi-dark-color: #2e3140;
+$light-color: #f1f1f1;
+
+// Button Colors //
+$btn-bg-color-primary: $turquoise;
+$btn-bg-color-secondary: $light;
+$btn-bg-color-submit: $dark;
+
+// Media Queries - Breakpoints
+//////////////////////////////
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
