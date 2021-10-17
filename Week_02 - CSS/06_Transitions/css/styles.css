@@ -111,6 +111,8 @@ hr {
   z-index: 1;
   overflow: auto;
   padding-top: 50px;
+        background-image: linear-gradient( 
+88deg,#01241e 1.9%,#0b463b 71.28%,#066453);
 }
 .sidebarMenu > ul {
   list-style-type: none;
