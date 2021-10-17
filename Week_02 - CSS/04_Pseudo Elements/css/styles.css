@@ -54,19 +54,20 @@ hr {
   padding: 50px 100px;
 }
 .container {
-  background-color: #5CA6A3;
+  background-color: #a3c4e0;
   border-radius: 10px;
   padding: 5% 3%;
   color: #101010;
   margin: 50px 100px;
+/*
   display: flex;
   justify-content: center;
   align-items: center;
+*/
 }
 .footer {
   /* background-color: #164a41;*/
-  background: linear-gradient(to right top, #043634, #043634);
-
+  background: linear-gradient(to right top, #02466B, #002A40);
   padding: 50px;
 }
 .text-align {
