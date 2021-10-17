@@ -67,8 +67,12 @@ hr {
 }
 .footer {
   /* background-color: #164a41;*/
-  background: linear-gradient(to right top, #02466B, #002A40);
+  background: linear-gradient(to right top, #043634, #043634);
+
   padding: 50px;
+}
+.text-align {
+  text-align: center;
 }
 .text-align {
   text-align: center;
