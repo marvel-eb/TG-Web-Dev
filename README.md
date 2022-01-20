@@ -1,6 +1,6 @@
 # TechGrounds Web Development Course
 
-This is my first repository for learning purpose at TechGrounds. _MAY/05/2021 - OCT/10/2021_
+This is my first repository for learning purpose at TechGrounds. _MAY/05/2021 - OCT/29/2021_
 
 > - Web Development - HTML5 | CSS3 | Bootstrap | ReactJS | SASS
 > - Dev Tools - Terminal | Atom | VS Code | GitKraken | Git
