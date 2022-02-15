@@ -8,4 +8,4 @@ This is my first repository for learning purpose at TechGrounds. _MAY/05/2021 - 
 
 <hr>
 
-## [🌐 DEMO - Live Preview](https://marvel-eb.github.io/TG-Web-Dev/)
+## [🌐 DEMO - Live Preview](https://marvel-eb.github.io/WebDevelopment_TechGrounds/)
