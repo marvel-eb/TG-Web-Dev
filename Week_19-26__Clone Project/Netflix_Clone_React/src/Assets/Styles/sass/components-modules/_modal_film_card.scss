@@ -1,0 +1,82 @@
+.modal-film-container {
+    border-radius: 8px;
+    background-color: $background-color-alt;
+    cursor: pointer;
+
+    .film-card-container:hover .play-button {
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .mzd-image {
+        height: auto;
+        width: auto;
+        border-start-start-radius: 8px;
+        border-start-end-radius: 8px;
+    }
+
+    .play-button {
+        width: 100%;
+        height: auto;
+        max-height: 75px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+
+    .match-text {
+        color: #43bb60;
+        font-weight: bold;
+    }
+
+    .age-pic {
+        height: 30px;
+        width: auto;
+        margin-right: 5px;
+    }
+
+    span {
+        color: $font-color;
+        font-weight: bold;
+    }
+
+    p {
+        color: $font-color;
+    }
+
+    .circle-button {
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 25px;
+        background-color: $background-color-alt;
+    }
+
+    .circle-button:hover {
+        border: 2px solid white;
+    }
+
+    .circle-button:focus {
+        outline: none;
+    }
+
+    .row:nth-of-type(3) {
+        height: 200px;
+        overflow: auto;
+        
+        &::-webkit-scrollbar{
+            background-color: $font-color-alt;
+            width: 5px;
+            border-radius: 25px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $font-color; 
+            border-radius: 10px;
+          }
+
+    }
+
+}

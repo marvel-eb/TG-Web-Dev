@@ -1,0 +1,43 @@
+// == MEDIA__QUERIES ==
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #2d2d2d !important;
+    padding: 10px 25px;
+  }
+
+  a.nav-link {
+    border-top-color: #3e3d3d;
+    border-bottom-color: #201f1f;
+    border-width: 1px 0;
+    border-style: solid;
+  }
+
+  .user-info-wrapper {
+    margin: 10px 0px;
+  }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .user-auth-form__holder {
+    width: 100%;
+  }
+  // @media (min-width: 560px) {
+  //   .user-auth-form__holder {
+  //     width: 550px;
+  //   }
+  // }
+  .user-auth-page-bg__holder,
+  .user-auth-page-bg__holder img {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+}

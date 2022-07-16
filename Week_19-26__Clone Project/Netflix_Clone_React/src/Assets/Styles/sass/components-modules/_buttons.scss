@@ -1,0 +1,45 @@
+// == BUTTONS ==
+
+.btn {
+  display: block;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* padding: 0.375rem 0.75rem; */
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn--primary {
+  color: #fff;
+  background-color: #00a592;
+  border-color: #2edac6;
+  padding: 10px 20px;
+}
+.btn--primary:hover {
+  background-color: #03c9b2;
+  color: #ecfdff;
+}
+
+.btn--secondary {
+  border: 2px solid #e1e8ee;
+  border-radius: 6px;
+  padding: 13px 20px;
+  font-size: 14px;
+  color: #5e6977;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn--secondary:hover {
+  border: 2px solid #86939e;
+  outline: none;
+}

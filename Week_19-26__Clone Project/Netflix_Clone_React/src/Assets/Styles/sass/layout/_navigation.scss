@@ -1,0 +1,40 @@
+.navbar {
+  height: 6rem;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+.dropdown-menu {
+  background-color: #2d2d2d;
+  right: 0px !important;
+  left: unset;
+}
+
+.dropdown-item,
+a.nav-link {
+  color: #e7e7e7;
+}
+a.text-white-50.nav-link:hover {
+  color: crimson;
+}
+
+a.dropdown-item:hover {
+  background-color: #444444;
+  color: #e7e7e7;
+}
+.avator {
+  width: 40px;
+  height: 40px;
+  border-radius: 25%;
+}
+
+.user-info-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.notification,
+.notification {
+  padding: 10px;
+}
+.dropdown-divider {
+  border-top: 1 px solid #201f1f !important;
+}

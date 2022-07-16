@@ -1,0 +1,381 @@
+
+
+#landing-page {
+  background-color: $background-color;
+  color: $font-color;
+  
+  .logo {
+      width: 11rem;
+  }
+
+  & > div:nth-of-type(1) {
+      // background-color: red;
+      height: 43.125rem;
+      background-size: auto;
+      background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/897182ab-a592-4015-9372-5047825c92df/NL-nl-20210823-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+      background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/897182ab-a592-4015-9372-5047825c92df/NL-nl-20210823-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+      margin-bottom: 0.5rem;
+      
+
+      .nav {
+          display: flex;
+          align-items: center;
+          margin-bottom: 9.375rem;
+
+          button {
+              height: 2.5rem;
+              color: $font-color;
+              background-color: rgba(0, 0, 0, 0.4);
+              border: 2px solid rgb(170, 170, 170);
+              -webkit-border-radius: 3px;
+              -moz-border-radius: 3px;
+              border-radius: 3px;
+              margin-right: 1.875rem;
+            
+
+              + button {
+                  background-color: $primary-color;
+                  border: none;
+                  line-height: normal;
+                  padding: 0 1.25rem;
+                  margin-right: 3.125rem;
+              }
+          }
+      }
+      
+      h1,
+      h4,
+      h5 {
+          text-align: center;
+          color: $light-color;
+      }
+  }
+
+      form {
+          margin-top: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          input {
+              height: 3.75rem;
+              width: 40%;
+              max-width: 43.75rem;
+              padding-left: 1rem;
+              border-radius: 3px 0px 0px 3px;
+              border: none;
+          }
+
+          button {
+              height: 3.75rem;
+              width: 20%;
+              max-width: 12.5rem;
+              color: $font-color;
+              background-color: $primary-color;
+              border-radius: 0px 4px 4px 0px;
+          }
+      }
+
+ .our-story-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 30rem;
+  padding: 2rem 4rem;
+  margin-bottom: 0.5rem;
+  // border: 8px 0 solid $background-color;
+  overflow: hidden;
+  background-color: #010101;
+ 
+       .our-story-card-text {
+       flex-basis: 50%;
+       }
+
+       .our-story-card-title {
+        color: $light-color;
+        line-height: 1.1;
+        margin-bottom: .4em;
+      }
+
+       .our-story-card-subtitle {
+       color: $light-color;
+       }
+  }
+
+  .our-story-card-img-container {
+      flex-basis: 45%;
+      overflow: hidden;
+  }
+
+  .our-story-card-animation-container {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+  }
+
+  .our-story-card-animation {
+      width: 100%;
+      height: 100%;
+      max-width: 75%;
+      max-height: 50%;
+      position: absolute;
+      top: 48%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  .animationPlace {
+      top: 10%;
+      left: 50%;
+      max-width: 60%;
+  }
+
+  .our-story-card-img {
+      position: relative;
+      z-index: 100;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .our-story-card-video {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+  }
+
+  .positionChange {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top:7rem;
+}
+
+  .downloadAndWatch .our-story-card-animation {
+      position: absolute;
+      left: 50%;
+      // bottom: 8%;
+      top: 22rem;
+      transform: translateX(-50%);
+      margin: 0 auto;
+      background: $dark-color;
+      display: flex;
+      align-items: center;
+      width: 60%;
+      height: 6rem;
+      min-width: 15em;
+      padding: .25em 0.65em;
+      border-radius: 0.75em;
+      border: 2px solid $background-color-alt;
+      z-index: 100;
+      box-shadow: 0 0 2em 0 $dark-color; 
+
+      &::after {
+      width: 3em;
+      margin-left: auto;
+      height: 3em;
+      outline: 2px solid $dark-color;
+      outline-offset: -2px;
+      display: block;
+      background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+      background-size: 100%;
+      content: "";
+      flex-grow: 0;
+      flex-shrink: 0;
+      }
+  
+       .our-story-card-animation-container {
+          position: relative;
+          overflow: hidden;
+       }
+
+       .our-story-card-animation-image {
+           height: 4.5em;
+           width: 4.5em;
+           margin-right: 1rem;
+
+               img {
+                   height: 100%;
+                   width: 100%;
+                   object-fit: cover;
+
+              }
+      }
+  }
+
+  .text-0 {
+      color: $font-color;
+      font-weight: 600;
+      font-size: 0.9em;
+
+  }
+
+  .text-1 {
+      color: $alt-color;
+      font-size: 0.9em;
+  }
+
+//     @media only screen and (min-width: 550px) and (max-width: 949px), only screen and (min-width: 400px) and (max-width: 549px), only screen and (min-width: 350px) and (max-width: 399px), only screen and (max-width: 349px) {
+// .animation-card .our-story-card-text {
+// width: 100%;
+// text-align: center;
+// padding: 0;
+// }
+//     }
+
+//     @media only screen and (min-width: 550px) and (max-width: 949px), only screen and (min-width: 400px) and (max-width: 549px), only screen and (min-width: 350px) and (max-width: 399px), only screen and (max-width: 349px) {
+// .animation-card .animation-card-container {
+// -webkit-box-orient: vertical;
+// -webkit-box-direction: normal;
+// -webkit-flex-direction: column;
+// -moz-box-orient: vertical;
+// -moz-box-direction: normal;
+// -ms-flex-direction: column;
+// flex-direction: column;
+// }
+//     }
+
+//     @media only screen and (min-width: 550px) and (max-width: 949px), only screen and (min-width: 400px) and (max-width: 549px), only screen and (min-width: 350px) and (max-width: 399px), only screen and (max-width: 349px) {}
+// .animation-card .our-story-card-img-container {
+// width: 100%;
+// max-width: 600px;
+// margin-top: 1em;
+// }
+  
+
+}
+
+  
+
+
+
+
+
+
+
+
+  // & > div:nth-of-type(2) {
+      // margin-bottom: 8px;
+
+      // div {
+      //     height: 31.25rem;
+      // }
+
+      // h2 {
+      //     margin-top: 9.375rem;
+      //     margin-left: 6.25rem;
+      //     margin-bottom: 1.875rem;
+      // }
+
+      // p {
+      //     margin-left:6.25rem;
+      // }
+
+      // img {
+      //     position: relative;
+      //     z-index: 2;
+      // }
+
+      // video {
+      //     display: inline-block;
+      //     position: relative;
+      //     left: 5rem;
+      //     bottom: 24.375rem;
+      //     z-index: 1;
+      
+         
+      // }
+  // }
+//     & > div:nth-of-type(3) {
+//         display: flex;
+//         background-color: $dark;
+//         margin-bottom: 8px;
+
+//         div {
+//             height: 31.25rem;
+//         }
+
+//         h2 {
+//             margin-top: 9.375rem;
+//             margin-left: 6.25rem;
+//             margin-bottom: 1.875rem;
+//         }
+
+//         p {
+//             margin-left:6.25rem;
+//         }
+
+//         img {
+//             position: relative;
+//             z-index: 2;
+//         }
+//     }
+//     & > div:nth-of-type(4) {
+//         display: flex;
+//         background-color: $dark;
+//         margin-bottom: 8px;
+
+//         div {
+//             height: 31.25rem;
+//         }
+
+//         h2 {
+//             margin-top: 9.375rem;
+//             margin-left: 6.25rem;
+//             margin-bottom: 1.875rem;
+//         }
+
+//         p {
+//             margin-left:6.25rem;
+//         }
+
+//         img {
+//             position: relative;
+//             z-index: 2;
+//         }
+
+//         video {
+//             display: inline-block;
+//             position: relative;
+//             left: 5rem;
+//             bottom: 24.375rem;
+//             z-index: 1;
+//             max-width: fit-content;
+//         }
+//     }
+//     & > div:nth-of-type(5) {
+//         display: flex;
+//         background-color: $dark;
+//         margin-bottom: 8px;
+
+//         div {
+//             height: 31.25rem;
+//         }
+
+//         h2 {
+//             margin-top: 9.375rem;
+//             margin-left: 6.25rem;
+//             margin-bottom: 1.875rem;
+//         }
+
+//         p {
+//             margin-left:6.25rem;
+//         }
+
+//         img {
+//             position: relative;
+//             z-index: 2;
+//         }
+//     }
+//     & > div:nth-of-type(5) {
+//         display: flex;
+//         background-color: $dark;
+//         margin-bottom: 8px;
+//         justify-content: center;
+//         align-items: center;
+//     }
+
+  

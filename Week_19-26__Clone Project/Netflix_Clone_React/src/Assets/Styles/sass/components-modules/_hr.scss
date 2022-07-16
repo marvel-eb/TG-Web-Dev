@@ -1,0 +1,15 @@
+// == HORIZONTAL__DIVIDER ==
+
+.container hr {
+  border-top: 1px solid #cbcbd0;
+  border-bottom: 1px solid #ffffff !important;
+}
+
+.block hr {
+  margin: 30px 0px;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #ffffff !important;
+}
+.block .card hr {
+  margin: 3px;
+}

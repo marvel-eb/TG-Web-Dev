@@ -1,0 +1,61 @@
+a {
+  color: #101010;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-transition: background-color 0.15s linear, color 0.15s linear;
+  -moz-transition: background-color 0.15s linear, color 0.15s linear;
+  -o-transition: background-color 0.15s linear, color 0.15s linear;
+  -ms-transition: background-color 0.15s linear, color 0.15s linear;
+  transition: background-color 0.15s linear, color 0.15s linear;
+  cursor: pointer;
+}
+a:hover {
+  color: #000;
+  text-decoration: underline;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+p {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+.italic {
+  font-style: italic;
+}
+.tagline {
+  color: #00a592;
+}
+
+ul,
+ol,
+p,
+table,
+form,
+pre {
+  margin: 0 0 12px;
+}
+
+/* Responsive Font Sizes (RFS)
+---------------------------------------------*/
+
+h1 {
+  font-size: calc(2.375rem + 2.5vw);
+  /*font-size: calc(1.375rem + 1.5vw);*/
+}
+h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}

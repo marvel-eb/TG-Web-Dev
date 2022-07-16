@@ -1,0 +1,273 @@
+// == USER__AUTHENTICATION__PAGE ==
+
+.user-auth-page__wrapper {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+  background-color: #010101;
+}
+
+.user-auth-page-bg__holder {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+.user-auth-page-bg__holder img {
+  width: 100%;
+  height: 100%;
+}
+
+// Registration / SignIn / SignUp
+
+.user-auth-form__holder {
+  color: $font-color;
+  // width: 550px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 7px;
+  box-shadow: #0a0a0a 0px 20px 30px -10px;
+
+  p,
+  label {
+    color: #737373;
+    font-size: 13px;
+  }
+
+  a {
+    color: #737373;
+  }
+  .privacy-link {
+    color: #0071eb;
+  }
+}
+.user-auth__heading {
+  color: #a7a7a7;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.form-wrapper > div {
+  width: 100%;
+}
+.user-auth__form {
+  width: 100%;
+  max-width: 40rem;
+
+  margin: 0 auto;
+}
+
+input.formInput {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 20px 15px;
+  border: none;
+  border-bottom: 1px solid #222;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+  width: 100%;
+  background-color: #333;
+  border-radius: 3px;
+  outline: none;
+}
+
+input.formInput:focus {
+  border-bottom: 3px solid #e87c02;
+  color: #e87c02;
+  transition: 0.2s ease;
+  background-color: #333;
+}
+input.formInput:focus:active {
+  background-color: #333;
+}
+
+input {
+  border: 3px solid grey;
+  border-radius: 3px;
+}
+
+input:-webkit-autofill {
+  border: 3px solid #222;
+}
+input:autofill {
+  border: 3px solid #222;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+   box-shadow: 0 0 0 1000px #333 inset !important;
+  -webkit-box-shadow: 0 0 0 1000px #333 inset !important;
+  -webkit-text-fill-color: #f1f1f1 !important;
+}
+
+// Guest User LogIn Authentication
+
+.guest-user {
+  /*background-color: #e50a131f; */
+  border-color: #e50a1342;
+  border-width: 3 px;
+  border-style: solid;
+}
+.guest-user p {
+  font-size: 1rem;
+}
+// Error Message
+
+li.error-message {
+  border-bottom-width: 2px;
+  color: #f00;
+  list-style: none;
+  border-bottom-color: #ff0d0d;
+  border-bottom-style: solid;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  width: auto;
+}
+//  Form Label
+.form__separator:before {
+  border-top: 2px solid #ace2d0;
+  content: " ";
+  display: block;
+  position: relative;
+  top: 12px;
+}
+
+.form__label {
+  position: relative;
+  z-index: 1;
+}
+
+.form__label a {
+  text-decoration: underline;
+}
+
+.vertical-align {
+  vertical-align: inherit;
+}
+svg.fb-login {
+  margin-right: 7px;
+  background-color: #3b579d;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 1.6rem;
+}
+
+.btn--signIn-email {
+  width: 100%;
+  background: #e50914;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #f1f1f1;
+}
+.btn--signIn-email:hover {
+  background: #f8333d;
+  color: #f1f1f1;
+}
+span.login-remember-me-label-text {
+  // color: #dd252e;
+  font-size: 13px;
+}
+
+// Checkbox - RememberMe
+
+.rememberMe {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.rememberMe input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border-radius: 2px;
+  background-color: #737373;
+}
+#rememberCheck {
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: checkbox;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.rememberMe input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.rememberMe .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #020202;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+// Footer - Guest
+.footer-guest a {
+  color: #868788;
+}
+
+.language-picker,
+.language-picker-holder {
+  background-color: #000;
+  background-image: none;
+}
+
+.language-picker {
+  text-indent: 2px;
+  line-height: 1.7;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  color: #6d757d;
+}
+
+.language-picker-holder {
+  padding: 10px;
+
+  border: 1px solid #363a3c;
+  border-radius: 7px;
+
+  margin-top: 25px;
+  width: 150px;
+}

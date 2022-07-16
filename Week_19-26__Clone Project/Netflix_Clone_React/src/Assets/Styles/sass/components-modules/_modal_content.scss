@@ -1,0 +1,236 @@
+#modal-container {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: $background-color;
+
+    h2 {
+        color: $font-color;
+        font-weight: bold;
+    }
+
+    .meer-zoals-dit-container {
+        height: 400px;
+        // background-image: linear-gradient(to bottom, $semi-dark-color 95%, rgba(24, 24, 24, 0.5));
+        background-color: $background-color;
+        overflow: hidden;
+    }
+
+    .video-container {
+        background-color: $background-color;
+
+        iframe {
+            pointer-events: none;
+            border: none;
+        }
+
+    }
+
+    .video-container::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(20,20,20,1) 100%);
+        width: 100%;
+        height: 12.5%;
+    }
+
+    #video-controls {
+        position: relative;
+        bottom: 260px;
+        height: 240px;
+        pointer-events: none;
+        z-index: 2;
+
+        h1 {
+            width: 50%;
+            font-size: xx-large;
+            color: $font-color;
+            max-height: 190px;
+            overflow: hidden;
+            margin-bottom: 0px;
+        }
+
+        & > div {
+            height: 50px;
+        }
+
+        button {
+            pointer-events: all;
+        }
+
+        .circle-button {
+            width: 40px;
+            height: 40px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 25px;
+            background-color: $semi-dark-color;
+        }
+
+        .circle-button:hover {
+            border: 2px solid white;
+        }
+
+        .circle-button:focus {
+            outline: none;
+        }
+    }
+
+    #film-summary {
+        background-color: $background-color;
+        margin-top: -200px;
+        color: $font-color;
+
+        .match-text {
+            color: #43bb60;
+            font-weight: bold;
+        }
+
+        .age-pic {
+            height: 30px;
+            width: auto;
+            margin-right: 5px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        span + p {
+            font-size: larger;
+            // font-weight: bold;
+            color: $font-color;
+        }
+
+        .summary-details {
+            p {
+                color: $font-color;
+            }
+
+            span {
+                color: $font-color-alt;
+            }
+
+            span + span {
+                color: $font-color;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .modal-hr {
+        height: 3px;
+        background-color: $font-color-alt;
+    }
+
+    .expand-mzd-button {
+        display: block;
+        position: relative;
+        z-index: 1;
+        bottom: 25px;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(24, 24, 24, 0.7);
+        border: 2px solid white;
+        border-radius: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        // outline: none;
+    }
+
+    .expand-mzd-button:hover {
+        background-color: $font-color-alt;
+    }
+
+    .expand-mzd-button:focus {
+        outline: none;
+    }
+
+    .trailers-en-meer-container {
+        background-color: $background-color;
+        margin-top: -53px;
+        margin-bottom: 100px;
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        p {
+            color: $font-color;
+            font-weight: bold;
+        }
+
+        span {
+            color: $font-color;
+            font-weight: bold;
+        }
+
+        iframe {
+            // border-radius: 10px;
+            border-start-start-radius: 10px;
+            border-start-end-radius: 10px;
+            border-color: $background-color-alt;
+        }
+    }
+
+    .modal-content-footer {
+        background-color: $background-color;
+
+        span {
+            color: $font-color-alt;
+        }
+
+        #footer-cast{
+            max-height: 100px;
+            overflow: auto;
+
+            &::-webkit-scrollbar{
+                background-color: $font-color-alt;
+                width: 5px;
+                border-radius: 25px;
+            }
+    
+            &::-webkit-scrollbar-thumb {
+                background: $font-color; 
+                border-radius: 10px;
+              }
+        }
+
+        p {
+            color: $font-color;
+        }
+
+        span + span {
+            color: $font-color;
+        }
+
+        .age-pic {
+            height: 30px;
+            width: auto;
+        }
+    }
+
+    @media screen and (max-width: 585px) {
+        #video-controls {
+            position: static;
+            padding-left: 48px;
+            // margin-bottom: 150px;
+            // padding-right: 48px;
+            height: auto;
+            pointer-events: all;
+
+            & > div {
+                height: auto;
+            }
+
+            h1{
+                width: 100%;
+            }
+        }
+
+        #film-summary {
+            margin-top: 0px;
+        }
+    }
+}
